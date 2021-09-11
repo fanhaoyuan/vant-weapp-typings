@@ -79,6 +79,8 @@ export interface VantCalendarRangeProps {
     'max-range'?: string | number;
 
     /**
+     * `Calendar`的`type`为`range`时有效
+     * 
      * 范围选择超过最多可选天数时的提示文案
      *
      * @default '选择天数不能超过 xx 天'
@@ -86,6 +88,8 @@ export interface VantCalendarRangeProps {
     'range-prompt'?: string | null;
 
     /**
+     * `Calendar`的`type`为`range`时有效
+     * 
      * 范围选择超过最多可选天数时，是否展示提示文案
      *
      * @default true
@@ -93,6 +97,8 @@ export interface VantCalendarRangeProps {
     'show-range-prompt'?: boolean;
 
     /**
+     * `Calendar`的`type`为`range`时有效
+     * 
      * 是否允许日期范围的起止时间为同一天
      *
      * @default false
