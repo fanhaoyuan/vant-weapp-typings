@@ -5,4 +5,5 @@ export * from './col';
 export * from './config-provider';
 export * from './icon';
 export * from './image';
+export * from './popup';
 export * from './row';
