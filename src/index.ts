@@ -7,3 +7,4 @@ export * from './icon';
 export * from './image';
 export * from './popup';
 export * from './row';
+export * from './transition';
