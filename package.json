@@ -1,0 +1,20 @@
+{
+    "name": "vant-weapp-typings",
+    "version": "1.0.0",
+    "main": "src/index.d.ts",
+    "typings": "src/index.d.ts",
+    "repository": "https://github.com/fanhaoyuan/vant-weapp-typings.git",
+    "author": "Fansy <418536538@qq.com>",
+    "license": "MIT",
+    "gitHooks": {
+        "commit-msg": "cmv"
+    },
+    "dependencies": {
+        "@types/wechat-miniprogram": "^3.4.0"
+    },
+    "devDependencies": {
+        "@fansy/commit-msg-validator": "^1.0.0",
+        "@fansy/eslint-config": "^1.0.0",
+        "@fansy/prettier-config": "^1.0.0"
+    }
+}
