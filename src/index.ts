@@ -3,6 +3,7 @@ export * from './calendar';
 export * from './cell';
 export * from './cell-group';
 export * from './checkbox';
+export * from './checkbox-group';
 export * from './col';
 export * from './config-provider';
 export * from './icon';
