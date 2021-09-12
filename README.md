@@ -80,3 +80,9 @@
 
 ### 废弃
 - [ ] `Panel` 面板
+
+## 支持功能
+
+- [x] `Props` 组件传参类型
+- [x] `Events` 组件事件类型
+- [ ] `ExternalClassName` 外部样式名称
