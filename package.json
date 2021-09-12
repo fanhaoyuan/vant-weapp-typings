@@ -9,6 +9,15 @@
     "files": [
         "dist"
     ],
+    "keywords": [
+        "@vant/weapp",
+        "vant",
+        "weapp",
+        "miniprogram",
+        "types",
+        "typings"
+    ],
+    "description": "@vant/weapp小程序UI框架的类型声明文件",
     "gitHooks": {
         "commit-msg": "cmv"
     },
