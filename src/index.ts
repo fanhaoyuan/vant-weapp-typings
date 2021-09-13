@@ -12,5 +12,7 @@ export * from './icon';
 export * from './image';
 export * from './picker';
 export * from './popup';
+export * from './radio';
+export * from './radio-group';
 export * from './row';
 export * from './transition';
