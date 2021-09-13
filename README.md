@@ -37,7 +37,7 @@
 - [x] `Slider` 滑块
 - [x] `Stepper` 步进器
 - [x] `Switch` 开关
-- [ ] `Uploader` 文件上传
+- [x] `Uploader` 文件上传
 
 ### 反馈组件
 

@@ -21,3 +21,4 @@ export * from './slider';
 export * from './stepper';
 export * from './switch';
 export * from './transition';
+export * from './uploader';
