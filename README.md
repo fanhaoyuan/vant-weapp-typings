@@ -64,7 +64,7 @@
 - [ ] `Progress` 进度条
 - [ ] `Skeleton` 骨架屏
 - [ ] `Steps` 步骤条
-- [ ] `Sticky` 粘性布局
+- [x] `Sticky` 粘性布局
 - [ ] `Tag` 标签
 
 ### 导航组件
