@@ -59,7 +59,7 @@
 - [ ] `Collapse` 折叠面板
 - [ ] `CountDown` 倒计时
 - [ ] `Divider` 分割线
-- [ ] `Empty` 空状态
+- [x] `Empty` 空状态
 - [ ] `NoticeBar` 通知栏
 - [ ] `Progress` 进度条
 - [ ] `Skeleton` 骨架屏

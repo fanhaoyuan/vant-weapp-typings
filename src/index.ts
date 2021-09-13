@@ -10,6 +10,7 @@ export * from './config-provider';
 export * from './datetime-picker';
 export * from './dropdown-item';
 export * from './dropdown-menu';
+export * from './empty';
 export * from './field';
 export * from './icon';
 export * from './image';
