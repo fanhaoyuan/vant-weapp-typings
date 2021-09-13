@@ -14,5 +14,6 @@ export * from './picker';
 export * from './popup';
 export * from './radio';
 export * from './radio-group';
+export * from './rate';
 export * from './row';
 export * from './transition';
