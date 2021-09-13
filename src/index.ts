@@ -18,4 +18,5 @@ export * from './rate';
 export * from './row';
 export * from './search';
 export * from './slider';
+export * from './stepper';
 export * from './transition';
