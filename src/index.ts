@@ -14,6 +14,7 @@ export * from './field';
 export * from './icon';
 export * from './image';
 export * from './loading';
+export * from './overlay';
 export * from './picker';
 export * from './popup';
 export * from './radio';
