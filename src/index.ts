@@ -7,6 +7,7 @@ export * from './checkbox-group';
 export * from './col';
 export * from './config-provider';
 export * from './datetime-picker';
+export * from './field';
 export * from './icon';
 export * from './image';
 export * from './popup';
