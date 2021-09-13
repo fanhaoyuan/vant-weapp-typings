@@ -48,7 +48,7 @@
 - [x] `ActionSheet` 动作面板
 - [ ] `Dialog` 弹出框
 - [x] `DropdownMenu` 下拉菜单
-- [ ] `Loading` 加载
+- [x] `Loading` 加载
 - [ ] `Notify` 消息通知
 - [ ] `Overlay` 遮罩层
 - [ ] `ShareSheet` 分享面板
