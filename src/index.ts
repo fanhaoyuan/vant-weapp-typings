@@ -10,6 +10,7 @@ export * from './datetime-picker';
 export * from './field';
 export * from './icon';
 export * from './image';
+export * from './picker';
 export * from './popup';
 export * from './row';
 export * from './transition';

@@ -30,7 +30,7 @@
 - [x] `Checkbox` 复选框
 - [x] `DatetimePicker` 时间选择
 - [x] `Field` 输入框
-- [ ] `Picker` 选择器
+- [x] `Picker` 选择器
 - [ ] `Radio` 单选框
 - [ ] `Rate` 评分
 - [ ] `Search` 搜索
