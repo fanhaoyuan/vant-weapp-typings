@@ -16,4 +16,5 @@ export * from './radio';
 export * from './radio-group';
 export * from './rate';
 export * from './row';
+export * from './search';
 export * from './transition';

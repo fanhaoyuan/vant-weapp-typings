@@ -33,7 +33,7 @@
 - [x] `Picker` 选择器
 - [x] `Radio` 单选框
 - [x] `Rate` 评分
-- [ ] `Search` 搜索
+- [x] `Search` 搜索
 - [ ] `Slider` 滑块
 - [ ] `Stepper` 步进器
 - [ ] `Switch` 开关
