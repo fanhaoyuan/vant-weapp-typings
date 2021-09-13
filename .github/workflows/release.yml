@@ -20,7 +20,7 @@ jobs:
             - name: Use Node.js ${{ matrix.node-version }}
               uses: actions/setup-node@v2
               with:
-                  node-version: '12'
+                  node-version: '12',
 
             - name: Set Dependencies Cache
               uses: actions/cache@v2
@@ -43,4 +43,4 @@ jobs:
             - name: Publish
               run: npm publish
               env:
-                  NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+                  NPM_TOKEN: ${{secrets.NPM_TOKEN}}
