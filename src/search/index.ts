@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantSearchProps {
     /**
      * 在表单内提交时的标识符
@@ -188,4 +190,21 @@ export interface VantSearchEvents {
      * 点击搜索区域时触发
      */
     'bind:click-input'?: WechatMiniprogram.EventCallback;
+}
+
+export interface VantSearchExternalClassName extends VantBaseExternalClassName {
+    /**
+     * 搜索框样式类
+     */
+    'field-class'?: string;
+
+    /**
+     * 输入框样式类
+     */
+    'input-class'?: string;
+
+    /**
+     * 取消按钮样式类
+     */
+    'cancel-class'?: string;
 }
