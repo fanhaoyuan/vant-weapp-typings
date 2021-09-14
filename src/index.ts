@@ -32,6 +32,7 @@ export * from './radio-group';
 export * from './rate';
 export * from './row';
 export * from './search';
+export * from './skeleton';
 export * from './slider';
 export * from './stepper';
 export * from './sticky';
