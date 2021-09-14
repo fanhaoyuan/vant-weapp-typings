@@ -50,3 +50,5 @@ jobs:
 
             - name: Publish
               run: npm publish
+              env:
+                  NPM_TOKEN: ${{secrets.NPM_TOKEN}}
