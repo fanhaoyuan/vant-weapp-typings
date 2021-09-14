@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantTagProps {
     /**
      * 类型
@@ -53,3 +55,5 @@ export interface VantTagProps {
 export interface VantTagEvents {
     close?: WechatMiniprogram.EventCallback;
 }
+
+export type VantTagExternalClassName = VantBaseExternalClassName
