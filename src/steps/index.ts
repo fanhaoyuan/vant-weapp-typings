@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantStepsProps {
     /**
      * 当前步骤
@@ -43,4 +45,11 @@ export interface VantStepsEvents {
      * 点击步骤时触发的事件
      */
     'bind:click-step'?: WechatMiniprogram.EventCallback;
+}
+
+export interface VantStepsExternalClassName extends VantBaseExternalClassName {
+    /**
+     * 描述信息样式类
+     */
+    'desc-class'?: string;
 }
