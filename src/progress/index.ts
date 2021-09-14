@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantProgressProps {
     /**
      * 是否置灰
@@ -62,3 +64,5 @@ export interface VantProgressProps {
      */
     'pivot-color'?: string;
 }
+
+export type VantProgressExternalClassName = VantBaseExternalClassName;
