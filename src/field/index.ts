@@ -330,3 +330,20 @@ export interface VantFieldEvents {
      */
     'bind:keyboardheightchange'?: WechatMiniprogram.EventCallback;
 }
+
+export interface VantFieldExternalClassName {
+    /**
+     * 左侧文本样式类
+     */
+    'label-class'?: string;
+
+    /**
+     * 输入框样式类
+     */
+    'input-class'?: string;
+
+    /**
+     * 右侧图标样式类
+     */
+    'right-icon-class'?: string;
+}
