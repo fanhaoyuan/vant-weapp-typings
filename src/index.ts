@@ -30,4 +30,5 @@ export * from './stepper';
 export * from './sticky';
 export * from './switch';
 export * from './transition';
+export * from './tree-select';
 export * from './uploader';

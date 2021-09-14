@@ -74,7 +74,7 @@
 - [ ] `Sidebar` 侧边导航
 - [ ] `Tab` 标签页
 - [ ] `Tabbar` 标签栏
-- [ ] `TreeSelect` 分类选择
+- [x] `TreeSelect` 分类选择
 
 ### 业务组件
 - [ ] `Area` 省市区选择
