@@ -1,5 +1,13 @@
 # 更新日志
 
+## v1.18.1
+
+### refactor
+
+-   🔧 `ActionSheet`继承`OpenType`
+-   🔧 `Button`继承`OpenType`
+-   🔧 `GoodsAction`继承`OpenType`
+
 ## v1.18.0
 
 ### features
