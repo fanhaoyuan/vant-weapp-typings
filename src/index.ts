@@ -43,6 +43,8 @@ export * from './stepper';
 export * from './steps';
 export * from './sticky';
 export * from './switch';
+export * from './tab';
+export * from './tabs';
 export * from './tag';
 export * from './transition';
 export * from './tree-select';

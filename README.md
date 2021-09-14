@@ -72,7 +72,7 @@
 - [x] `IndexBar` 索引栏
 - [x] `NavBar` 导航栏
 - [x] `Sidebar` 侧边导航
-- [ ] `Tab` 标签页
+- [x] `Tab` 标签页
 - [ ] `Tabbar` 标签栏
 - [x] `TreeSelect` 分类选择
 
