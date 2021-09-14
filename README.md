@@ -60,7 +60,7 @@
 - [ ] `CountDown` 倒计时
 - [x] `Divider` 分割线
 - [x] `Empty` 空状态
-- [ ] `NoticeBar` 通知栏
+- [x] `NoticeBar` 通知栏
 - [ ] `Progress` 进度条
 - [ ] `Skeleton` 骨架屏
 - [ ] `Steps` 步骤条
