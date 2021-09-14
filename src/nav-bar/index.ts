@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantNavBarProps {
     /**
      * 标题
@@ -78,4 +80,11 @@ export interface VantNavBarEvents {
      * 点击右侧按钮时触发
      */
     'bind:click-right'?: WechatMiniprogram.EventCallback;
+}
+
+export interface VantNavBarExternalClassName extends VantBaseExternalClassName {
+    /**
+     * 标题样式类
+     */
+    'title-class'?: string;
 }
