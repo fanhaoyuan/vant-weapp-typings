@@ -10,6 +10,7 @@ export * from './col';
 export * from './collapse';
 export * from './collapse-item';
 export * from './config-provider';
+export * from './count-down';
 export * from './datetime-picker';
 export * from './divider';
 export * from './dropdown-item';
