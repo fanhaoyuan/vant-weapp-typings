@@ -1,3 +1,5 @@
+import { VantComponent } from '../base';
+
 export interface VantSwipeCellProps {
     /**
      * 标识符，可以在 `close` 事件的参数中获取到
@@ -51,3 +53,9 @@ export interface VantSwipeCellEvents {
      */
     open?: (data?: { position: 'left' | 'right'; name: string }) => void;
 }
+
+export type VantSwipeCell = VantComponent<VantSwipeCellProps, VantSwipeCellEvents>;
+
+declare const SwipeCell: VantSwipeCell;
+
+export default SwipeCell;

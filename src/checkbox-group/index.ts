@@ -1,3 +1,5 @@
+import { VantComponent } from '../base';
+
 export interface VantCheckboxGroupProps {
     /**
      * 在表单内提交时的标识符
@@ -39,3 +41,9 @@ export interface VantCheckboxGroupEvents {
      */
     'bind:change'?: (value: string[]) => void;
 }
+
+export type VantCheckboxGroup = VantComponent<VantCheckboxGroupProps, VantCheckboxGroupEvents>;
+
+declare const CheckboxGroup: VantCheckboxGroup;
+
+export default CheckboxGroup;

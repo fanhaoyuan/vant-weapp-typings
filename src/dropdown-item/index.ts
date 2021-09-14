@@ -1,3 +1,5 @@
+import { VantComponent } from '../base';
+
 export interface VantDropdownItemOption {
     /**
      * 文字
@@ -79,3 +81,9 @@ export interface VantDropdownItemEvents {
      */
     closed?: WechatMiniprogram.EventCallback;
 }
+
+export type VantDropdownItem = VantComponent<VantDropdownItemProps, VantDropdownItemEvents>;
+
+declare const DropdownItem: VantDropdownItem;
+
+export default DropdownItem;

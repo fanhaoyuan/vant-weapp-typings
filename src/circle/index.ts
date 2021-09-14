@@ -1,3 +1,5 @@
+import { VantComponent } from '../base';
+
 export interface VantCircleProps {
     /**
      * 目标进度
@@ -63,3 +65,9 @@ export interface VantCircleProps {
      */
     clockwise?: boolean;
 }
+
+export type VantCircle = VantComponent<VantCircleProps>;
+
+declare const Circle: VantCircle;
+
+export default Circle;

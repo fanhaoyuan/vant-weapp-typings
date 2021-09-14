@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantNavBarProps {
     /**
@@ -88,3 +88,9 @@ export interface VantNavBarExternalClassName extends VantBaseExternalClassName {
      */
     'title-class'?: string;
 }
+
+export type VantNavBar = VantComponent<VantNavBarProps, VantNavBarEvents, VantNavBarExternalClassName>;
+
+declare const NavBar: VantNavBar;
+
+export default NavBar;

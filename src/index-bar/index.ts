@@ -1,3 +1,5 @@
+import { VantComponent } from '../base';
+
 export interface VantIndexBarProps {
     /**
      * 索引字符列表
@@ -41,3 +43,9 @@ export interface VantIndexBarEvents {
      */
     select?: (value?: string | number) => void;
 }
+
+export type VantIndexBar = VantComponent<VantIndexBarProps, VantIndexBarEvents>;
+
+declare const IndexBar: VantIndexBar;
+
+export default IndexBar;

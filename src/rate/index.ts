@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantRateProps {
     /**
@@ -109,3 +109,9 @@ export interface VantRateExternalClassName extends VantBaseExternalClassName {
      */
     'icon-class'?: string;
 }
+
+export type VantRate = VantComponent<VantRateProps, VantRateEvents, VantRateExternalClassName>;
+
+declare const Rate: VantRate;
+
+export default Rate;

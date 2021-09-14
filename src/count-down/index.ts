@@ -1,3 +1,5 @@
+import { VantComponent } from '../base';
+
 export interface VantCountDownProps {
     /**
      * 倒计时时长，单位毫秒
@@ -81,3 +83,9 @@ export interface VantCountDownEvents {
      */
     change?: (timeData?: VantCountDownTimeData) => void;
 }
+
+export type VantCountDown = VantComponent<VantCountDownProps, VantCountDownEvents>;
+
+declare const CountDown: VantCountDown;
+
+export default CountDown;

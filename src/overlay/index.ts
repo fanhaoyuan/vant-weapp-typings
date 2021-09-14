@@ -1,3 +1,5 @@
+import { VantComponent } from '../base';
+
 export interface VantOverlayProps {
     /**
      * 是否展示遮罩层
@@ -46,3 +48,9 @@ export interface VantOverlayEvents {
      */
     'bind:click'?: WechatMiniprogram.EventCallback;
 }
+
+export type VantOverlay = VantComponent<VantOverlayProps, VantOverlayEvents>;
+
+declare const Overlay: VantOverlay;
+
+export default Overlay;

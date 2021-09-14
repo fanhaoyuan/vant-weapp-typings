@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantCollapseProps {
     /**
@@ -42,4 +42,10 @@ export interface VantCollapseEvents {
     close?: (currentName?: string | number) => void;
 }
 
-export type VantCollapseExternalClassName = VantBaseExternalClassName
+export type VantCollapseExternalClassName = VantBaseExternalClassName;
+
+export type VantCollapse = VantComponent<VantCollapseProps, VantCollapseEvents, VantCollapseExternalClassName>;
+
+declare const Collapse: VantCollapse;
+
+export default Collapse;

@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantNoticeBarProps {
     /**
@@ -80,4 +80,10 @@ export interface VantNoticeBarEvents {
     close?: WechatMiniprogram.EventCallback;
 }
 
-export type VantNoticeBarExternalClassName = VantBaseExternalClassName
+export type VantNoticeBarExternalClassName = VantBaseExternalClassName;
+
+export type VantNoticeBar = VantComponent<VantNoticeBarProps, VantNoticeBarEvents, VantNoticeBarExternalClassName>;
+
+declare const NoticeBar: VantNoticeBar;
+
+export default NoticeBar;

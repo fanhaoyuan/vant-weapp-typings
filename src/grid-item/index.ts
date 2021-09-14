@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantGridItemProps {
     /**
@@ -73,3 +73,9 @@ export interface VantGridItemExternalClassName extends VantBaseExternalClassName
      */
     'text-class'?: string;
 }
+
+export type VantGridItem = VantComponent<VantGridItemProps, VantGridItemEvents, VantGridItemExternalClassName>;
+
+declare const GridItem: VantGridItem;
+
+export default GridItem;

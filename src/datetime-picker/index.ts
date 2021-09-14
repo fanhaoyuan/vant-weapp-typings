@@ -1,3 +1,5 @@
+import { VantComponent } from '../base';
+
 export interface VantDateTimePickerProps {
     /**
      * 当前选中值
@@ -151,3 +153,13 @@ export interface VantDateTimePickerExternalClassName {
      */
     'column-class'?: string;
 }
+
+export type VantDateTimePicker = VantComponent<
+    VantDateTimePickerProps,
+    VantDateTimePickerEvents,
+    VantDateTimePickerExternalClassName
+>;
+
+declare const DateTimePicker: VantDateTimePicker;
+
+export default DateTimePicker;

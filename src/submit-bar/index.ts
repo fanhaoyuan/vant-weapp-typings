@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantSubmitBarProps {
     /**
@@ -99,3 +99,9 @@ export interface VantSubmitBarExternalClassName extends VantBaseExternalClassNam
      */
     'bar-class'?: string;
 }
+
+export type VantSubmitBar = VantComponent<VantSubmitBarProps, VantSubmitBarEvents, VantSubmitBarExternalClassName>;
+
+declare const SubmitBar: VantSubmitBar;
+
+export default SubmitBar;

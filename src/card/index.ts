@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantCardProps {
     /**
@@ -108,3 +108,9 @@ export interface VantCardExternalClassName extends VantBaseExternalClassName {
      */
     'num-class'?: string;
 }
+
+export type VantCard = VantComponent<VantCardProps, {}, VantCardExternalClassName>;
+
+declare const Card: VantCard;
+
+export default Card;

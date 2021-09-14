@@ -1,3 +1,5 @@
+import { VantComponent } from '../base';
+
 export interface VantTabbarProps {
     /**
      * 当前选中标签的索引
@@ -60,3 +62,9 @@ export interface VantTabbarEvents {
      */
     'bind:change'?: WechatMiniprogram.EventCallback;
 }
+
+export type VantTabbar = VantComponent<VantTabbarProps, VantTabbarEvents>;
+
+declare const Tabbar: VantTabbar;
+
+export default Tabbar;

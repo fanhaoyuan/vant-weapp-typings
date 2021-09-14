@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '..';
+import { VantBaseExternalClassName, VantComponent } from '..';
 
 export interface VantCheckboxProps {
     /**
@@ -81,3 +81,9 @@ export interface VantCheckboxExternalClassName extends VantBaseExternalClassName
      */
     'label-class'?: string;
 }
+
+export type VantCheckbox = VantComponent<VantCheckboxProps, VantCheckboxEvents, VantCheckboxExternalClassName>;
+
+declare const Checkbox: VantCheckbox;
+
+export default Checkbox;

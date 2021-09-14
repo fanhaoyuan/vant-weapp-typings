@@ -1,3 +1,5 @@
+import { VantComponent } from '../base';
+
 export interface VantUploaderProps {
     /**
      * 标识符，可以在回调函数的第二项参数中获取
@@ -152,3 +154,9 @@ export interface VantUploaderEvents {
      */
     'bind:delete'?: WechatMiniprogram.EventCallback;
 }
+
+export type VantUploader = VantComponent<VantUploaderProps, VantUploaderEvents>;
+
+declare const Uploader: VantUploader;
+
+export default Uploader;

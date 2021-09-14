@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantGridProps {
     /**
@@ -75,3 +75,9 @@ export interface VantGridProps {
 }
 
 export type VantGridExternalClassName = VantBaseExternalClassName;
+
+export type VantGrid = VantComponent<VantGridProps, {}, VantGridExternalClassName>;
+
+declare const Grid: VantGrid;
+
+export default Grid;

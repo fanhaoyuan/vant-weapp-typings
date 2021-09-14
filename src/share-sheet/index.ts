@@ -1,3 +1,5 @@
+import { VantComponent } from '../base';
+
 export interface VantShareSheetOption {
     /**
      * 分享渠道名称
@@ -97,3 +99,9 @@ export interface VantShareSheetEvents {
      */
     'click-overlay'?: WechatMiniprogram.EventCallback;
 }
+
+export type VantShareSheet = VantComponent<VantShareSheetProps, VantShareSheetEvents>;
+
+declare const ShareSheet: VantShareSheet;
+
+export default ShareSheet;

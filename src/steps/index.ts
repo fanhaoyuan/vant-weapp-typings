@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantStepsProps {
     /**
@@ -53,3 +53,9 @@ export interface VantStepsExternalClassName extends VantBaseExternalClassName {
      */
     'desc-class'?: string;
 }
+
+export type VantSteps = VantComponent<VantStepsProps, VantStepsEvents, VantStepsExternalClassName>;
+
+declare const Steps: VantSteps;
+
+export default Steps;

@@ -1,3 +1,5 @@
+import { VantComponent } from '../base';
+
 export interface Day {
     /**
      * 日期对应的 Date 对象
@@ -80,7 +82,7 @@ export interface VantCalendarRangeProps {
 
     /**
      * `Calendar`的`type`为`range`时有效
-     * 
+     *
      * 范围选择超过最多可选天数时的提示文案
      *
      * @default '选择天数不能超过 xx 天'
@@ -89,7 +91,7 @@ export interface VantCalendarRangeProps {
 
     /**
      * `Calendar`的`type`为`range`时有效
-     * 
+     *
      * 范围选择超过最多可选天数时，是否展示提示文案
      *
      * @default true
@@ -98,7 +100,7 @@ export interface VantCalendarRangeProps {
 
     /**
      * `Calendar`的`type`为`range`时有效
-     * 
+     *
      * 是否允许日期范围的起止时间为同一天
      *
      * @default false
@@ -275,3 +277,9 @@ export interface VantCalendarEvents {
      */
     'click-subtitle'?: (e: WechatMiniprogram.TouchEvent) => void;
 }
+
+export type VantCalendar = VantComponent<VantCalendarProps, VantCalendarEvents>;
+
+declare const Calendar: VantCalendar;
+
+export default Calendar;

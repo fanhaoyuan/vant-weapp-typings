@@ -1,3 +1,5 @@
+import { VantComponent } from '../base';
+
 export interface VantTreeSelectItem {
     /**
      * 作为匹配选中状态的标识
@@ -123,3 +125,9 @@ export interface VantTreeSelectExternalClassName {
      */
     'content-disabled-class'?: string;
 }
+
+export type VantTreeSelect = VantComponent<VantTreeSelectProps, VantTreeSelectEvents, VantTreeSelectExternalClassName>;
+
+declare const TreeSelect: VantTreeSelect;
+
+export default TreeSelect;

@@ -1,3 +1,5 @@
+import { VantComponent } from '../base';
+
 export interface VantSkeletonProps {
     /**
      * 段落占位图行数
@@ -60,3 +62,9 @@ export interface VantSkeletonProps {
      */
     animate?: boolean;
 }
+
+export type VantSkeleton = VantComponent<VantSkeletonProps>;
+
+declare const Skeleton: VantSkeleton;
+
+export default Skeleton;

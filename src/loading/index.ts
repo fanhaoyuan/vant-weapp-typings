@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantLoadingProps {
     /**
@@ -42,3 +42,9 @@ export interface VantLoadingProps {
 }
 
 export type VantLoadingExternalClassName = VantBaseExternalClassName;
+
+export type VantLoading = VantComponent<VantLoadingProps, {}, VantLoadingExternalClassName>;
+
+declare const Loading: VantLoading;
+
+export default Loading;

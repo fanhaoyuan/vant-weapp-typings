@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantIconProps {
     /**
@@ -51,4 +51,10 @@ export interface VantIconEvents {
     'bind:click'?: WechatMiniprogram.EventCallback;
 }
 
-export type VantIconExternalClassName = VantBaseExternalClassName
+export type VantIconExternalClassName = VantBaseExternalClassName;
+
+export type VantIcon = VantComponent<VantIconProps, VantIconEvents, VantIconExternalClassName>;
+
+declare const Icon: VantIcon;
+
+export default Icon;

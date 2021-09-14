@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from "../base";
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantRowProps {
     /**
@@ -8,3 +8,9 @@ export interface VantRowProps {
 }
 
 export type VantRowExternalClassName = VantBaseExternalClassName;
+
+export type VantRow = VantComponent<VantRowProps, {}, VantRowExternalClassName>;
+
+declare const Row: VantRow;
+
+export default Row;

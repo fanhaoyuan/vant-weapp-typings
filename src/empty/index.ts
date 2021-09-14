@@ -1,3 +1,5 @@
+import { VantComponent } from '../base';
+
 export interface VantEmptyProps {
     /**
      * 图片类型，支持传入图片 URL
@@ -11,3 +13,9 @@ export interface VantEmptyProps {
      */
     description?: string;
 }
+
+export type VantEmpty = VantComponent<VantEmptyProps>;
+
+declare const Empty: VantEmpty;
+
+export default Empty;

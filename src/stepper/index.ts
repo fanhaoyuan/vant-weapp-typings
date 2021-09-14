@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantStepperProps {
     /**
@@ -163,3 +163,9 @@ export interface VantStepperExternalClassName extends VantBaseExternalClassName 
      */
     'minus-class'?: string;
 }
+
+export type VantStepper = VantComponent<VantStepperProps, VantStepperEvents, VantStepperExternalClassName>;
+
+declare const Stepper: VantStepper;
+
+export default Stepper;

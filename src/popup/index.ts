@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantPopupProps {
     /**
@@ -143,4 +143,10 @@ export interface VantPopupEvents {
     'bind:after-leave'?: WechatMiniprogram.EventCallback;
 }
 
-export type VantPopupExternalClassName = VantBaseExternalClassName
+export type VantPopupExternalClassName = VantBaseExternalClassName;
+
+export type VantPopup = VantComponent<VantPopupProps, VantPopupEvents, VantPopupExternalClassName>;
+
+declare const Popup: VantPopup;
+
+export default Popup;

@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from "../base";
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantSwitchProps {
     /**
@@ -75,3 +75,9 @@ export interface VantSwitchExternalClassName extends VantBaseExternalClassName {
      */
     'node-class'?: string;
 }
+
+export type VantSwitch = VantComponent<VantSwitchProps, VantSwitchEvents, VantSwitchExternalClassName>;
+
+declare const Switch: VantSwitch;
+
+export default Switch;

@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantPickerColumn {
     /**
@@ -138,3 +138,9 @@ export interface VantPickerExternalClassName extends VantBaseExternalClassName {
      */
     'column-class'?: string;
 }
+
+export type VantPicker = VantComponent<VantPickerProps, VantPickerEvents, VantPickerExternalClassName>;
+
+declare const Picker: VantPicker;
+
+export default Picker;

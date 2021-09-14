@@ -1,3 +1,5 @@
+import { VantComponent } from '../base';
+
 export interface VantRadioGroupProps {
     /**
      * 在表单内提交时的标识符
@@ -30,3 +32,9 @@ export interface VantRadioGroupEvents {
      */
     'bind:change'?: (name?: string) => void;
 }
+
+export type VantRadioGroup = VantComponent<VantRadioGroupProps, VantRadioGroupEvents>;
+
+declare const RadioGroup: VantRadioGroup;
+
+export default RadioGroup;

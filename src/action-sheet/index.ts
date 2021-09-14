@@ -1,4 +1,4 @@
-import { VantOpenTypeCamelCaseProps, VantOpenTypeEvents } from '../base/open-type';
+import { VantOpenTypeCamelCaseProps, VantOpenTypeEvents, VantComponent } from '../base';
 
 export interface VantAction extends Omit<VantOpenTypeCamelCaseProps, 'businessId'> {
     /**
@@ -131,3 +131,9 @@ export interface VantActionSheetEvents extends VantOpenTypeEvents {
      */
     'bind:launchapp'?: WechatMiniprogram.EventCallback;
 }
+
+export type VantActionSheet = VantComponent<VantActionSheetProps, VantActionSheetEvents>;
+
+declare const ActionSheet: VantActionSheet;
+
+export default ActionSheet;

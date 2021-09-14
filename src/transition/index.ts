@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '..';
+import { VantBaseExternalClassName, VantComponent } from '..';
 
 export interface VantTransitionProps {
     /**
@@ -122,3 +122,9 @@ export interface VantTransitionExternalClassName extends VantBaseExternalClassNa
      */
     'leave-to-class'?: string;
 }
+
+export type VantTransition = VantComponent<VantTransitionProps, VantTransitionEvents, VantTransitionExternalClassName>;
+
+declare const Transition: VantTransition;
+
+export default Transition;

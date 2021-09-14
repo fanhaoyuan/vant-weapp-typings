@@ -1,3 +1,5 @@
+import { VantComponent } from '../base';
+
 export interface VantTabbarItemProps {
     /**
      * 标签名称，作为匹配的标识符
@@ -28,3 +30,9 @@ export interface VantTabbarItemProps {
      */
     info?: string | number;
 }
+
+export type VantTabbarItem = VantComponent<VantTabbarItemProps>;
+
+declare const TabbarItem: VantTabbarItem;
+
+export default TabbarItem;

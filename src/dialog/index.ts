@@ -1,3 +1,4 @@
+import { VantComponent } from '../base';
 import { VantOpenTypeEvents, VantOpenTypeProps } from '../base/open-type';
 
 export interface VantDialogProps extends VantOpenTypeProps {
@@ -178,3 +179,9 @@ export interface VantDialogEvents extends VantOpenTypeEvents {
      */
     'bind:cancel'?: WechatMiniprogram.EventCallback;
 }
+
+export type VantDialog = VantComponent<VantDialogProps, VantDialogEvents>;
+
+declare const Dialog: VantDialog;
+
+export default Dialog;

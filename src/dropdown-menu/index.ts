@@ -1,3 +1,5 @@
+import { VantComponent } from '../base';
+
 export interface VantDropdownMenuProps {
     /**
      * 菜单标题和选项的选中态颜色
@@ -46,3 +48,9 @@ export interface VantDropdownMenuProps {
      */
     'close-on-click-outside'?: boolean;
 }
+
+export type VantDropdownMenu = VantComponent<VantDropdownMenuProps>;
+
+declare const DropdownMenu: VantDropdownMenu;
+
+export default DropdownMenu;

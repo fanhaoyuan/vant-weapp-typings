@@ -1,3 +1,5 @@
+import { VantComponent } from '../base';
+
 export interface VantIndexAnchorProps {
     /**
      * 是否使用自定义内容的插槽
@@ -11,3 +13,9 @@ export interface VantIndexAnchorProps {
      */
     index?: string | number;
 }
+
+export type VantIndexAnchor = VantComponent<VantIndexAnchorProps>;
+
+declare const IndexAnchor: VantIndexAnchor;
+
+export default IndexAnchor;

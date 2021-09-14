@@ -1,3 +1,5 @@
+import { VantComponent } from '../base';
+
 /* eslint-disable camelcase */
 export interface VantAreaList {
     province_list: Record<number, string>;
@@ -87,3 +89,9 @@ export interface VantAreaEvents {
      */
     'bind:change'?: WechatMiniprogram.EventCallback;
 }
+
+export type VantArea = VantComponent<VantAreaProps, VantAreaEvents>;
+
+declare const Area: VantArea;
+
+export default Area;

@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantRadioProps {
     /**
@@ -70,3 +70,9 @@ export interface VantRadioExternalClassName extends VantBaseExternalClassName {
      */
     'label-class'?: string;
 }
+
+export type VantRadio = VantComponent<VantRadioProps, VantRadioEvents, VantRadioExternalClassName>;
+
+declare const Radio: VantRadio;
+
+export default Radio;

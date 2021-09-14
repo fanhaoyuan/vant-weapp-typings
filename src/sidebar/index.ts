@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantSidebarProps {
     /**
@@ -17,3 +17,9 @@ export interface VantSidebarEvents {
 }
 
 export type VantSidebarExternalClassName = VantBaseExternalClassName;
+
+export type VantSidebar = VantComponent<VantSidebarProps, VantSidebarEvents, VantSidebarExternalClassName>;
+
+declare const Sidebar: VantSidebar;
+
+export default Sidebar;

@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantProgressProps {
     /**
@@ -66,3 +66,9 @@ export interface VantProgressProps {
 }
 
 export type VantProgressExternalClassName = VantBaseExternalClassName;
+
+export type VantProgress = VantComponent<VantProgressProps, {}, VantProgressExternalClassName>;
+
+declare const Progress: VantProgress;
+
+export default Progress;

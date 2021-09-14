@@ -3,6 +3,7 @@ import {
     VantOpenTypeProps,
     VantBaseExternalClassName,
     VantBaseLoadingExternalClassName,
+    VantComponent,
 } from '../base';
 
 export interface VantButtonProps extends VantOpenTypeProps {
@@ -144,3 +145,9 @@ export interface VantButtonEvents extends VantOpenTypeEvents {
 }
 
 export interface VantButtonExternalClassName extends VantBaseExternalClassName, VantBaseLoadingExternalClassName {}
+
+export type VantButton = VantComponent<VantButtonProps, VantButtonEvents, VantButtonExternalClassName>;
+
+declare const Button: VantButton;
+
+export default Button;

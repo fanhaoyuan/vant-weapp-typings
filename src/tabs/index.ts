@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantTabsProps {
     /**
@@ -151,3 +151,9 @@ export interface VantTabsExternalClassName extends VantBaseExternalClassName {
      */
     'tab-active-class': string;
 }
+
+export type VantTabs = VantComponent<VantTabsProps, VantTabsEvents, VantTabsExternalClassName>;
+
+declare const Tabs: VantTabs;
+
+export default Tabs;

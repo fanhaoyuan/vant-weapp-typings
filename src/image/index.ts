@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantBaseLoadingExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantBaseLoadingExternalClassName, VantComponent } from '../base';
 
 export interface VantImageProps {
     /**
@@ -121,3 +121,9 @@ export interface VantImageExternalClassName extends VantBaseExternalClassName, V
      */
     'error-class': string;
 }
+
+export type VantImage = VantComponent<VantImageProps, VantImageEvents, VantImageExternalClassName>;
+
+declare const Image: VantImage;
+
+export default Image;

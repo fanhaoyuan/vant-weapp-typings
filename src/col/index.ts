@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantColProps {
     /**
@@ -12,4 +12,10 @@ export interface VantColProps {
     offset?: string | number;
 }
 
-export type VantColExternalClassName = VantBaseExternalClassName
+export type VantColExternalClassName = VantBaseExternalClassName;
+
+export type VantCol = VantComponent<VantColProps, {}, VantColExternalClassName>;
+
+declare const Col: VantCol;
+
+export default Col;

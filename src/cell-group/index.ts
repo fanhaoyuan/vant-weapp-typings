@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantCellGroupProps {
     /**
@@ -22,3 +22,9 @@ export interface VantCellGroupProps {
 }
 
 export type VantCellGroupExternalClassName = VantBaseExternalClassName;
+
+export type VantCellGroup = VantComponent<VantCellGroupProps, {}, VantCellGroupExternalClassName>;
+
+declare const CellGroup: VantCellGroup;
+
+export default CellGroup;

@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantSearchProps {
     /**
@@ -208,3 +208,9 @@ export interface VantSearchExternalClassName extends VantBaseExternalClassName {
      */
     'cancel-class'?: string;
 }
+
+export type VantSearch = VantComponent<VantSearchProps, VantSearchEvents, VantSearchExternalClassName>;
+
+declare const Search: VantSearch;
+
+export default Search;

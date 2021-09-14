@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantCellProps {
     /**
@@ -121,3 +121,9 @@ export interface VantCellExternalClassName extends VantBaseExternalClassName {
      */
     'value-class'?: string;
 }
+
+export type VantCell = VantComponent<VantCellProps, VantCellEvents, VantCellExternalClassName>;
+
+declare const Cell: VantCell;
+
+export default Cell;

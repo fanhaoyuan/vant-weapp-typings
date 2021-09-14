@@ -1,3 +1,5 @@
+import { VantComponent } from '../base';
+
 export interface VantStickyProps {
     /**
      * 吸顶时与顶部的距离，单位`px`
@@ -35,3 +37,9 @@ export interface VantStickyEvents {
         isFixed: boolean;
     }) => void;
 }
+
+export type VantSticky = VantComponent<VantStickyProps, VantStickyEvents>;
+
+declare const Sticky: VantSticky;
+
+export default Sticky;

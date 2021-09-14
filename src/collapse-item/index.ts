@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantCollapseItemProps {
     /**
@@ -63,3 +63,9 @@ export interface VantCollapseItemExternalClassName extends VantBaseExternalClass
      */
     'content-class'?: string;
 }
+
+export type VantCollapseItem = VantComponent<VantCollapseItemProps, {}, VantCollapseItemExternalClassName>;
+
+declare const CollapseItem: VantCollapseItem;
+
+export default CollapseItem;

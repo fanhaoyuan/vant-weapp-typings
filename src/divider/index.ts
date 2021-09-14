@@ -1,3 +1,5 @@
+import { VantComponent } from '../base';
+
 export interface VantDividerProps {
     /**
      * 虚线
@@ -23,3 +25,9 @@ export interface VantDividerProps {
      */
     'custom-style'?: string;
 }
+
+export type VantDivider = VantComponent<VantDividerProps>;
+
+declare const Divider: VantDivider;
+
+export default Divider;

@@ -1,3 +1,5 @@
+import { VantComponent } from '../base';
+
 export interface VantTabProps {
     /**
      * 标签名称，作为匹配的标识符
@@ -33,3 +35,9 @@ export interface VantTabProps {
      */
     'title-style'?: string;
 }
+
+export type VantTab = VantComponent<VantTabProps>;
+
+declare const Tab: VantTab;
+
+export default Tab;

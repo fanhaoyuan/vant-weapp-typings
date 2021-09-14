@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantPanelProps {
     /**
@@ -28,3 +28,9 @@ export interface VantPanelExternalClassName extends VantBaseExternalClassName {
      */
     'footer-class'?: string;
 }
+
+export type VantPanel = VantComponent<VantPanelProps, {}, VantPanelExternalClassName>;
+
+declare const Panel: VantPanel;
+
+export default Panel;

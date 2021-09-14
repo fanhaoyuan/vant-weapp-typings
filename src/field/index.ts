@@ -1,3 +1,5 @@
+import { VantComponent } from '../base';
+
 export interface VantFieldProps {
     /**
      * 在表单内提交时的标识符
@@ -347,3 +349,9 @@ export interface VantFieldExternalClassName {
      */
     'right-icon-class'?: string;
 }
+
+export type VantField = VantComponent<VantFieldProps, VantFieldEvents, VantFieldExternalClassName>;
+
+declare const Field: VantField;
+
+export default Field;

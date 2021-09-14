@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantOpenTypeProps } from '../base';
+import { VantBaseExternalClassName, VantComponent, VantOpenTypeProps } from '../base';
 
 export interface VantGoodsActionButtonProps extends Omit<VantOpenTypeProps, 'business-id'> {
     /**
@@ -70,3 +70,13 @@ export interface VantGoodsActionButtonProps extends Omit<VantOpenTypeProps, 'bus
 }
 
 export type VantGoodsActionButtonExternalClassName = VantBaseExternalClassName;
+
+export type VantGoodsActionButton = VantComponent<
+    VantGoodsActionButtonProps,
+    {},
+    VantGoodsActionButtonExternalClassName
+>;
+
+declare const GoodsActionButton: VantGoodsActionButton;
+
+export default GoodsActionButton;

@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName } from "../base";
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantSliderProps {
     /**
@@ -96,4 +96,10 @@ export interface VantSliderEvents {
     'bind:drag-end'?: WechatMiniprogram.EventCallback;
 }
 
-export type VantSliderExternalClassName = VantBaseExternalClassName
+export type VantSliderExternalClassName = VantBaseExternalClassName;
+
+export type VantSlider = VantComponent<VantSliderProps, VantSliderEvents, VantSliderExternalClassName>;
+
+declare const Slider: VantSlider;
+
+export default Slider;
