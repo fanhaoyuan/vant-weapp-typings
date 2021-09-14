@@ -65,7 +65,7 @@
 - [ ] `Skeleton` 骨架屏
 - [ ] `Steps` 步骤条
 - [x] `Sticky` 粘性布局
-- [ ] `Tag` 标签
+- [x] `Tag` 标签
 
 ### 导航组件
 - [ ] `Grid` 宫格
