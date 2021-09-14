@@ -17,6 +17,8 @@ export * from './dropdown-item';
 export * from './dropdown-menu';
 export * from './empty';
 export * from './field';
+export * from './grid';
+export * from './grid-item';
 export * from './icon';
 export * from './image';
 export * from './index-anchor';
