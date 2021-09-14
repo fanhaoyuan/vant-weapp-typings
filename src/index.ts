@@ -7,6 +7,8 @@ export * from './checkbox';
 export * from './checkbox-group';
 export * from './circle';
 export * from './col';
+export * from './collapse';
+export * from './collapse-item';
 export * from './config-provider';
 export * from './datetime-picker';
 export * from './divider';
