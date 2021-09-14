@@ -58,7 +58,7 @@
 - [x] `Circle` 环形进度条
 - [ ] `Collapse` 折叠面板
 - [ ] `CountDown` 倒计时
-- [ ] `Divider` 分割线
+- [x] `Divider` 分割线
 - [x] `Empty` 空状态
 - [ ] `NoticeBar` 通知栏
 - [ ] `Progress` 进度条

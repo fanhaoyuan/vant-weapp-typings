@@ -9,6 +9,7 @@ export * from './circle';
 export * from './col';
 export * from './config-provider';
 export * from './datetime-picker';
+export * from './divider';
 export * from './dropdown-item';
 export * from './dropdown-menu';
 export * from './empty';
