@@ -63,7 +63,7 @@
 - [x] `NoticeBar` 通知栏
 - [x] `Progress` 进度条
 - [x] `Skeleton` 骨架屏
-- [ ] `Steps` 步骤条
+- [x] `Steps` 步骤条
 - [x] `Sticky` 粘性布局
 - [x] `Tag` 标签
 

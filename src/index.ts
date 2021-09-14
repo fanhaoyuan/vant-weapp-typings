@@ -35,6 +35,7 @@ export * from './search';
 export * from './skeleton';
 export * from './slider';
 export * from './stepper';
+export * from './steps';
 export * from './sticky';
 export * from './switch';
 export * from './tag';
