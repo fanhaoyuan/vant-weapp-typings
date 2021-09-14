@@ -1,5 +1,6 @@
 export * from './action-sheet';
 export * from './area';
+export * from './base';
 export * from './button';
 export * from './calendar';
 export * from './card';
