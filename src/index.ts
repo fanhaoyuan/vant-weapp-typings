@@ -57,6 +57,7 @@ export * from './tabbar';
 export * from './tabbar-item';
 export * from './tabs';
 export * from './tag';
+export * from './toast/toast';
 export * from './transition';
 export * from './tree-select';
 export * from './uploader';

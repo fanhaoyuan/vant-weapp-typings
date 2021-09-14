@@ -25,7 +25,7 @@
 - [x] `Image` 图片
 - [x] `Layout` 布局
 - [x] `Popup` 弹出层
-- [ ] `Toast` 轻提示
+- [x] `Toast` 轻提示
 - [x] `Transition` 动画
 
 ### 表单组件
