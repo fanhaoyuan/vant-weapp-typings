@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantPopupProps {
     /**
      * 是否显示弹出层
@@ -140,3 +142,5 @@ export interface VantPopupEvents {
      */
     'bind:after-leave'?: WechatMiniprogram.EventCallback;
 }
+
+export type VantPopupExternalClassName = VantBaseExternalClassName
