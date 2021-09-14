@@ -15,6 +15,8 @@ export * from './collapse-item';
 export * from './config-provider';
 export * from './count-down';
 export * from './datetime-picker';
+export * from './dialog';
+export * from './dialog/dialog';
 export * from './divider';
 export * from './dropdown-item';
 export * from './dropdown-menu';

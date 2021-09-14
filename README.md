@@ -46,7 +46,7 @@
 ### 反馈组件
 
 - [x] `ActionSheet` 动作面板
-- [ ] `Dialog` 弹出框
+- [x] `Dialog` 弹出框
 - [x] `DropdownMenu` 下拉菜单
 - [x] `Loading` 加载
 - [x] `Notify` 消息通知
