@@ -1,0 +1,13 @@
+export interface VantIndexAnchorProps {
+    /**
+     * 是否使用自定义内容的插槽
+     *
+     * @default false
+     */
+    'use-slot'?: boolean;
+
+    /**
+     * 索引字符
+     */
+    index?: string | number;
+}

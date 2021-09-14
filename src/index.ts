@@ -14,6 +14,8 @@ export * from './empty';
 export * from './field';
 export * from './icon';
 export * from './image';
+export * from './index-anchor';
+export * from './index-bar';
 export * from './loading';
 export * from './overlay';
 export * from './picker';

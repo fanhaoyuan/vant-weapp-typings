@@ -69,7 +69,7 @@
 
 ### 导航组件
 - [ ] `Grid` 宫格
-- [ ] `IndexBar` 索引栏
+- [x] `IndexBar` 索引栏
 - [ ] `NavBar` 导航栏
 - [ ] `Sidebar` 侧边导航
 - [ ] `Tab` 标签页
