@@ -134,3 +134,20 @@ export interface VantDateTimePickerEvents {
      */
     cancel?: WechatMiniprogram.EventCallback;
 }
+
+export interface VantDateTimePickerExternalClassName {
+    /**
+     * 选中项样式类
+     */
+    'active-class'?: string;
+
+    /**
+     * 顶部栏样式类
+     */
+    'toolbar-class'?: string;
+
+    /**
+     * 列样式类
+     */
+    'column-class'?: string;
+}
