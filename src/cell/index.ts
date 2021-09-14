@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantCellProps {
     /**
      * 左侧图标名称或图片链接，可选值见 Icon 组件
@@ -101,4 +103,21 @@ export interface VantCellEvents {
      * 点击单元格时触发
      */
     'bind:click'?: WechatMiniprogram.EventCallback;
+}
+
+export interface VantCellExternalClassName extends VantBaseExternalClassName {
+    /**
+     * 标题样式类
+     */
+    'title-class'?: string;
+
+    /**
+     * 描述信息样式类
+     */
+    'label-class'?: string;
+
+    /**
+     * 右侧内容样式类
+     */
+    'value-class'?: string;
 }

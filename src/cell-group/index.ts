@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantCellGroupProps {
     /**
      * 分组标题
@@ -18,3 +20,5 @@ export interface VantCellGroupProps {
      */
     border?: boolean;
 }
+
+export type VantCellGroupExternalClassName = VantBaseExternalClassName;
