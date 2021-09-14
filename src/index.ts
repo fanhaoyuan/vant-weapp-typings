@@ -5,6 +5,7 @@ export * from './cell';
 export * from './cell-group';
 export * from './checkbox';
 export * from './checkbox-group';
+export * from './circle';
 export * from './col';
 export * from './config-provider';
 export * from './datetime-picker';
