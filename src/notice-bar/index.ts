@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantNoticeBarProps {
     /**
      * 通知栏模式
@@ -77,3 +79,5 @@ export interface VantNoticeBarEvents {
      */
     close?: WechatMiniprogram.EventCallback;
 }
+
+export type VantNoticeBarExternalClassName = VantBaseExternalClassName
