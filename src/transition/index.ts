@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '..';
+
 export interface VantTransitionProps {
     /**
      * 动画类型
@@ -83,4 +85,40 @@ export interface VantTransitionEvents {
      * 离开后触发
      */
     'bind:after-leave': WechatMiniprogram.EventCallback;
+}
+
+export interface VantTransitionExternalClassName extends VantBaseExternalClassName {
+    /**
+     * 定义进入过渡的开始状态。在元素被插入之前生效，在元素被插入之后的下一帧移除。
+     */
+    'enter-class'?: string;
+
+    /**
+     * 定义进入过渡生效时的状态。在整个进入过渡的阶段中应用，在元素被插入之前生效，在过渡/动画完成之后移除。
+     *
+     * 这个类可以被用来定义进入过渡的过程时间，延迟和曲线函数。
+     */
+    'enter-active-class'?: string;
+
+    /**
+     * 定义进入过渡的结束状态。在元素被插入之后下一帧生效 (与此同时 `enter-class` 被移除)，在过渡/动画完成之后移除。
+     */
+    'enter-to-class'?: string;
+
+    /**
+     * 定义离开过渡的开始状态。在离开过渡被触发时立刻生效，下一帧被移除。
+     */
+    'leave-class'?: string;
+
+    /**
+     * 定义离开过渡生效时的状态。在整个离开过渡的阶段中应用，在离开过渡被触发时立刻生效，在过渡/动画完成之后移除。
+     *
+     * 这个类可以被用来定义离开过渡的过程时间，延迟和曲线函数。
+     */
+    'leave-active-class'?: string;
+
+    /**
+     * 定义离开过渡的结束状态。在离开过渡被触发之后下一帧生效 (与此同时 `leave-class` 被删除)，在过渡/动画完成之后移除。
+     */
+    'leave-to-class'?: string;
 }
