@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from "../base";
+
 export interface VantSwitchProps {
     /**
      * 在表单内提交时的标识符
@@ -65,4 +67,11 @@ export interface VantSwitchEvents {
      * 开关状态切换回调
      */
     'bind:change'?: WechatMiniprogram.EventCallback;
+}
+
+export interface VantSwitchExternalClassName extends VantBaseExternalClassName {
+    /**
+     * 圆点样式类
+     */
+    'node-class'?: string;
 }
