@@ -6,6 +6,10 @@
 
 -   🚀 `ExternalClassName` 外部样式名称支持
 
+### bugs
+
+-   🐛 fix duplicate name
+
 ## v1.18.1
 
 ### refactor
