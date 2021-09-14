@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantColProps {
     /**
      * 列元素宽度
@@ -9,3 +11,5 @@ export interface VantColProps {
      */
     offset?: string | number;
 }
+
+export type VantColExternalClassName = VantBaseExternalClassName
