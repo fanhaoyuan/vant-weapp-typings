@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantGridItemProps {
     /**
      * 文字
@@ -53,4 +55,21 @@ export interface VantGridItemEvents {
      * 点击格子时触发
      */
     'bind:click'?: WechatMiniprogram.EventCallback;
+}
+
+export interface VantGridItemExternalClassName extends VantBaseExternalClassName {
+    /**
+     * 内容样式类
+     */
+    'content-class'?: string;
+
+    /**
+     * 图标样式类
+     */
+    'icon-class'?: string;
+
+    /**
+     * 文本样式类
+     */
+    'text-class'?: string;
 }

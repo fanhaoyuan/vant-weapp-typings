@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantGridProps {
     /**
      * 列数
@@ -71,3 +73,5 @@ export interface VantGridProps {
      */
     'use-slot'?: boolean;
 }
+
+export type VantGridExternalClassName = VantBaseExternalClassName;
