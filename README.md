@@ -78,7 +78,7 @@
 
 ### 业务组件
 - [x] `Area` 省市区选择
-- [ ] `Card` 商品卡片
+- [x] `Card` 商品卡片
 - [ ] `SubmitBar` 提交订单栏
 - [ ] `GoodsAction` 商品导航
 

@@ -2,6 +2,7 @@ export * from './action-sheet';
 export * from './area';
 export * from './button';
 export * from './calendar';
+export * from './card';
 export * from './cell';
 export * from './cell-group';
 export * from './checkbox';
