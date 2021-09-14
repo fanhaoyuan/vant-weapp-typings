@@ -105,7 +105,7 @@ export type VantDialogOptions = {
     confirmButtonOpenType?: VantDialogProps['confirm-button-open-type'];
 } & VantDialogCommonProps;
 
-export interface VantDialog {
+export interface VantDialogInstance {
     /**
      * 展示弹窗
      */
