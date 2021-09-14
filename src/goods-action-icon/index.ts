@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantOpenTypeProps } from '..';
+import { VantBaseExternalClassName, VantOpenTypeProps } from '../base';
 
 export interface VantGoodsActionIconProps extends Omit<VantOpenTypeProps, 'business-id'> {
     /**
@@ -53,7 +53,7 @@ export interface VantGoodsActionIconProps extends Omit<VantOpenTypeProps, 'busin
     'open-type'?: string;
 }
 
-export interface VantGoodsActionButtonExternalClassName extends VantBaseExternalClassName {
+export interface VantGoodsActionIconExternalClassName extends VantBaseExternalClassName {
     /**
      * 文字样式类
      */

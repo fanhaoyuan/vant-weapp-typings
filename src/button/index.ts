@@ -2,7 +2,7 @@ import {
     VantOpenTypeEvents,
     VantOpenTypeProps,
     VantBaseExternalClassName,
-    VantLoadingExternalClassName,
+    VantBaseLoadingExternalClassName,
 } from '../base';
 
 export interface VantButtonProps extends VantOpenTypeProps {
@@ -143,4 +143,4 @@ export interface VantButtonEvents extends VantOpenTypeEvents {
     'bind:click'?: WechatMiniprogram.EventCallback;
 }
 
-export interface VantButtonExternalClassName extends VantBaseExternalClassName, VantLoadingExternalClassName {}
+export interface VantButtonExternalClassName extends VantBaseExternalClassName, VantBaseLoadingExternalClassName {}

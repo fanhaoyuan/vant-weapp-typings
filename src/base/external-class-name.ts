@@ -5,7 +5,7 @@ export interface VantBaseExternalClassName {
     'custom-class'?: string;
 }
 
-export interface VantLoadingExternalClassName {
+export interface VantBaseLoadingExternalClassName {
     /**
      * 加载样式类
      */

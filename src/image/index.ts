@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantLoadingExternalClassName } from '../base';
+import { VantBaseExternalClassName, VantBaseLoadingExternalClassName } from '../base';
 
 export interface VantImageProps {
     /**
@@ -111,7 +111,7 @@ export interface VantImageEvents {
     error: (e: WechatMiniprogram.BaseEvent) => void;
 }
 
-export interface VantImageExternalClassName extends VantBaseExternalClassName, VantLoadingExternalClassName {
+export interface VantImageExternalClassName extends VantBaseExternalClassName, VantBaseLoadingExternalClassName {
     /**
      * 图片样式类
      */
