@@ -83,7 +83,7 @@
 - [x] `GoodsAction` 商品导航
 
 ### 废弃
-- [ ] `Panel` 面板
+- [x] `Panel` 面板
 
 ## 支持功能
 

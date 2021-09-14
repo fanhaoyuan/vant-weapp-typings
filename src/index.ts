@@ -32,6 +32,7 @@ export * from './loading';
 export * from './nav-bar';
 export * from './notice-bar';
 export * from './overlay';
+export * from './panel';
 export * from './picker';
 export * from './popup';
 export * from './progress';
