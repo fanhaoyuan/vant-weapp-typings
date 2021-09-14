@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '..';
+
 export interface VantCheckboxProps {
     /**
      * 标识`Checkbox`名称
@@ -66,4 +68,16 @@ export interface VantCheckboxEvents {
      * 当绑定值变化时触发的事件
      */
     'bind:change'?: (value: boolean) => void;
+}
+
+export interface VantCheckboxExternalClassName extends VantBaseExternalClassName {
+    /**
+     * 图标样式类
+     */
+    'icon-class'?: string;
+
+    /**
+     * 描述信息样式类
+     */
+    'label-class'?: string;
 }
