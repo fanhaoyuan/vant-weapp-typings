@@ -52,7 +52,7 @@
 - [ ] `Notify` 消息通知
 - [x] `Overlay` 遮罩层
 - [x] `ShareSheet` 分享面板
-- [ ] `SwipeCell` 滑动单元格
+- [x] `SwipeCell` 滑动单元格
 
 ### 展示组件
 - [x] `Circle` 环形进度条

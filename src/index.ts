@@ -43,6 +43,7 @@ export * from './slider';
 export * from './stepper';
 export * from './steps';
 export * from './sticky';
+export * from './swipe-cell';
 export * from './switch';
 export * from './tab';
 export * from './tabbar';
