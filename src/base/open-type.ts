@@ -72,6 +72,17 @@ export interface VantOpenTypeProps {
     'show-message-card'?: string;
 }
 
+export interface VantOpenTypeCamelCaseProps {
+    appParameter?: VantOpenTypeProps['app-parameter'];
+    lang?: VantOpenTypeProps['lang'];
+    sessionFrom?: VantOpenTypeProps['session-from'];
+    businessId?: VantOpenTypeProps['business-id'];
+    sendMessageTitle?: VantOpenTypeProps['send-message-title'];
+    sendMessagePath?: VantOpenTypeProps['send-message-path'];
+    sendMessageImg?: VantOpenTypeProps['send-message-img'];
+    showMessageCard?: VantOpenTypeProps['show-message-card'];
+}
+
 export interface VantOpenTypeEvents {
     /**
      * 用户点击该按钮时，会返回获取到的用户信息，
