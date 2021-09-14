@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from "../base";
+
 export interface VantSliderProps {
     /**
      * 当前进度百分比，在双滑块模式下为数组格式
@@ -93,3 +95,5 @@ export interface VantSliderEvents {
      */
     'bind:drag-end'?: WechatMiniprogram.EventCallback;
 }
+
+export type VantSliderExternalClassName = VantBaseExternalClassName
