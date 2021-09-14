@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantTabsProps {
     /**
      * 样式风格
@@ -131,4 +133,21 @@ export interface VantTabsEvents {
      * 滚动时触发
      */
     'bind:scroll'?: (data?: { scrollTop: number; isFixed: boolean }) => void;
+}
+
+export interface VantTabsExternalClassName extends VantBaseExternalClassName {
+    /**
+     * 标签栏样式类
+     */
+    'nav-class'?: string;
+
+    /**
+     * 标签样式类
+     */
+    'tab-class'?: string;
+
+    /**
+     * 标签激活态样式类
+     */
+    'tab-active-class': string;
 }
