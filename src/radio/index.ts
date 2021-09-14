@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantRadioProps {
     /**
      * 标识符
@@ -55,4 +57,16 @@ export interface VantRadioEvents {
      * 当绑定值变化时触发的事件
      */
     'bind:change'?: (name?: string) => void;
+}
+
+export interface VantRadioExternalClassName extends VantBaseExternalClassName {
+    /**
+     * 图标样式类
+     */
+    'icon-class'?: string;
+
+    /**
+     * 描述信息样式类
+     */
+    'label-class'?: string;
 }
