@@ -31,6 +31,8 @@ export * from './index-bar';
 export * from './loading';
 export * from './nav-bar';
 export * from './notice-bar';
+export * from './notify';
+export * from './notify/notify';
 export * from './overlay';
 export * from './panel';
 export * from './picker';
