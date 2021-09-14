@@ -44,6 +44,8 @@ export * from './steps';
 export * from './sticky';
 export * from './switch';
 export * from './tab';
+export * from './tabbar';
+export * from './tabbar-item';
 export * from './tabs';
 export * from './tag';
 export * from './transition';

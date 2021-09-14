@@ -73,7 +73,7 @@
 - [x] `NavBar` 导航栏
 - [x] `Sidebar` 侧边导航
 - [x] `Tab` 标签页
-- [ ] `Tabbar` 标签栏
+- [x] `Tabbar` 标签栏
 - [x] `TreeSelect` 分类选择
 
 ### 业务组件
