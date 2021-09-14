@@ -91,3 +91,35 @@ export interface VantTreeSelectEvents {
      */
     'bind:click-item'?: WechatMiniprogram.EventCallback;
 }
+
+export interface VantTreeSelectExternalClassName {
+    /**
+     * 左侧选项样式类
+     */
+    'main-item-class'?: string;
+
+    /**
+     * 右侧选项样式类
+     */
+    'content-item-class'?: string;
+
+    /**
+     * 左侧选项选中样式类
+     */
+    'main-active-class'?: string;
+
+    /**
+     * 右侧选项选中样式类
+     */
+    'content-active-class'?: string;
+
+    /**
+     * 左侧选项禁用样式类
+     */
+    'main-disabled-class'?: string;
+
+    /**
+     * 右侧选项禁用样式类
+     */
+    'content-disabled-class'?: string;
+}
