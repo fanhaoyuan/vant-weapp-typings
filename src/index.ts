@@ -35,6 +35,8 @@ export * from './radio-group';
 export * from './rate';
 export * from './row';
 export * from './search';
+export * from './sidebar';
+export * from './sidebar-item';
 export * from './skeleton';
 export * from './slider';
 export * from './stepper';
