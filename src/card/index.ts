@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantCardProps {
     /**
      * 左侧图片
@@ -73,4 +75,36 @@ export interface VantCardProps {
      * @default false
      */
     'lazy-load'?: boolean;
+}
+
+export interface VantCardExternalClassName extends VantBaseExternalClassName {
+    /**
+     * 左侧图片样式类
+     */
+    'thumb-class'?: string;
+
+    /**
+     * 标题样式类
+     */
+    'title-class'?: string;
+
+    /**
+     * 价格样式类
+     */
+    'price-class'?: string;
+
+    /**
+     * 划线原价样式类
+     */
+    'origin-price-class'?: string;
+
+    /**
+     * 描述样式类
+     */
+    'desc-class'?: string;
+
+    /**
+     * 数量样式类
+     */
+    'num-class'?: string;
 }
