@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantSidebarProps {
     /**
      * 选中项的索引
@@ -13,3 +15,5 @@ export interface VantSidebarEvents {
      */
     change?: (activeKey?: string | number) => void;
 }
+
+export type VantSidebarExternalClassName = VantBaseExternalClassName;

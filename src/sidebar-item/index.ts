@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantSidebarItemProps {
     /**
      * 内容
@@ -45,3 +47,5 @@ export interface VantSidebarItemEvents {
      */
     click?: WechatMiniprogram.EventCallback;
 }
+
+export type VantSidebarItemExternalClassName = VantBaseExternalClassName;
