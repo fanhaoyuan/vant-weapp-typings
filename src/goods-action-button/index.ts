@@ -1,4 +1,4 @@
-import { VantOpenTypeProps } from '../base/open-type';
+import { VantBaseExternalClassName, VantOpenTypeProps } from '../base';
 
 export interface VantGoodsActionButtonProps extends Omit<VantOpenTypeProps, 'business-id'> {
     /**
@@ -68,3 +68,5 @@ export interface VantGoodsActionButtonProps extends Omit<VantOpenTypeProps, 'bus
      */
     size?: 'normal' | 'large' | 'small' | 'mini';
 }
+
+export type VantGoodsActionButtonExternalClassName = VantBaseExternalClassName;

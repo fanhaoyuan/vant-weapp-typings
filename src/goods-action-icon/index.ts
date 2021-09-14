@@ -1,6 +1,6 @@
-import { VantOpenTypeProps } from "..";
+import { VantBaseExternalClassName, VantOpenTypeProps } from '..';
 
-export interface VantGoodsActionIconProps extends Omit<VantOpenTypeProps, 'business-id'>{
+export interface VantGoodsActionIconProps extends Omit<VantOpenTypeProps, 'business-id'> {
     /**
      * 按钮文字
      */
@@ -51,4 +51,11 @@ export interface VantGoodsActionIconProps extends Omit<VantOpenTypeProps, 'busin
      * 微信开放能力，具体支持可参考 微信官方文档
      */
     'open-type'?: string;
+}
+
+export interface VantGoodsActionButtonExternalClassName extends VantBaseExternalClassName {
+    /**
+     * 文字样式类
+     */
+    'text-class'?: string;
 }
