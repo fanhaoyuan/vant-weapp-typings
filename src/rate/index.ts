@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantRateProps {
     /**
      * 在表单内提交时的标识符
@@ -101,3 +103,9 @@ export interface VantRateEvents {
     change?: (value?: number) => void;
 }
 
+export interface VantRateExternalClassName extends VantBaseExternalClassName {
+    /**
+     * 图标样式类
+     */
+    'icon-class'?: string;
+}
