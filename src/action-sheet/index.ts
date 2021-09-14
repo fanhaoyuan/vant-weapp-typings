@@ -1,4 +1,6 @@
-export interface VantAction {
+import { VantOpenTypeCamelCaseProps, VantOpenTypeEvents } from '../base/open-type';
+
+export interface VantAction extends Omit<VantOpenTypeCamelCaseProps, 'businessId'> {
     /**
      * 标题
      */
@@ -33,59 +35,6 @@ export interface VantAction {
      * 微信开放能力，具体支持可参考 微信官方文档
      */
     openType?: string;
-
-    /**
-     * 指定返回用户信息的语言
-     *
-     * `zh_CN` 简体中文
-     *
-     * `zh_TW` 繁体中文
-     *
-     * `en` 英文
-     *
-     * @default 'en'
-     */
-    lang?: 'zh_CN' | 'zh_TW' | 'en';
-
-    /**
-     * 会话来源，`openType="contact"`时有效
-     */
-    sessionFrom?: string;
-
-    /**
-     * 会话内消息卡片标题，`openType="contact"`时有效
-     *
-     * @default 当前标题
-     */
-    sendMessageTitle?: string;
-
-    /**
-     * 会话内消息卡片点击跳转小程序路径，`openType="contact"`时有效
-     *
-     * @default 当前分享路径
-     */
-    sendMessagePath?: string;
-
-    /**
-     * 会话内消息卡片图片，openType="contact"时有效
-     *
-     * @default 截图
-     */
-    sendMessageImg?: string;
-
-    /**
-     * 是否显示会话内消息卡片，设置此参数为`true`，
-     * 用户进入客服会话会在右下角显示"可能要发送的小程序"提示，
-     * 用户点击后可以快速发送小程序消息，`openType="contact"`时有效
-     *
-     * @default false
-     */
-    showMessageCard?: string;
-
-    /**
-     * 打开 `APP` 时，向 `APP` 传递的参数，`openType=launchApp`时有效
-     */
-    appParameter?: string;
 }
 
 export interface VantActionSheetProps {
@@ -154,7 +103,7 @@ export interface VantActionSheetProps {
     'safe-area-inset-bottom'?: boolean;
 }
 
-export interface VantActionSheetEvents {
+export interface VantActionSheetEvents extends VantOpenTypeEvents {
     /**
      * 选中选项时触发，禁用或加载状态下不会触发
      */
@@ -176,45 +125,9 @@ export interface VantActionSheetEvents {
     'bind:click-overlay'?: WechatMiniprogram.EventCallback;
 
     /**
-     * 用户点击该按钮时，会返回获取到的用户信息，
-     * 从返回参数的`detail`中获取到的值同`wx.getUserInfo`
-     *
-     * `openType="getUserInfo"`时有效
-     */
-    'bind:getuserinfo'?: WechatMiniprogram.GetUserInfoSuccessCallback;
-
-    /**
-     * 客服消息回调
-     *
-     * `openType="contact"`时有效
-     */
-    'bind:contact'?: (e: WechatMiniprogram.ButtonContact) => void;
-
-    /**
-     * 获取用户手机号回调
-     *
-     * `openType="getPhoneNumber"`时有效
-     */
-    'bind:getphonenumber'?: (e: WechatMiniprogram.ButtonGetPhoneNumber) => void;
-
-    /**
-     * 当使用开放能力时，发生错误的回调
-     *
-     * 当使用开放能力时，发生错误的回调，`openType="launchApp"`时有效
-     */
-    'bind:error'?: WechatMiniprogram.EventCallback;
-
-    /**
      * 打开 APP 成功的回调
      *
      * `openType="launchApp"`时有效
      */
     'bind:launchapp'?: WechatMiniprogram.EventCallback;
-
-    /**
-     * 在打开授权设置页后回调
-     *
-     * 在打开授权设置页后回调，`openType="openSetting"`时有效
-     */
-    'bind:opensetting'?: WechatMiniprogram.OpenSettingSuccessCallback;
 }
