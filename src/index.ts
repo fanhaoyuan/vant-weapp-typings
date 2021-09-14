@@ -23,6 +23,7 @@ export * from './notice-bar';
 export * from './overlay';
 export * from './picker';
 export * from './popup';
+export * from './progress';
 export * from './radio';
 export * from './radio-group';
 export * from './rate';

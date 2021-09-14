@@ -61,7 +61,7 @@
 - [x] `Divider` 分割线
 - [x] `Empty` 空状态
 - [x] `NoticeBar` 通知栏
-- [ ] `Progress` 进度条
+- [x] `Progress` 进度条
 - [ ] `Skeleton` 骨架屏
 - [ ] `Steps` 步骤条
 - [x] `Sticky` 粘性布局
