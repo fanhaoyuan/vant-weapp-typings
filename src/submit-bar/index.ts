@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantSubmitBarProps {
     /**
      * 价格（单位分）
@@ -79,4 +81,21 @@ export interface VantSubmitBarEvents {
      * 按钮点击事件回调
      */
     submit?: WechatMiniprogram.EventCallback;
+}
+
+export interface VantSubmitBarExternalClassName extends VantBaseExternalClassName {
+    /**
+     * 价格样式类
+     */
+    'price-class'?: string;
+
+    /**
+     * 按钮样式类
+     */
+    'button-class'?: string;
+
+    /**
+     * 订单栏样式类
+     */
+    'bar-class'?: string;
 }
