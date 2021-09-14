@@ -80,7 +80,7 @@
 - [x] `Area` 省市区选择
 - [x] `Card` 商品卡片
 - [x] `SubmitBar` 提交订单栏
-- [ ] `GoodsAction` 商品导航
+- [x] `GoodsAction` 商品导航
 
 ### 废弃
 - [ ] `Panel` 面板
