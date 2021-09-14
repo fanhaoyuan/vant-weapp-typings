@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName, VantLoadingExternalClassName } from '../base';
+
 export interface VantImageProps {
     /**
      * 图片链接
@@ -107,4 +109,15 @@ export interface VantImageEvents {
      * 图片加载失败时触发
      */
     error: (e: WechatMiniprogram.BaseEvent) => void;
+}
+
+export interface VantImageExternalClassName extends VantBaseExternalClassName, VantLoadingExternalClassName {
+    /**
+     * 图片样式类
+     */
+    'image-class': string;
+    /**
+     * `error` 样式类
+     */
+    'error-class': string;
 }
