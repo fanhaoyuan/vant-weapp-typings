@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantCollapseProps {
     /**
      * 当前展开面板的 `name`
@@ -39,3 +41,5 @@ export interface VantCollapseEvents {
      */
     close?: (currentName?: string | number) => void;
 }
+
+export type VantCollapseExternalClassName = VantBaseExternalClassName

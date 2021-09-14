@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantCollapseItemProps {
     /**
      * 唯一标识符，默认为索引值
@@ -53,4 +55,11 @@ export interface VantCollapseItemProps {
      * @default false
      */
     disabled?: boolean;
+}
+
+export interface VantCollapseItemExternalClassName extends VantBaseExternalClassName {
+    /**
+     * 内容样式类
+     */
+    'content-class'?: string;
 }
