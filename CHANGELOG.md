@@ -1,5 +1,11 @@
 # 更新日志
 
+## v1.19.0
+
+### features
+
+-   🚀 `ExternalClassName` 外部样式名称支持
+
 ## v1.18.1
 
 ### refactor

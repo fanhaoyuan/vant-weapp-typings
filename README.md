@@ -89,4 +89,4 @@
 
 - [x] `Props` 组件传参类型
 - [x] `Events` 组件事件类型
-- [ ] `ExternalClassName` 外部样式名称
+- [x] `ExternalClassName` 外部样式名称
