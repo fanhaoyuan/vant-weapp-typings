@@ -1,4 +1,6 @@
-export interface VantButtonProps {
+import { VantOpenTypeEvents, VantOpenTypeProps } from "../base/open-type";
+
+export interface VantButtonProps extends VantOpenTypeProps {
 	/**标识符 */
 	id?: string;
 
@@ -117,58 +119,6 @@ export interface VantButtonProps {
 	"open-type"?: string;
 
 	/**
-	 * 打开`APP`时，向`APP`传递的参数
-	 */
-	"app-parameter"?: string;
-
-	/**
-	 * 指定返回用户信息的语言
-	 *
-	 * `zh_CN` --简体中文
-	 * `zh_TW` -- 繁体中文
-	 * `en` -- 英文
-	 * @default 'en'
-	 */
-	lang?: "zh_CN" | "zh_TW" | "en";
-
-	/**
-	 * 会话来源
-	 */
-	"session-from"?: string;
-
-	/**
-	 * 客服消息子商户`id`
-	 */
-	"business-id"?: number;
-
-	/**
-	 * 会话内消息卡片标题
-	 *
-	 * @default 当前标题
-	 */
-	"send-message-title"?: string;
-
-	/**
-	 * 会话内消息卡片点击跳转小程序路径
-	 *
-	 * @default 当前分享路径
-	 */
-	"send-message-path"?: string;
-
-	/**
-	 * sendMessageImg
-	 *
-	 * @default 截图
-	 */
-	"send-message-img"?: string;
-
-	/**
-	 * 显示会话内消息卡片
-	 *
-	 * @default false
-	 */
-	"show-message-card"?: string;
-	/**
 	 * 按钮`dataset`，`open-type`为`share`时，
 	 * 可在`onShareAppMessage`事件的`event.target.dataset.detail`中看到传入的值
 	 */
@@ -181,34 +131,9 @@ export interface VantButtonProps {
 	"form-type"?: string;
 }
 
-export interface VantButtonEvents {
+export interface VantButtonEvents extends VantOpenTypeEvents {
 	/**
 	 * 点击按钮，且按钮状态不为加载或禁用时触发
 	 */
 	"bind:click"?: WechatMiniprogram.EventCallback;
-
-	/**
-	 * 用户点击该按钮时，会返回获取到的用户信息，
-	 * 从返回参数的`detail`中获取到的值同`wx.getUserInfo`
-	 */
-	"bind:getuserinfo"?: WechatMiniprogram.GetUserInfoSuccessCallback;
-
-	/**
-	 * 客服消息回调
-	 */
-	"bind:contact"?: (e: WechatMiniprogram.ButtonContact) => void;
-	/**
-	 * 获取用户手机号回调
-	 */
-	"bind:getphonenumber"?: (e: WechatMiniprogram.ButtonGetPhoneNumber) => void;
-
-	/**
-	 * 当使用开放能力时，发生错误的回调
-	 */
-	"bind:error"?: WechatMiniprogram.EventCallback;
-
-	/**
-	 * 在打开授权设置页后回调
-	 */
-	"bind:opensetting"?: WechatMiniprogram.OpenSettingSuccessCallback;
 }
