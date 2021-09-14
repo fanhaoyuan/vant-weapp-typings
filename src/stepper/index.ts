@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantStepperProps {
     /**
      * 在表单内提交时的标识符
@@ -143,4 +145,21 @@ export interface VantStepperEvents {
      * 输入框失焦时触发
      */
     'bind:blur'?: WechatMiniprogram.EventCallback;
+}
+
+export interface VantStepperExternalClassName extends VantBaseExternalClassName {
+    /**
+     * 输入框样式类
+     */
+    'input-class'?: string;
+
+    /**
+     * 加号按钮样式类
+     */
+    'plus-class'?: string;
+
+    /**
+     * 减号按钮样式类
+     */
+    'minus-class'?: string;
 }
