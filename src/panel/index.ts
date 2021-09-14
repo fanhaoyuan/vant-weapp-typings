@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantPanelProps {
     /**
      * 标题
@@ -13,4 +15,16 @@ export interface VantPanelProps {
      * 状态
      */
     status?: string;
+}
+
+export interface VantPanelExternalClassName extends VantBaseExternalClassName {
+    /**
+     * 头部样式类
+     */
+    'header-class'?: string;
+
+    /**
+     * 底部样式类
+     */
+    'footer-class'?: string;
 }
