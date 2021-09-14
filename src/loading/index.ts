@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantLoadingProps {
     /**
      * 颜色
@@ -38,3 +40,5 @@ export interface VantLoadingProps {
      */
     vertical?: boolean;
 }
+
+export type VantLoadingExternalClassName = VantBaseExternalClassName;
