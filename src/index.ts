@@ -1,4 +1,5 @@
 export * from './action-sheet';
+export * from './area';
 export * from './button';
 export * from './calendar';
 export * from './cell';
