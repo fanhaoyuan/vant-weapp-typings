@@ -24,6 +24,7 @@ export * from './image';
 export * from './index-anchor';
 export * from './index-bar';
 export * from './loading';
+export * from './nav-bar';
 export * from './notice-bar';
 export * from './overlay';
 export * from './picker';
