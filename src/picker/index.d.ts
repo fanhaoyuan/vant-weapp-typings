@@ -1,3 +1,5 @@
+import { VantBaseExternalClassName } from '../base';
+
 export interface VantPickerColumn {
     /**
      * 列中对应的备选值
@@ -118,4 +120,21 @@ export interface VantPickerEvents {
      * 多列：`Picker` 实例，所有列选中值，当前列对应的索引
      */
     change?: WechatMiniprogram.EventCallback;
+}
+
+export interface VantPickerExternalClassName extends VantBaseExternalClassName {
+    /**
+     * 选中项样式类
+     */
+    'active-class'?: string;
+
+    /**
+     * 顶部栏样式类
+     */
+    'toolbar-class'?: string;
+
+    /**
+     * 列样式类
+     */
+    'column-class'?: string;
 }
