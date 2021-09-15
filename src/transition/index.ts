@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantComponent } from '..';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantTransitionProps {
     /**
