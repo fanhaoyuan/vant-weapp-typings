@@ -1,17 +1,21 @@
 import { VantBaseExternalClassName, VantComponent } from '../base';
 
-export interface VantPickerColumn {
+export type VantPickerSingleColumn = string | Record<string, unknown>;
+
+export interface VantPickerMultipleColumn {
     /**
      * 列中对应的备选值
      */
-    values: string[];
+    values: VantPickerSingleColumn[];
 
     /**
      * 初始选中项的索引，默认为 `0`
      *
      * @default 0
      */
-    defaultIndex: number;
+    defaultIndex?: number;
+
+    [key: string]: unknown;
 }
 
 export interface VantPickerProps {
@@ -20,7 +24,7 @@ export interface VantPickerProps {
      *
      * @default []
      */
-    columns?: VantPickerColumn[];
+    columns?: VantPickerSingleColumn[] | VantPickerMultipleColumn[];
 
     /**
      * 是否显示顶部栏
