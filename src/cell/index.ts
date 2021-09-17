@@ -55,7 +55,7 @@ export interface VantCellProps {
      *
      * @default 'navigateTo'
      */
-    'link-type': 'redirectTo' | 'switchTab' | 'reLaunch';
+    'link-type'?: 'redirectTo' | 'switchTab' | 'reLaunch';
 
     /**
      * 是否开启点击反馈
