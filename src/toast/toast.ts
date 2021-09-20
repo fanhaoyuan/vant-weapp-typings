@@ -65,42 +65,43 @@ export interface VantToastOptions {
     onClose?: Function;
 }
 
-export declare function VantToast(message: string): void;
-export declare function VantToast(option: VantToastOptions): void;
-export declare class VantToast {
+export interface VantToast {
+    /**
+     * 展示提示
+     */
+    (): (options: string | VantToastOptions) => void;
+
     /**
      * 展示加载提示
      */
-    static loading(message: string): void;
-
-    static loading(options: VantToastOptions): void;
+    loading: (options: string | VantToastOptions) => void;
 
     /**
      * 展示成功提示
      */
-    static success(message: string): void;
-
-    static success(options: VantToastOptions): void;
+    success: (options: string | VantToastOptions) => void;
 
     /**
      * 展示失败提示
      */
-    static fail(message: string): void;
-
-    static fail(options: VantToastOptions): void;
+    fail: (options: string | VantToastOptions) => void;
 
     /**
      * 关闭提示
      */
-    static clear(): void;
+    clear: () => void;
 
     /**
      * 修改默认配置，对所有 Toast 生效
      */
-    static setDefaultOptions(options: VantToastOptions): void;
+    setDefaultOptions: (options: VantToastOptions) => void;
 
     /**
      * 重置默认配置，对所有 Toast 生效
      */
-    static resetDefaultOptions(): void;
+    resetDefaultOptions: () => void;
 }
+
+type Toast = VantToast;
+declare const Toast: Toast;
+export default Toast;
