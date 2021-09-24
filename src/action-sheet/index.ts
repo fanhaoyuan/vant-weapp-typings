@@ -39,6 +39,11 @@ export interface VantAction extends Omit<VantOpenTypeCamelCaseProps, 'businessId
 
 export interface VantActionSheetProps {
     /**
+     * 是否显示动作面板
+     */
+    show?: boolean;
+
+    /**
      * 菜单选项
      *
      * @default []
