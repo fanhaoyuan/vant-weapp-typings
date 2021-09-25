@@ -98,28 +98,28 @@ export interface VantImageEvents {
     /**
      * 点击图片时触发
      */
-    click: (e: WechatMiniprogram.BaseEvent) => void;
+    click?: (e: WechatMiniprogram.BaseEvent) => void;
 
     /**
      * 图片加载完毕时触发
      */
-    load: (e: WechatMiniprogram.BaseEvent) => void;
+    load?: (e: WechatMiniprogram.BaseEvent) => void;
 
     /**
      * 图片加载失败时触发
      */
-    error: (e: WechatMiniprogram.BaseEvent) => void;
+    error?: (e: WechatMiniprogram.BaseEvent) => void;
 }
 
 export interface VantImageExternalClassName extends VantBaseExternalClassName, VantBaseLoadingExternalClassName {
     /**
      * 图片样式类
      */
-    'image-class': string;
+    'image-class'?: string;
     /**
      * `error` 样式类
      */
-    'error-class': string;
+    'error-class'?: string;
 }
 
 export type VantImage = VantComponent<VantImageProps, VantImageEvents, VantImageExternalClassName>;
