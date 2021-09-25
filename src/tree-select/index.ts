@@ -33,7 +33,7 @@ export interface VantTreeSelectItem {
     /**
      * 该导航下所有的可选项
      */
-    children: VantTreeSelectItem[];
+    children?: VantTreeSelectItem[];
 }
 
 export interface VantTreeSelectProps {
