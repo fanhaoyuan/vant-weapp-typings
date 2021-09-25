@@ -38,6 +38,11 @@ export interface VantTabProps {
 
 export type VantTab = VantComponent<VantTabProps>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const Tab: VantTab;
 
 export default Tab;

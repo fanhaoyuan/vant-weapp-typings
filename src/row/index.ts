@@ -11,6 +11,11 @@ export type VantRowExternalClassName = VantBaseExternalClassName;
 
 export type VantRow = VantComponent<VantRowProps, {}, VantRowExternalClassName>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const Row: VantRow;
 
 export default Row;

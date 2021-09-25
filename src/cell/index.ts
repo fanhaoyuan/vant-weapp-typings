@@ -124,6 +124,11 @@ export interface VantCellExternalClassName extends VantBaseExternalClassName {
 
 export type VantCell = VantComponent<VantCellProps, VantCellEvents, VantCellExternalClassName>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const Cell: VantCell;
 
 export default Cell;

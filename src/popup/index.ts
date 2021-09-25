@@ -147,6 +147,11 @@ export type VantPopupExternalClassName = VantBaseExternalClassName;
 
 export type VantPopup = VantComponent<VantPopupProps, VantPopupEvents, VantPopupExternalClassName>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const Popup: VantPopup;
 
 export default Popup;

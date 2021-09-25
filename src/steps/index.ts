@@ -56,6 +56,11 @@ export interface VantStepsExternalClassName extends VantBaseExternalClassName {
 
 export type VantSteps = VantComponent<VantStepsProps, VantStepsEvents, VantStepsExternalClassName>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const Steps: VantSteps;
 
 export default Steps;

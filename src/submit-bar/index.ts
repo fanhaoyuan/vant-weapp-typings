@@ -102,6 +102,11 @@ export interface VantSubmitBarExternalClassName extends VantBaseExternalClassNam
 
 export type VantSubmitBar = VantComponent<VantSubmitBarProps, VantSubmitBarEvents, VantSubmitBarExternalClassName>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const SubmitBar: VantSubmitBar;
 
 export default SubmitBar;

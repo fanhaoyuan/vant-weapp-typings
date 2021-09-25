@@ -102,6 +102,11 @@ export interface VantShareSheetEvents {
 
 export type VantShareSheet = VantComponent<VantShareSheetProps, VantShareSheetEvents>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const ShareSheet: VantShareSheet;
 
 export default ShareSheet;

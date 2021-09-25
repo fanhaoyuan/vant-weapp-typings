@@ -157,6 +157,11 @@ export interface VantUploaderEvents {
 
 export type VantUploader = VantComponent<VantUploaderProps, VantUploaderEvents>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const Uploader: VantUploader;
 
 export default Uploader;

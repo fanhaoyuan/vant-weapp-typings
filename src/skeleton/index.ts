@@ -65,6 +65,11 @@ export interface VantSkeletonProps {
 
 export type VantSkeleton = VantComponent<VantSkeletonProps>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const Skeleton: VantSkeleton;
 
 export default Skeleton;

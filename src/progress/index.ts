@@ -69,6 +69,11 @@ export type VantProgressExternalClassName = VantBaseExternalClassName;
 
 export type VantProgress = VantComponent<VantProgressProps, {}, VantProgressExternalClassName>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const Progress: VantProgress;
 
 export default Progress;

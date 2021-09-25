@@ -91,6 +91,11 @@ export interface VantNavBarExternalClassName extends VantBaseExternalClassName {
 
 export type VantNavBar = VantComponent<VantNavBarProps, VantNavBarEvents, VantNavBarExternalClassName>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const NavBar: VantNavBar;
 
 export default NavBar;

@@ -76,6 +76,11 @@ export interface VantGridItemExternalClassName extends VantBaseExternalClassName
 
 export type VantGridItem = VantComponent<VantGridItemProps, VantGridItemEvents, VantGridItemExternalClassName>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const GridItem: VantGridItem;
 
 export default GridItem;

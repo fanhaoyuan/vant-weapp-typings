@@ -125,6 +125,11 @@ export interface VantTransitionExternalClassName extends VantBaseExternalClassNa
 
 export type VantTransition = VantComponent<VantTransitionProps, VantTransitionEvents, VantTransitionExternalClassName>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const Transition: VantTransition;
 
 export default Transition;

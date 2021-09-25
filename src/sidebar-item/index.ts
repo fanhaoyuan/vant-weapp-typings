@@ -56,6 +56,11 @@ export type VantSidebarItem = VantComponent<
     VantSidebarItemExternalClassName
 >;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const SidebarItem: VantSidebarItem;
 
 export default SidebarItem;

@@ -211,6 +211,11 @@ export interface VantSearchExternalClassName extends VantBaseExternalClassName {
 
 export type VantSearch = VantComponent<VantSearchProps, VantSearchEvents, VantSearchExternalClassName>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const Search: VantSearch;
 
 export default Search;

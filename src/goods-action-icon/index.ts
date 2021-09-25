@@ -62,6 +62,11 @@ export interface VantGoodsActionIconExternalClassName extends VantBaseExternalCl
 
 export type VantGoodsActionIcon = VantComponent<VantGoodsActionIconProps, {}, VantGoodsActionIconExternalClassName>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const GoodsActionIcon: VantGoodsActionIcon;
 
 export default GoodsActionIcon;

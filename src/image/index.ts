@@ -124,6 +124,11 @@ export interface VantImageExternalClassName extends VantBaseExternalClassName, V
 
 export type VantImage = VantComponent<VantImageProps, VantImageEvents, VantImageExternalClassName>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const Image: VantImage;
 
 export default Image;

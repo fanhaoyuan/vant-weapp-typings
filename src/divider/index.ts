@@ -28,6 +28,11 @@ export interface VantDividerProps {
 
 export type VantDivider = VantComponent<VantDividerProps>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const Divider: VantDivider;
 
 export default Divider;

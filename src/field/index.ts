@@ -352,6 +352,11 @@ export interface VantFieldExternalClassName {
 
 export type VantField = VantComponent<VantFieldProps, VantFieldEvents, VantFieldExternalClassName>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const Field: VantField;
 
 export default Field;

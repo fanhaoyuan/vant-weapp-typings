@@ -166,6 +166,11 @@ export interface VantStepperExternalClassName extends VantBaseExternalClassName 
 
 export type VantStepper = VantComponent<VantStepperProps, VantStepperEvents, VantStepperExternalClassName>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const Stepper: VantStepper;
 
 export default Stepper;

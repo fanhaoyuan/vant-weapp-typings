@@ -148,6 +148,11 @@ export interface VantButtonExternalClassName extends VantBaseExternalClassName, 
 
 export type VantButton = VantComponent<VantButtonProps, VantButtonEvents, VantButtonExternalClassName>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const Button: VantButton;
 
 export default Button;

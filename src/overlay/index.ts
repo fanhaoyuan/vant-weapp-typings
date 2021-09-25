@@ -51,6 +51,11 @@ export interface VantOverlayEvents {
 
 export type VantOverlay = VantComponent<VantOverlayProps, VantOverlayEvents>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const Overlay: VantOverlay;
 
 export default Overlay;

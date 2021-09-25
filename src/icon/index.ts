@@ -55,6 +55,11 @@ export type VantIconExternalClassName = VantBaseExternalClassName;
 
 export type VantIcon = VantComponent<VantIconProps, VantIconEvents, VantIconExternalClassName>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const Icon: VantIcon;
 
 export default Icon;

@@ -33,6 +33,11 @@ export interface VantTabbarItemProps {
 
 export type VantTabbarItem = VantComponent<VantTabbarItemProps>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const TabbarItem: VantTabbarItem;
 
 export default TabbarItem;

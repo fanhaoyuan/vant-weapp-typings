@@ -25,6 +25,11 @@ export type VantCellGroupExternalClassName = VantBaseExternalClassName;
 
 export type VantCellGroup = VantComponent<VantCellGroupProps, {}, VantCellGroupExternalClassName>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const CellGroup: VantCellGroup;
 
 export default CellGroup;

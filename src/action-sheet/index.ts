@@ -139,6 +139,11 @@ export interface VantActionSheetEvents extends VantOpenTypeEvents {
 
 export type VantActionSheet = VantComponent<VantActionSheetProps, VantActionSheetEvents>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const ActionSheet: VantActionSheet;
 
 export default ActionSheet;

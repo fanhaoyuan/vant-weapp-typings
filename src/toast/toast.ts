@@ -103,5 +103,11 @@ export interface VantToast {
 }
 
 type Toast = VantToast;
+
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const Toast: Toast;
 export default Toast;

@@ -16,6 +16,11 @@ export interface VantIndexAnchorProps {
 
 export type VantIndexAnchor = VantComponent<VantIndexAnchorProps>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const IndexAnchor: VantIndexAnchor;
 
 export default IndexAnchor;

@@ -154,6 +154,11 @@ export interface VantTabsExternalClassName extends VantBaseExternalClassName {
 
 export type VantTabs = VantComponent<VantTabsProps, VantTabsEvents, VantTabsExternalClassName>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const Tabs: VantTabs;
 
 export default Tabs;

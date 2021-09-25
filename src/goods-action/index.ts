@@ -18,6 +18,11 @@ export interface VantGoodsActionEvents {
 
 export type VantGoodsAction = VantComponent<VantGoodsActionProps, VantGoodsActionEvents>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const GoodsAction: VantGoodsAction;
 
 export default GoodsAction;

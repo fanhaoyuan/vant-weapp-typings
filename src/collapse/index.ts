@@ -46,6 +46,11 @@ export type VantCollapseExternalClassName = VantBaseExternalClassName;
 
 export type VantCollapse = VantComponent<VantCollapseProps, VantCollapseEvents, VantCollapseExternalClassName>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const Collapse: VantCollapse;
 
 export default Collapse;

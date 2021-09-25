@@ -68,6 +68,11 @@ export interface VantCircleProps {
 
 export type VantCircle = VantComponent<VantCircleProps>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const Circle: VantCircle;
 
 export default Circle;

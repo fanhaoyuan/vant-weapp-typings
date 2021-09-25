@@ -92,6 +92,11 @@ export interface VantAreaEvents {
 
 export type VantArea = VantComponent<VantAreaProps, VantAreaEvents>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const Area: VantArea;
 
 export default Area;

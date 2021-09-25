@@ -16,6 +16,11 @@ export type VantColExternalClassName = VantBaseExternalClassName;
 
 export type VantCol = VantComponent<VantColProps, {}, VantColExternalClassName>;
 
+/**
+ * @deprecated
+ *
+ * 将在`v1.22`移除
+ */
 declare const Col: VantCol;
 
 export default Col;
