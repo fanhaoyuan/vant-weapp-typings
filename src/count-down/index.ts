@@ -81,7 +81,7 @@ export interface VantCountDownEvents {
     /**
      * 时间变化时触发，仅在开启`use-slot`后才会触发
      */
-    'bind:change'?: (timeData?: VantCountDownTimeData) => void;
+    'bind:change'?: (e: WechatMiniprogram.CustomEvent<VantCountDownTimeData>) => void;
 }
 
 export type VantCountDown = VantComponent<VantCountDownProps, VantCountDownEvents>;
