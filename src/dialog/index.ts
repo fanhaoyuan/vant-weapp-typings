@@ -148,7 +148,7 @@ export interface VantDialogProps extends VantOpenTypeProps {
     /**
      * 关闭前的回调函数，返回 `false` 可阻止关闭，支持返回 `Promise`
      */
-    'before-close'?: (action) => boolean | Promise<boolean>;
+    'before-close'?: (action: 'confirm' | 'cancel' | 'overlay') => boolean | Promise<boolean>;
 
     /**
      * 动画名称
