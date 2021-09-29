@@ -64,12 +64,3 @@ export interface VantTabbarEvents {
 }
 
 export type VantTabbar = VantComponent<VantTabbarProps, VantTabbarEvents>;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const Tabbar: VantTabbar;
-
-export default Tabbar;

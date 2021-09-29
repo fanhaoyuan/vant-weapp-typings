@@ -44,12 +44,3 @@ export interface VantLoadingProps {
 export type VantLoadingExternalClassName = VantBaseExternalClassName;
 
 export type VantLoading = VantComponent<VantLoadingProps, {}, VantLoadingExternalClassName>;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const Loading: VantLoading;
-
-export default Loading;

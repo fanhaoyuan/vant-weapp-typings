@@ -77,12 +77,3 @@ export interface VantSwitchExternalClassName extends VantBaseExternalClassName {
 }
 
 export type VantSwitch = VantComponent<VantSwitchProps, VantSwitchEvents, VantSwitchExternalClassName>;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const Switch: VantSwitch;
-
-export default Switch;

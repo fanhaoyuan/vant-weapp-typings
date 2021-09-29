@@ -59,12 +59,3 @@ export interface VantTagEvents {
 export type VantTagExternalClassName = VantBaseExternalClassName;
 
 export type VantTag = VantComponent<VantTagProps, VantTagEvents, VantTagExternalClassName>;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const Tag: VantTag;
-
-export default Tag;

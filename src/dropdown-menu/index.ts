@@ -50,12 +50,3 @@ export interface VantDropdownMenuProps {
 }
 
 export type VantDropdownMenu = VantComponent<VantDropdownMenuProps>;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const DropdownMenu: VantDropdownMenu;
-
-export default DropdownMenu;

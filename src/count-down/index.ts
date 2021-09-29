@@ -85,12 +85,3 @@ export interface VantCountDownEvents {
 }
 
 export type VantCountDown = VantComponent<VantCountDownProps, VantCountDownEvents>;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const CountDown: VantCountDown;
-
-export default CountDown;

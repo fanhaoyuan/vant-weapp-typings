@@ -83,12 +83,3 @@ export interface VantCheckboxExternalClassName extends VantBaseExternalClassName
 }
 
 export type VantCheckbox = VantComponent<VantCheckboxProps, VantCheckboxEvents, VantCheckboxExternalClassName>;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const Checkbox: VantCheckbox;
-
-export default Checkbox;

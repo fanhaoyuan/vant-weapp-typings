@@ -76,12 +76,3 @@ export type VantGoodsActionButton = VantComponent<
     {},
     VantGoodsActionButtonExternalClassName
 >;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const GoodsActionButton: VantGoodsActionButton;
-
-export default GoodsActionButton;

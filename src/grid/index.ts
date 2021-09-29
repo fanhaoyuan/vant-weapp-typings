@@ -77,12 +77,3 @@ export interface VantGridProps {
 export type VantGridExternalClassName = VantBaseExternalClassName;
 
 export type VantGrid = VantComponent<VantGridProps, {}, VantGridExternalClassName>;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const Grid: VantGrid;
-
-export default Grid;

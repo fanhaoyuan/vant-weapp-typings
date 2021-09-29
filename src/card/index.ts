@@ -110,12 +110,3 @@ export interface VantCardExternalClassName extends VantBaseExternalClassName {
 }
 
 export type VantCard = VantComponent<VantCardProps, {}, VantCardExternalClassName>;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const Card: VantCard;
-
-export default Card;

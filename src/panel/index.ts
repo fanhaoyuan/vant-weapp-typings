@@ -30,12 +30,3 @@ export interface VantPanelExternalClassName extends VantBaseExternalClassName {
 }
 
 export type VantPanel = VantComponent<VantPanelProps, {}, VantPanelExternalClassName>;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const Panel: VantPanel;
-
-export default Panel;

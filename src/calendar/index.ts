@@ -279,12 +279,3 @@ export interface VantCalendarEvents {
 }
 
 export type VantCalendar = VantComponent<VantCalendarProps, VantCalendarEvents>;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const Calendar: VantCalendar;
-
-export default Calendar;

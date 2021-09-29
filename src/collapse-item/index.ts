@@ -65,12 +65,3 @@ export interface VantCollapseItemExternalClassName extends VantBaseExternalClass
 }
 
 export type VantCollapseItem = VantComponent<VantCollapseItemProps, {}, VantCollapseItemExternalClassName>;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const CollapseItem: VantCollapseItem;
-
-export default CollapseItem;

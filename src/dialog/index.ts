@@ -181,12 +181,3 @@ export interface VantDialogEvents extends VantOpenTypeEvents {
 }
 
 export type VantDialog = VantComponent<VantDialogProps, VantDialogEvents>;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const Dialog: VantDialog;
-
-export default Dialog;

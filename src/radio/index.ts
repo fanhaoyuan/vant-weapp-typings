@@ -72,12 +72,3 @@ export interface VantRadioExternalClassName extends VantBaseExternalClassName {
 }
 
 export type VantRadio = VantComponent<VantRadioProps, VantRadioEvents, VantRadioExternalClassName>;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const Radio: VantRadio;
-
-export default Radio;

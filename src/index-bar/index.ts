@@ -45,12 +45,3 @@ export interface VantIndexBarEvents {
 }
 
 export type VantIndexBar = VantComponent<VantIndexBarProps, VantIndexBarEvents>;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const IndexBar: VantIndexBar;
-
-export default IndexBar;

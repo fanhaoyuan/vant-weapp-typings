@@ -43,12 +43,3 @@ export interface VantCheckboxGroupEvents {
 }
 
 export type VantCheckboxGroup = VantComponent<VantCheckboxGroupProps, VantCheckboxGroupEvents>;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const CheckboxGroup: VantCheckboxGroup;
-
-export default CheckboxGroup;

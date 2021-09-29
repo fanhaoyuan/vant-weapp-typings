@@ -83,12 +83,3 @@ export interface VantNoticeBarEvents {
 export type VantNoticeBarExternalClassName = VantBaseExternalClassName;
 
 export type VantNoticeBar = VantComponent<VantNoticeBarProps, VantNoticeBarEvents, VantNoticeBarExternalClassName>;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const NoticeBar: VantNoticeBar;
-
-export default NoticeBar;

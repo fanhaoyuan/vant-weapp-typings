@@ -19,12 +19,3 @@ export interface VantSidebarEvents {
 export type VantSidebarExternalClassName = VantBaseExternalClassName;
 
 export type VantSidebar = VantComponent<VantSidebarProps, VantSidebarEvents, VantSidebarExternalClassName>;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const Sidebar: VantSidebar;
-
-export default Sidebar;

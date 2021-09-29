@@ -144,12 +144,3 @@ export interface VantPickerExternalClassName extends VantBaseExternalClassName {
 }
 
 export type VantPicker = VantComponent<VantPickerProps, VantPickerEvents, VantPickerExternalClassName>;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const Picker: VantPicker;
-
-export default Picker;

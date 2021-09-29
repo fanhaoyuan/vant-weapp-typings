@@ -39,12 +39,3 @@ export interface VantStickyEvents {
 }
 
 export type VantSticky = VantComponent<VantStickyProps, VantStickyEvents>;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const Sticky: VantSticky;
-
-export default Sticky;

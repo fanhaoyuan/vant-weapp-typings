@@ -99,12 +99,3 @@ export interface VantSliderEvents {
 export type VantSliderExternalClassName = VantBaseExternalClassName;
 
 export type VantSlider = VantComponent<VantSliderProps, VantSliderEvents, VantSliderExternalClassName>;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const Slider: VantSlider;
-
-export default Slider;

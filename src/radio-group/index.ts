@@ -34,12 +34,3 @@ export interface VantRadioGroupEvents {
 }
 
 export type VantRadioGroup = VantComponent<VantRadioGroupProps, VantRadioGroupEvents>;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const RadioGroup: VantRadioGroup;
-
-export default RadioGroup;

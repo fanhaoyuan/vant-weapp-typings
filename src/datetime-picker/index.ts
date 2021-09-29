@@ -159,12 +159,3 @@ export type VantDateTimePicker = VantComponent<
     VantDateTimePickerEvents,
     VantDateTimePickerExternalClassName
 >;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const DateTimePicker: VantDateTimePicker;
-
-export default DateTimePicker;

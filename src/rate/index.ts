@@ -111,12 +111,3 @@ export interface VantRateExternalClassName extends VantBaseExternalClassName {
 }
 
 export type VantRate = VantComponent<VantRateProps, VantRateEvents, VantRateExternalClassName>;
-
-/**
- * @deprecated
- *
- * 将在`v1.22`移除
- */
-declare const Rate: VantRate;
-
-export default Rate;
