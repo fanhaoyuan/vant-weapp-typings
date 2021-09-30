@@ -1,3 +1,4 @@
+import { VantOpenTypeProps } from '..';
 import { VantDialogProps } from './index';
 
 type VantDialogCommonProps = Pick<VantDialogProps, 'title' | 'width' | 'message' | 'theme' | 'overlay' | 'transition'>;
@@ -97,29 +98,30 @@ export type VantDialogOptions = {
      *
      * @default 当前页面
      */
-    context?: object;
+    context?: WechatMiniprogram.Page.TrivialInstance | WechatMiniprogram.Component.TrivialInstance;
 
     /**
      * 确认按钮的微信开放能力，具体支持可参考 微信官方文档
      */
     confirmButtonOpenType?: VantDialogProps['confirm-button-open-type'];
-} & VantDialogCommonProps;
+} & VantDialogCommonProps &
+    VantOpenTypeProps;
 
 export interface VantDialogInstance {
     /**
      * 展示弹窗
      */
-    (options: VantDialogOptions): Promise<void>;
+    (options: VantDialogOptions): Promise<WechatMiniprogram.Component.TrivialInstance>;
 
     /**
      * 展示消息提示弹窗
      */
-    alert(options: VantDialogOptions): Promise<void>;
+    alert(options: VantDialogOptions): Promise<WechatMiniprogram.Component.TrivialInstance>;
 
     /**
      * 展示消息确认弹窗
      */
-    confirm(options: VantDialogOptions): Promise<void>;
+    confirm(options: VantDialogOptions): Promise<WechatMiniprogram.Component.TrivialInstance>;
 
     /**
      * 修改默认配置，对所有 `Dialog` 生效
