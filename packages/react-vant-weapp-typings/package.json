@@ -1,0 +1,12 @@
+{
+    "name": "react-vant-weapp-typings",
+    "version": "1.22.0",
+    "files": [
+        "dist"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "@types/react": "^17.0.25",
+        "vant-weapp-typings": "^1.22.0"
+    }
+}
