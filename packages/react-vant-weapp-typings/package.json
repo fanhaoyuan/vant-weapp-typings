@@ -1,7 +1,7 @@
 {
     "name": "react-vant-weapp-typings",
     "version": "1.0.0",
-    "repository": "https://github.com/fanhaoyuan/vant-weapp-typings/packages/react-vant-weapp-typings",
+    "repository": "https://github.com/fanhaoyuan/vant-weapp-typings/tree/master/packages/react-vant-weapp-typings",
     "author": "Fansy <418536538@qq.com>",
     "description": "vant-weapp的react组件的类型声明库",
     "files": [
