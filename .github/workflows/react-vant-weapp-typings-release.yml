@@ -1,9 +1,9 @@
-name: Release
+name: React Vant Weapp Typings Release
 
 on:
     push:
         tags:
-            - 'v*'
+            - 'react-vant-weapp-typings/v*'
 
 jobs:
     release:
@@ -12,6 +12,6 @@ jobs:
             - name: Create GitHub release
               uses: Roang-zero1/github-create-release-action@master
               with:
-                  version_regex: ^v[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+
+                  version_regex: ^react-vant-weapp-typings/v[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+
               env:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
