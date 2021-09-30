@@ -72,6 +72,15 @@ export interface VantSliderProps {
      * @default false
      */
     range?: boolean;
+
+    /**
+     * 是否垂直展示
+     *
+     * @version `v1.8.5`
+     *
+     * @default false
+     */
+    vertical?: boolean;
 }
 
 export interface VantSliderEvents {
