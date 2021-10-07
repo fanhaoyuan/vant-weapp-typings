@@ -225,6 +225,13 @@ export interface VantCalendarProps extends VantCalendarRangeProps, VantCalendarP
      * @default 0
      */
     'first-day-of-week'?: number;
+
+    /**
+     * 是否为只读状态，只读状态下不能选择日期
+     *
+     * @default false
+     */
+    readonly?: boolean;
 }
 
 export interface VantCalendarEvents {
