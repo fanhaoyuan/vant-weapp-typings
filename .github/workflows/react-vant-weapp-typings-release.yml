@@ -12,6 +12,6 @@ jobs:
             - name: Create GitHub release
               uses: Roang-zero1/github-create-release-action@master
               with:
-                  version_regex: ^react-vant-weapp-typings\/v[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+
+                  version_regex: ^react-vant-weapp-typings\/v\d+\.\d+\.\d+
               env:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
