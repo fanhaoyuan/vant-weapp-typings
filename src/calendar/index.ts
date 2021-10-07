@@ -25,6 +25,11 @@ export interface Day {
      * 下方的提示信息
      */
     bottomInfo?: string;
+
+    /**
+     * 自定义 `className`
+     */
+    className?: string;
 }
 
 export interface VantCalendarPoppableProps {
