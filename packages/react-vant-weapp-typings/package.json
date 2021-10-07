@@ -1,9 +1,12 @@
 {
     "name": "react-vant-weapp-typings",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "repository": "https://github.com/fanhaoyuan/vant-weapp-typings/tree/master/packages/react-vant-weapp-typings",
     "author": "Fansy <418536538@qq.com>",
     "description": "vant-weapp的react组件的类型声明库",
+    "scripts": {
+        "build": "tsc"
+    },
     "files": [
         "dist"
     ],
@@ -19,6 +22,6 @@
     "license": "MIT",
     "dependencies": {
         "@types/react": "^17.0.25",
-        "vant-weapp-typings": "^1.22.0"
+        "vant-weapp-typings": "^1.23.0"
     }
 }
