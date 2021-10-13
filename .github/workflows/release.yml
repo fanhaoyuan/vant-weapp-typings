@@ -79,7 +79,7 @@ jobs:
                       ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
 
             - name: Enter Workspace
-              run: cd /packages/react-vant-weapp-typings
+              run: cd packages/react-vant-weapp-typings
 
             - name: Install Dependencies
               uses: borales/actions-yarn@v2.3.0
