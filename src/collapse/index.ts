@@ -29,17 +29,17 @@ export interface VantCollapseEvents {
     /**
      * 切换面板时触发
      */
-    change?: (activeNames?: string | string[]) => void;
+    'bind:change'?: WechatMiniprogram.EventCallback;
 
     /**
      * 展开面板时触发
      */
-    open?: (currentName?: string | number) => void;
+    'bind:open'?: WechatMiniprogram.EventCallback;
 
     /**
      * 关闭面板时触发
      */
-    close?: (currentName?: string | number) => void;
+    'bind:close'?: WechatMiniprogram.EventCallback;
 }
 
 export type VantCollapseExternalClassName = VantBaseExternalClassName;
