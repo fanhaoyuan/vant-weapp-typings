@@ -31,9 +31,9 @@ csstype@^3.0.2:
   resolved "http://5isp.wicp.net:9367/csstype/-/csstype-3.0.9.tgz#6410af31b26bd0520933d02cbc64fce9ce3fbf0b"
   integrity sha1-ZBCvMbJr0FIJM9AsvGT86c4/vws=
 
-vant-weapp-typings@^1.23.0:
-  version "1.23.0"
-  resolved "https://registry.yarnpkg.com/vant-weapp-typings/-/vant-weapp-typings-1.23.0.tgz#29ead00c262a8ac6d4c4b74f0151928a5a009d49"
-  integrity sha512-cc0/1GKN4mK+YReWK6wRf/4OHdLtRiRGXUdXtJB2TS8NY2/wpiEE+diDzYHtTlIW06FsIzzPkpNSZGSujwMh9A==
+vant-weapp-typings@^1.23.2:
+  version "1.23.2"
+  resolved "https://registry.yarnpkg.com/vant-weapp-typings/-/vant-weapp-typings-1.23.2.tgz#8a5c130654a048443744309d5042bf2871bb5cc6"
+  integrity sha512-dAGHcRSUo1UB1SYjvlqkJ4ONk1E7EhbCaXUW4dcFpgiGT20xaS10ZWhgJqqcXdru5aMpbWIAaWzkAJ1z+ju70w==
   dependencies:
     "@types/wechat-miniprogram" "^3.4.0"
