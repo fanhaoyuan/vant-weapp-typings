@@ -1,26 +1,6 @@
 {
-    "name": "vant-weapp-typings",
+    "private": true,
     "version": "1.23.2",
-    "main": "dist/index.js",
-    "typings": "dist/index.d.ts",
-    "repository": "https://github.com/fanhaoyuan/vant-weapp-typings.git",
-    "author": "Fansy <418536538@qq.com>",
-    "license": "MIT",
-    "scripts": {
-        "build": "tsc -p tsconfig.tsc.json"
-    },
-    "files": [
-        "dist"
-    ],
-    "keywords": [
-        "@vant/weapp",
-        "vant",
-        "weapp",
-        "miniprogram",
-        "types",
-        "typings"
-    ],
-    "description": "@vant/weapp小程序UI框架的类型声明文件",
     "lint-staged": {
         "*.{js,ts,md,json}": [
             "prettier --write"
@@ -30,14 +10,17 @@
         "pre-commit": "lint-staged",
         "commit-msg": "cmv"
     },
-    "dependencies": {
-        "@types/wechat-miniprogram": "^3.4.0"
-    },
     "devDependencies": {
         "@fansy/commit-msg-validator": "^1.0.0",
         "@fansy/eslint-config": "^1.0.0",
         "@fansy/prettier-config": "^1.0.0",
+        "@types/fs-extra": "^9.0.13",
+        "fast-glob": "^3.2.11",
+        "fs-extra": "^10.0.1",
         "lint-staged": "^11.1.2",
-        "typescript": "^4.4.3"
+        "rimraf": "^3.0.2",
+        "ts-node": "^10.5.0",
+        "typescript": "^4.4.3",
+        "yorkie": "^2.0.0"
     }
 }

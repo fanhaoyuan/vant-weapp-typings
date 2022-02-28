@@ -119,22 +119,22 @@ export interface VantDateTimePickerEvents {
     /**
      * 当值变化时触发的事件
      */
-    input?: (value?: any) => void;
+    'bind:input'?: (value?: any) => void;
 
     /**
      * 当值变化时触发的事件
      */
-    change?: (currentComponentInstance?: any) => void;
+    'bind:change'?: (currentComponentInstance?: any) => void;
 
     /**
      * 点击完成按钮时触发的事件
      */
-    confirm?: (value?: any) => void;
+    'bind:confirm'?: (value?: any) => void;
 
     /**
      * 点击取消按钮时触发的事件
      */
-    cancel?: WechatMiniprogram.EventCallback;
+    'bind:cancel'?: WechatMiniprogram.EventCallback;
 }
 
 export interface VantDateTimePickerExternalClassName {
