@@ -1,0 +1,26 @@
+{
+    "name": "vant-weapp-typings",
+    "description": "@vant/weapp小程序UI框架的类型声明文件",
+    "typings": "dist/index.d.ts",
+    "repository": "https://github.com/fanhaoyuan/vant-weapp-typings.git",
+    "author": "Fansy <418536538@qq.com>",
+    "scripts": {
+        "build": "rimraf dist && tsc -p tsconfig.json"
+    },
+    "keywords": [
+        "@vant/weapp",
+        "vant",
+        "weapp",
+        "miniprogram",
+        "types",
+        "typings"
+    ],
+    "license": "MIT",
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "@types/wechat-miniprogram": "^3.4.0"
+    },
+    "version": "1.23.2"
+}
