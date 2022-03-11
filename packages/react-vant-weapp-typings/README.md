@@ -18,7 +18,7 @@ or
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
-            "@vant/weapp/*": ["react-vant-weapp-typings/dist/*"]
+            "@vant/weapp/*": ["./node_modules/react-vant-weapp-typings/dist/*"]
         }
     }
 }
