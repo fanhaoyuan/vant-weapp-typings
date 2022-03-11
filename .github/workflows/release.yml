@@ -16,7 +16,7 @@ jobs:
               env:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
-    deploy:
+    base-deploy:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
@@ -42,7 +42,26 @@ jobs:
               env:
                   NPM_TOKEN: ${{secrets.NPM_TOKEN}}
 
-            - run: cd ../../packages/react-vant-weapp-typings
+    react-deploy:
+        runs-on: ubuntu-latest
+        needs: [base-deploy]
+        steps:
+            - uses: actions/checkout@v2
+
+            - uses: pnpm/action-setup@v2.0.1
+              with:
+                  version: 6.20.3
+
+            - uses: actions/setup-node@v2
+              with:
+                  node-version: ${{ matrix.node_version }}
+                  cache: 'pnpm'
+
+            - run: pnpm install
+
+            - run: echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
+
+            - run: cd packages/react-vant-weapp-typings
 
             - run: pnpm build
 
