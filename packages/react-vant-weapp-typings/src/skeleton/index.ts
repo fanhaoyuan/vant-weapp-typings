@@ -1,4 +1,4 @@
-import { VantSkeleton } from 'vant-weapp-typings/dist/skeleton';
+import { VantSkeleton } from 'vant-weapp-typings';
 
 type Skeleton = React.ComponentType<VantSkeleton>;
 

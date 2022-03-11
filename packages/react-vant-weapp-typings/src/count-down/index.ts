@@ -1,4 +1,4 @@
-import { VantCountDown } from 'vant-weapp-typings/dist/count-down';
+import { VantCountDown } from 'vant-weapp-typings';
 
 type CountDown = React.ComponentType<VantCountDown>;
 

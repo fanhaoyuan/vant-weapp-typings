@@ -1,4 +1,4 @@
-import { VantArea } from 'vant-weapp-typings/dist/area';
+import { VantArea } from 'vant-weapp-typings';
 
 type Area = React.ComponentType<VantArea>;
 

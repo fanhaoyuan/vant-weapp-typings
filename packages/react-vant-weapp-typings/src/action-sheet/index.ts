@@ -1,4 +1,4 @@
-import { VantActionSheet } from 'vant-weapp-typings/dist/action-sheet';
+import { VantActionSheet } from 'vant-weapp-typings';
 
 type ActionSheet = React.ComponentType<VantActionSheet>;
 

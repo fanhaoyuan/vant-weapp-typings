@@ -1,4 +1,4 @@
-import { VantEmpty } from 'vant-weapp-typings/dist/empty';
+import { VantEmpty } from 'vant-weapp-typings';
 
 type Empty = React.ComponentType<VantEmpty>;
 

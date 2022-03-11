@@ -1,4 +1,4 @@
-import { VantCollapse } from 'vant-weapp-typings/dist/collapse';
+import { VantCollapse } from 'vant-weapp-typings';
 
 type Collapse = React.ComponentType<VantCollapse>;
 

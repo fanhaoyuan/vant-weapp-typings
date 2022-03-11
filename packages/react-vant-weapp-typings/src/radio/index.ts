@@ -1,4 +1,4 @@
-import { VantRadio } from 'vant-weapp-typings/dist/radio';
+import { VantRadio } from 'vant-weapp-typings';
 
 type Radio = React.ComponentType<VantRadio>;
 

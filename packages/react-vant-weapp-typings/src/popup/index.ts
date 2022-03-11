@@ -1,4 +1,4 @@
-import { VantPopup } from 'vant-weapp-typings/dist/popup';
+import { VantPopup } from 'vant-weapp-typings';
 
 type Popup = React.ComponentType<VantPopup>;
 

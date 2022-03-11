@@ -1,4 +1,4 @@
-import { VantTag } from 'vant-weapp-typings/dist/tag';
+import { VantTag } from 'vant-weapp-typings';
 
 type Tag = React.ComponentType<VantTag>;
 

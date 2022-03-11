@@ -1,4 +1,4 @@
-import { VantImage } from 'vant-weapp-typings/dist/image';
+import { VantImage } from 'vant-weapp-typings';
 
 type Image = React.ComponentType<VantImage>;
 

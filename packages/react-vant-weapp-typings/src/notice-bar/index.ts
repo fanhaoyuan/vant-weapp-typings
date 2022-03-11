@@ -1,4 +1,4 @@
-import { VantNoticeBar } from 'vant-weapp-typings/dist/notice-bar';
+import { VantNoticeBar } from 'vant-weapp-typings';
 
 type NoticeBar = React.ComponentType<VantNoticeBar>;
 

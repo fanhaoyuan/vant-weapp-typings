@@ -1,4 +1,4 @@
-import { VantCheckboxGroup } from 'vant-weapp-typings/dist/checkbox-group';
+import { VantCheckboxGroup } from 'vant-weapp-typings';
 
 type CheckboxGroup = React.ComponentType<VantCheckboxGroup>;
 

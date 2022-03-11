@@ -1,4 +1,4 @@
-import { VantPanel } from 'vant-weapp-typings/dist/panel';
+import { VantPanel } from 'vant-weapp-typings';
 
 type Panel = React.ComponentType<VantPanel>;
 

@@ -1,4 +1,4 @@
-import { VantToast } from 'vant-weapp-typings/dist/toast/toast';
+import { VantToast } from 'vant-weapp-typings';
 
 type Toast = VantToast;
 

@@ -1,4 +1,4 @@
-import { VantCol } from 'vant-weapp-typings/dist/col';
+import { VantCol } from 'vant-weapp-typings';
 
 type Col = React.ComponentType<VantCol>;
 

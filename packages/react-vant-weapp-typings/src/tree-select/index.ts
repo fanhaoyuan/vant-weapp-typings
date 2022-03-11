@@ -1,4 +1,4 @@
-import { VantTreeSelect } from 'vant-weapp-typings/dist/tree-select';
+import { VantTreeSelect } from 'vant-weapp-typings';
 
 type TreeSelect = React.ComponentType<VantTreeSelect>;
 

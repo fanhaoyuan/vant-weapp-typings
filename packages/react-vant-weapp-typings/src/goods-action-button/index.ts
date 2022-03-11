@@ -1,4 +1,4 @@
-import { VantGoodsActionButton } from 'vant-weapp-typings/dist/goods-action-button';
+import { VantGoodsActionButton } from 'vant-weapp-typings';
 
 type GoodsActionButton = React.ComponentType<VantGoodsActionButton>;
 

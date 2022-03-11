@@ -1,4 +1,4 @@
-import { VantDateTimePicker } from 'vant-weapp-typings/dist/datetime-picker';
+import { VantDateTimePicker } from 'vant-weapp-typings';
 
 type DateTimePicker = React.ComponentType<VantDateTimePicker>;
 

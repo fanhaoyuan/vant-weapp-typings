@@ -1,4 +1,4 @@
-import { VantCard } from 'vant-weapp-typings/dist/card';
+import { VantCard } from 'vant-weapp-typings';
 
 type Card = React.ComponentType<VantCard>;
 

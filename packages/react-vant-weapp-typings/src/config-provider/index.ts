@@ -1,4 +1,4 @@
-import { VantConfigProvider } from 'vant-weapp-typings/dist/config-provider';
+import { VantConfigProvider } from 'vant-weapp-typings';
 
 type ConfigProvider = React.ComponentType<VantConfigProvider>;
 

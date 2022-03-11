@@ -1,4 +1,4 @@
-import { VantSidebar } from 'vant-weapp-typings/dist/sidebar';
+import { VantSidebar } from 'vant-weapp-typings';
 
 type Sidebar = React.ComponentType<VantSidebar>;
 

@@ -1,4 +1,4 @@
-import { VantDialog } from 'vant-weapp-typings/dist/dialog';
+import { VantDialog } from 'vant-weapp-typings';
 
 type Dialog = React.ComponentType<VantDialog>;
 

@@ -1,4 +1,4 @@
-import { VantDropdownMenu } from 'vant-weapp-typings/dist/dropdown-menu';
+import { VantDropdownMenu } from 'vant-weapp-typings';
 
 type DropdownMenu = React.ComponentType<VantDropdownMenu>;
 

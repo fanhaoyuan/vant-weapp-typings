@@ -1,4 +1,4 @@
-import { VantLoading } from 'vant-weapp-typings/dist/loading';
+import { VantLoading } from 'vant-weapp-typings';
 
 type Loading = React.ComponentType<VantLoading>;
 

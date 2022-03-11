@@ -1,4 +1,4 @@
-import { VantRate } from 'vant-weapp-typings/dist/rate';
+import { VantRate } from 'vant-weapp-typings';
 
 type Rate = React.ComponentType<VantRate>;
 

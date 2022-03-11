@@ -1,4 +1,4 @@
-import { VantRadioGroup } from 'vant-weapp-typings/dist/radio-group';
+import { VantRadioGroup } from 'vant-weapp-typings';
 
 type RadioGroup = React.ComponentType<VantRadioGroup>;
 

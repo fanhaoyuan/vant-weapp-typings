@@ -1,4 +1,4 @@
-import { VantStepper } from 'vant-weapp-typings/dist/stepper';
+import { VantStepper } from 'vant-weapp-typings';
 
 type Stepper = React.ComponentType<VantStepper>;
 

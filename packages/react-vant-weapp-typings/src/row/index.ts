@@ -1,4 +1,4 @@
-import { VantRow } from 'vant-weapp-typings/dist/row';
+import { VantRow } from 'vant-weapp-typings';
 
 type Row = React.ComponentType<VantRow>;
 

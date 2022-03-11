@@ -1,4 +1,4 @@
-import { VantProgress } from 'vant-weapp-typings/dist/progress';
+import { VantProgress } from 'vant-weapp-typings';
 
 type Progress = React.ComponentType<VantProgress>;
 

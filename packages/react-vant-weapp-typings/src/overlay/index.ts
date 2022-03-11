@@ -1,4 +1,4 @@
-import { VantOverlay } from 'vant-weapp-typings/dist/overlay';
+import { VantOverlay } from 'vant-weapp-typings';
 
 type Overlay = React.ComponentType<VantOverlay>;
 

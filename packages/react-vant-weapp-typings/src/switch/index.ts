@@ -1,4 +1,4 @@
-import { VantSwitch } from 'vant-weapp-typings/dist/switch';
+import { VantSwitch } from 'vant-weapp-typings';
 
 type Switch = React.ComponentType<VantSwitch>;
 

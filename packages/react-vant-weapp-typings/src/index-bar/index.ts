@@ -1,4 +1,4 @@
-import { VantIndexBar } from 'vant-weapp-typings/dist/index-bar';
+import { VantIndexBar } from 'vant-weapp-typings';
 
 type IndexBar = React.ComponentType<VantIndexBar>;
 

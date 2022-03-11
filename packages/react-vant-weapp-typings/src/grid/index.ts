@@ -1,4 +1,4 @@
-import { VantGrid } from 'vant-weapp-typings/dist/grid';
+import { VantGrid } from 'vant-weapp-typings';
 
 type Grid = React.ComponentType<VantGrid>;
 

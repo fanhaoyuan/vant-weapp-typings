@@ -1,4 +1,4 @@
-import { VantSubmitBar } from 'vant-weapp-typings/dist/submit-bar';
+import { VantSubmitBar } from 'vant-weapp-typings';
 
 type SubmitBar = React.ComponentType<VantSubmitBar>;
 

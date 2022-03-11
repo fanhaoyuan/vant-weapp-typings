@@ -1,4 +1,4 @@
-import { VantDropdownItem } from 'vant-weapp-typings/dist/dropdown-item';
+import { VantDropdownItem } from 'vant-weapp-typings';
 
 type DropdownItem = React.ComponentType<VantDropdownItem>;
 

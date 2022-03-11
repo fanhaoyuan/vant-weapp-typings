@@ -1,4 +1,4 @@
-import { VantPicker } from 'vant-weapp-typings/dist/picker';
+import { VantPicker } from 'vant-weapp-typings';
 
 type Picker = React.ComponentType<VantPicker>;
 

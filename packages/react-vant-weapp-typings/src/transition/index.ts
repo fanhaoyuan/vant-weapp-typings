@@ -1,4 +1,4 @@
-import { VantTransition } from 'vant-weapp-typings/dist/transition';
+import { VantTransition } from 'vant-weapp-typings';
 
 type Transition = React.ComponentType<VantTransition>;
 

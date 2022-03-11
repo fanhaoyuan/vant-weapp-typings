@@ -1,4 +1,4 @@
-import { VantSticky } from 'vant-weapp-typings/dist/sticky';
+import { VantSticky } from 'vant-weapp-typings';
 
 type Sticky = React.ComponentType<VantSticky>;
 

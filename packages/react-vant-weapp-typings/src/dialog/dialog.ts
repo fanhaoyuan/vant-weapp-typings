@@ -1,4 +1,4 @@
-import { VantDialogInstance } from 'vant-weapp-typings/dist/dialog/dialog';
+import { VantDialogInstance } from 'vant-weapp-typings';
 
 type Dialog = VantDialogInstance;
 

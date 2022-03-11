@@ -1,4 +1,4 @@
-import { VantNotify } from 'vant-weapp-typings/dist/notify/notify';
+import { VantNotify } from 'vant-weapp-typings';
 
 type Notify = VantNotify;
 

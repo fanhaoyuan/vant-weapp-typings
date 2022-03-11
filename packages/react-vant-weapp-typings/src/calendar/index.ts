@@ -1,4 +1,4 @@
-import { VantCalendar } from 'vant-weapp-typings/dist/calendar';
+import { VantCalendar } from 'vant-weapp-typings';
 
 type Calendar = React.ComponentType<VantCalendar>;
 

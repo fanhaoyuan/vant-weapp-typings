@@ -1,4 +1,4 @@
-import { VantTabbarItem } from 'vant-weapp-typings/dist/tabbar-item';
+import { VantTabbarItem } from 'vant-weapp-typings';
 
 type TabbarItem = React.ComponentType<VantTabbarItem>;
 

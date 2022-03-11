@@ -1,4 +1,4 @@
-import { VantButton } from 'vant-weapp-typings/dist/button';
+import { VantButton } from 'vant-weapp-typings';
 
 type Button = React.ComponentType<VantButton>;
 

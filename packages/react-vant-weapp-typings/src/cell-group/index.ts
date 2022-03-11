@@ -1,4 +1,4 @@
-import { VantCellGroup } from 'vant-weapp-typings/dist/cell-group';
+import { VantCellGroup } from 'vant-weapp-typings';
 
 type CellGroup = React.ComponentType<VantCellGroup>;
 

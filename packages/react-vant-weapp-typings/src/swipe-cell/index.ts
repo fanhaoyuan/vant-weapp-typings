@@ -1,4 +1,4 @@
-import { VantSwipeCell } from 'vant-weapp-typings/dist/swipe-cell';
+import { VantSwipeCell } from 'vant-weapp-typings';
 
 type SwipeCell = React.ComponentType<VantSwipeCell>;
 

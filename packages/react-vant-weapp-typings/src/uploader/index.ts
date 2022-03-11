@@ -1,4 +1,4 @@
-import { VantUploader } from 'vant-weapp-typings/dist/uploader';
+import { VantUploader } from 'vant-weapp-typings';
 
 type Uploader = React.ComponentType<VantUploader>;
 

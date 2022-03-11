@@ -1,4 +1,4 @@
-import { VantDivider } from 'vant-weapp-typings/dist/divider';
+import { VantDivider } from 'vant-weapp-typings';
 
 type Divider = React.ComponentType<VantDivider>;
 

@@ -1,4 +1,4 @@
-import { VantIcon } from 'vant-weapp-typings/dist/icon';
+import { VantIcon } from 'vant-weapp-typings';
 
 type Icon = React.ComponentType<VantIcon>;
 

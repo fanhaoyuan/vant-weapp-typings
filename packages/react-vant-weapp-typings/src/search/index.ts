@@ -1,4 +1,4 @@
-import { VantSearch } from 'vant-weapp-typings/dist/search';
+import { VantSearch } from 'vant-weapp-typings';
 
 type Search = React.ComponentType<VantSearch>;
 

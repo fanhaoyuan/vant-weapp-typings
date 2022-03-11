@@ -1,4 +1,4 @@
-import { VantField } from 'vant-weapp-typings/dist/field';
+import { VantField } from 'vant-weapp-typings';
 
 type Field = React.ComponentType<VantField>;
 

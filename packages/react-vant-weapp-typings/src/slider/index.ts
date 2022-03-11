@@ -1,4 +1,4 @@
-import { VantSlider } from 'vant-weapp-typings/dist/slider';
+import { VantSlider } from 'vant-weapp-typings';
 
 type Slider = React.ComponentType<VantSlider>;
 
