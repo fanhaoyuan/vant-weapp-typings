@@ -1,3 +1,10 @@
+## v1.24.0
+
+-   🚀 `Field` 新增 `always-embed` 属性
+-   🚀 `DropdownMenu` 新增 `custom-class` 属性
+-   🚀 `Stepper` 新增 `always-embed` 属性
+-   🚀 `GoodsActionIcon` 新增 `class-prefix` 属性
+
 ## v1.23.3
 
 -   🐛 修复所有事件为`bind:*`

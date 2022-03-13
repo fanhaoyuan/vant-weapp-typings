@@ -23,5 +23,5 @@
         "@types/react": "^17.0.25",
         "vant-weapp-typings": "workspace:*"
     },
-    "version": "1.23.3"
+    "version": "1.24.0"
 }
