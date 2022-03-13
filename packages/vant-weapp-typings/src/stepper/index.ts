@@ -114,6 +114,15 @@ export interface VantStepperProps {
      * @default true
      */
     'long-press'?: boolean;
+
+    /**
+     * 强制 `input` 处于同层状态，默认 `focus` 时 `input` 会切到非同层状态 (仅在 `iOS` 下生效)
+     *
+     * @version `v1.9.3`
+     *
+     * @default false
+     */
+    'always-embed'?: boolean;
 }
 
 export interface VantStepperEvents {
