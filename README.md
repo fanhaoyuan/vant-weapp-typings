@@ -1,5 +1,7 @@
 # vant-weapp-typings
 
+[![CI](https://github.com/fanhaoyuan/vant-weapp-typings/actions/workflows/ci.yml/badge.svg)](https://github.com/fanhaoyuan/vant-weapp-typings/actions/workflows/ci.yml)
+
 `@vant/weapp`小程序`UI`框架的类型声明文件
 
 ## 版本
