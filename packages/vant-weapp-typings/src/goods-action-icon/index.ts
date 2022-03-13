@@ -51,6 +51,15 @@ export interface VantGoodsActionIconProps extends Omit<VantOpenTypeProps, 'busin
      * 微信开放能力，具体支持可参考 微信官方文档
      */
     'open-type'?: string;
+
+    /**
+     * 类名前缀
+     *
+     * @version `v1.10.1`
+     *
+     * @default 'van-icon'
+     */
+    'class-prefix'?: string;
 }
 
 export interface VantGoodsActionIconExternalClassName extends VantBaseExternalClassName {
