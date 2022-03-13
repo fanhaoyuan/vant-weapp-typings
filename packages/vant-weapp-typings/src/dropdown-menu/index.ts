@@ -1,4 +1,4 @@
-import { VantComponent } from '../base';
+import { VantBaseExternalClassName, VantComponent } from '../base';
 
 export interface VantDropdownMenuProps {
     /**
@@ -49,4 +49,4 @@ export interface VantDropdownMenuProps {
     'close-on-click-outside'?: boolean;
 }
 
-export type VantDropdownMenu = VantComponent<VantDropdownMenuProps>;
+export type VantDropdownMenu = VantComponent<VantDropdownMenuProps, {}, VantBaseExternalClassName>;
