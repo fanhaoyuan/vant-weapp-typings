@@ -4,7 +4,8 @@
     "author": "Fansy <418536538@qq.com>",
     "description": "vant-weapp的react组件的类型声明库",
     "scripts": {
-        "build": "rimraf dist && tsc"
+        "build": "rimraf dist && tsc",
+        "publish": "pnpm build && pnpm publish"
     },
     "files": [
         "dist"

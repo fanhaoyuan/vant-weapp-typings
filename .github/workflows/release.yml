@@ -34,11 +34,7 @@ jobs:
 
             - run: echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
 
-            - run: cd packages/vant-weapp-typings
-
-            - run: pnpm build
-
-            - run: pnpm publish
+            - run: pnpm publish --filter vant-weapp-typings
               env:
                   NPM_TOKEN: ${{secrets.NPM_TOKEN}}
 
@@ -61,10 +57,6 @@ jobs:
 
             - run: echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
 
-            - run: cd packages/react-vant-weapp-typings
-
-            - run: pnpm build
-
-            - run: pnpm publish
+            - run: pnpm publish --filter react-vant-weapp-typings
               env:
                   NPM_TOKEN: ${{secrets.NPM_TOKEN}}
