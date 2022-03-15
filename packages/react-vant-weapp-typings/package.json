@@ -5,7 +5,7 @@
     "description": "vant-weapp的react组件的类型声明库",
     "scripts": {
         "build": "rimraf dist && tsc",
-        "publish": "pnpm build && pnpm publish"
+        "release": "pnpm build && pnpm publish"
     },
     "files": [
         "dist"
