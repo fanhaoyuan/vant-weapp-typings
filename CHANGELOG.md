@@ -1,3 +1,7 @@
+## v1.24.1
+
+-   🐛 修复 `DropdownItem` 组件的 `Event` 类型错误问题
+
 ## v1.24.0
 
 -   🚀 `Field` 新增 `always-embed` 属性
