@@ -59,27 +59,27 @@ export interface VantDropdownItemEvents {
     /**
      * 点击选项导致 `value` 变化时触发
      */
-    change?: (value?: string | number) => void;
+    'bind:change'?: (value?: string | number) => void;
 
     /**
      * 打开菜单栏时触发
      */
-    open?: WechatMiniprogram.EventCallback;
+    'bind:open'?: WechatMiniprogram.EventCallback;
 
     /**
      * 关闭菜单栏时触发
      */
-    close?: WechatMiniprogram.EventCallback;
+    'bind:close'?: WechatMiniprogram.EventCallback;
 
     /**
      * 打开菜单栏且动画结束后触发
      */
-    opened?: WechatMiniprogram.EventCallback;
+    'bind:opened'?: WechatMiniprogram.EventCallback;
 
     /**
      * 关闭菜单栏且动画结束后触发
      */
-    closed?: WechatMiniprogram.EventCallback;
+    'bind:closed'?: WechatMiniprogram.EventCallback;
 }
 
 export type VantDropdownItem = VantComponent<VantDropdownItemProps, VantDropdownItemEvents>;
