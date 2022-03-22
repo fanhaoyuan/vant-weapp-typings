@@ -149,7 +149,7 @@ export interface VantTabsExternalClassName extends VantBaseExternalClassName {
     /**
      * 标签激活态样式类
      */
-    'tab-active-class': string;
+    'tab-active-class'?: string;
 }
 
 export type VantTabs = VantComponent<VantTabsProps, VantTabsEvents, VantTabsExternalClassName>;
