@@ -1,3 +1,7 @@
+## v1.24.2
+
+-   🐛 修复 `Tabs` 组件'tab-active-class'为必需参数的错误 [#6](https://github.com/fanhaoyuan/vant-weapp-typings/pull/6)
+
 ## v1.24.1
 
 -   🐛 修复 `DropdownItem` 组件的 `Event` 类型错误问题
