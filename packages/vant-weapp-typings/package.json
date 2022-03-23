@@ -6,7 +6,7 @@
     "author": "Fansy <418536538@qq.com>",
     "scripts": {
         "build": "rimraf dist && tsc -p tsconfig.json",
-        "release": "pnpm build && pnpm publish"
+        "release": "pnpm build && pnpm publish --no-git-check"
     },
     "keywords": [
         "@vant/weapp",
