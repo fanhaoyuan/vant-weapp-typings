@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantComponent } from '../base';
+import { VantBaseExternalClassName, VantComponent, WechatOpenType } from '../base';
 
 export interface VantNoticeBarProps {
     /**
@@ -65,7 +65,7 @@ export interface VantNoticeBarProps {
      *
      * @default 'navigate'
      */
-    'open-type'?: string;
+    'open-type'?: WechatOpenType;
 }
 
 export interface VantNoticeBarEvents {

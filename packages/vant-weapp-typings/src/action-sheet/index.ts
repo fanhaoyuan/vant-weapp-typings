@@ -1,4 +1,4 @@
-import { VantOpenTypeCamelCaseProps, VantOpenTypeEvents, VantComponent } from '../base';
+import { VantOpenTypeCamelCaseProps, VantOpenTypeEvents, VantComponent, WechatOpenType } from '../base';
 
 export interface VantAction extends Omit<VantOpenTypeCamelCaseProps, 'businessId'> {
     /**
@@ -34,7 +34,7 @@ export interface VantAction extends Omit<VantOpenTypeCamelCaseProps, 'businessId
     /**
      * 微信开放能力，具体支持可参考 微信官方文档
      */
-    openType?: string;
+    openType?: WechatOpenType;
 }
 
 export interface VantActionSheetProps {

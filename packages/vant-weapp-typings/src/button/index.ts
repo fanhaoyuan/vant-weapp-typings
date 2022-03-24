@@ -4,6 +4,7 @@ import {
     VantBaseExternalClassName,
     VantBaseLoadingExternalClassName,
     VantComponent,
+    WechatOpenType,
 } from '../base';
 
 export interface VantButtonProps extends VantOpenTypeProps {
@@ -122,7 +123,7 @@ export interface VantButtonProps extends VantOpenTypeProps {
      *
      * {@link https://developers.weixin.qq.com/miniprogram/dev/component/button.html}
      */
-    'open-type'?: string;
+    'open-type'?: WechatOpenType;
 
     /**
      * 按钮`dataset`，`open-type`为`share`时，

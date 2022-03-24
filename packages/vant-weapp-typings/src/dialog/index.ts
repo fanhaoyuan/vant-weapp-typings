@@ -1,5 +1,4 @@
-import { VantComponent } from '../base';
-import { VantOpenTypeEvents, VantOpenTypeProps } from '../base/open-type';
+import { VantComponent, VantOpenTypeEvents, VantOpenTypeProps, WechatOpenType } from '../base';
 
 export interface VantDialogProps extends VantOpenTypeProps {
     /**
@@ -160,7 +159,7 @@ export interface VantDialogProps extends VantOpenTypeProps {
     /**
      * 确认按钮的微信开放能力，具体支持可参考 微信官方文档
      */
-    'confirm-button-open-type'?: string;
+    'confirm-button-open-type'?: WechatOpenType;
 }
 
 export interface VantDialogEvents extends VantOpenTypeEvents {
