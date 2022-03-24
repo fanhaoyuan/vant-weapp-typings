@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantComponent, VantOpenTypeProps } from '../base';
+import { VantBaseExternalClassName, VantComponent, VantOpenTypeProps, WechatOpenType } from '../base';
 
 export interface VantGoodsActionIconProps extends Omit<VantOpenTypeProps, 'business-id'> {
     /**
@@ -50,7 +50,7 @@ export interface VantGoodsActionIconProps extends Omit<VantOpenTypeProps, 'busin
     /**
      * 微信开放能力，具体支持可参考 微信官方文档
      */
-    'open-type'?: string;
+    'open-type'?: WechatOpenType;
 
     /**
      * 类名前缀
