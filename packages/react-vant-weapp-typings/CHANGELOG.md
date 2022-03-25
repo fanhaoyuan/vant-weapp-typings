@@ -1,3 +1,7 @@
+## v1.25.1
+
+-   🐛 修复 `ConfigProvider` 的 `theme-vars` 中的项为必需项的错误 [#9](https://github.com/fanhaoyuan/vant-weapp-typings/pull/9)
+
 ## v1.25.0
 
 -   🚀 添加 `WechatOpenType` 类型 [#8](https://github.com/fanhaoyuan/vant-weapp-typings/pull/8)
