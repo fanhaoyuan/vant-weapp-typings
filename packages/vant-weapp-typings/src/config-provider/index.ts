@@ -5,7 +5,7 @@ export interface VantConfigProviderProps {
     /**
      * 自定义主题变量
      */
-    'theme-vars'?: ThemeVars;
+    'theme-vars'?: Partial<ThemeVars>;
 }
 
 export type VantConfigProvider = VantComponent<VantConfigProviderProps>;
