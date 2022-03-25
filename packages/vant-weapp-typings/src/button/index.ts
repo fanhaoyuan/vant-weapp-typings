@@ -134,7 +134,7 @@ export interface VantButtonProps extends VantOpenTypeProps {
      * 用于`form`组件，可选值为`submit` `reset`，
      * 点击分别会触发`form`组件的`submit/reset`事件
      */
-    'form-type'?: string;
+    'form-type'?: 'submit' | 'reset';
 }
 
 export interface VantButtonEvents extends VantOpenTypeEvents {
