@@ -55,7 +55,7 @@ export interface VantCellProps {
      *
      * @default 'navigateTo'
      */
-    'link-type'?: 'redirectTo' | 'switchTab' | 'reLaunch';
+    'link-type'?: 'redirectTo' | 'switchTab' | 'reLaunch' | 'navigateTo';
 
     /**
      * 是否开启点击反馈
@@ -80,8 +80,10 @@ export interface VantCellProps {
 
     /**
      * 箭头方向
+     *
+     * @default 'right'
      */
-    'arrow-direction'?: 'left' | 'up' | 'down';
+    'arrow-direction'?: 'left' | 'up' | 'down' | 'right';
 
     /**
      * 是否使用`label slot`
