@@ -1,3 +1,8 @@
+## v1.25.0
+
+-   🚀 添加 `WechatOpenType` 类型 [#8](https://github.com/fanhaoyuan/vant-weapp-typings/pull/8)
+-   🚀 添加 `ThemeVars` 类型 [#7](https://github.com/fanhaoyuan/vant-weapp-typings/pull/7)
+
 ## v1.24.2
 
 -   🐛 修复 `Tabs` 组件'tab-active-class'为必需参数的错误 [#6](https://github.com/fanhaoyuan/vant-weapp-typings/pull/6)
