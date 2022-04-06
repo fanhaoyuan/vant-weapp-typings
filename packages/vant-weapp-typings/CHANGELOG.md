@@ -1,19 +1,23 @@
+## v1.25.2
+
+-   🐛 修复 `Tabs` 事件返回参数错误的问题 ([#11](https://github.com/fanhaoyuan/vant-weapp-typings/pull/11))
+
 ## v1.25.1
 
--   🐛 修复 `ConfigProvider` 的 `theme-vars` 中的项为必需项的错误 [#9](https://github.com/fanhaoyuan/vant-weapp-typings/pull/9)
+-   🐛 修复 `ConfigProvider` 的 `theme-vars` 中的项为必需项的错误 ([#9](https://github.com/fanhaoyuan/vant-weapp-typings/pull/9))
 
 ## v1.25.0
 
--   🚀 添加 `WechatOpenType` 类型 [#8](https://github.com/fanhaoyuan/vant-weapp-typings/pull/8)
--   🚀 添加 `ThemeVars` 类型 [#7](https://github.com/fanhaoyuan/vant-weapp-typings/pull/7)
+-   🚀 添加 `WechatOpenType` 类型 ([#8](https://github.com/fanhaoyuan/vant-weapp-typings/pull/8))
+-   🚀 添加 `ThemeVars` 类型 ([#7](https://github.com/fanhaoyuan/vant-weapp-typings/pull/7))
 
 ## v1.24.2
 
--   🐛 修复 `Tabs` 组件'tab-active-class'为必需参数的错误 [#6](https://github.com/fanhaoyuan/vant-weapp-typings/pull/6)
+-   🐛 修复 `Tabs` 组件'tab-active-class'为必需参数的错误 ([#6](https://github.com/fanhaoyuan/vant-weapp-typings/pull/6))
 
 ## v1.24.1
 
--   🐛 修复 `DropdownItem` 组件的 `Event` 类型错误问题
+-   🐛 修复 `DropdownItem` 组件的 `Event` 类型错误问题 ([#5](https://github.com/fanhaoyuan/vant-weapp-typings/pull/5))
 
 ## v1.24.0
 

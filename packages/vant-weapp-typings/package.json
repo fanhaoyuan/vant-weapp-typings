@@ -23,5 +23,5 @@
     "dependencies": {
         "@types/wechat-miniprogram": "^3.4.0"
     },
-    "version": "1.25.1"
+    "version": "1.25.2"
 }
