@@ -113,21 +113,36 @@ export interface VantTabsProps {
     'z-index'?: number;
 }
 
+export interface VantTabsEventDetail {
+    /**
+     * 标签标识符
+     */
+    name: string;
+    /**
+     * 标题
+     */
+    title: string;
+    /**
+     * tab的序号
+     */
+    index: number;
+}
+
 export interface VantTabsEvents {
     /**
      * 点击标签时触发
      */
-    'bind:click'?: (name?: string | number, title?: string) => void;
+    'bind:click'?: (event: WechatMiniprogram.CustomEvent<VantTabsEventDetail>) => void;
 
     /**
      * 当前激活的标签改变时触发
      */
-    'bind:change'?: (name?: string | number, title?: string) => void;
+    'bind:change'?: (event: WechatMiniprogram.CustomEvent<VantTabsEventDetail>) => void;
 
     /**
      * 点击被禁用的标签时触发
      */
-    'bind:disabled'?: (name?: string | number, title?: string) => void;
+    'bind:disabled'?: (event: WechatMiniprogram.CustomEvent<VantTabsEventDetail>) => void;
 
     /**
      * 滚动时触发
