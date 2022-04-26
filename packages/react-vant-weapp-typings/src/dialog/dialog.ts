@@ -1,6 +1,8 @@
-import { VantDialogInstance } from 'vant-weapp-typings';
+import { VantDialogInstance, VantDialogOptions } from 'vant-weapp-typings';
 
 type Dialog = VantDialogInstance;
+
+export { VantDialogInstance, VantDialogOptions };
 
 declare const Dialog: Dialog;
 

@@ -1,6 +1,8 @@
-import { VantCollapseItem } from 'vant-weapp-typings';
+import { VantCollapseItem, VantCollapseItemExternalClassName, VantCollapseItemProps } from 'vant-weapp-typings';
 
 type CollapseItem = React.ComponentType<VantCollapseItem>;
+
+export { VantCollapseItem, VantCollapseItemExternalClassName, VantCollapseItemProps };
 
 declare const CollapseItem: CollapseItem;
 

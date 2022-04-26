@@ -1,6 +1,8 @@
-import { VantOverlay } from 'vant-weapp-typings';
+import { VantOverlay, VantOverlayEvents, VantOverlayProps } from 'vant-weapp-typings';
 
 type Overlay = React.ComponentType<VantOverlay>;
+
+export { VantOverlay, VantOverlayEvents, VantOverlayProps };
 
 declare const Overlay: Overlay;
 

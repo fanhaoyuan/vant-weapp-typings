@@ -1,6 +1,8 @@
-import { VantUploader } from 'vant-weapp-typings';
+import { VantUploader, VantUploaderEvents, VantUploaderProps } from 'vant-weapp-typings';
 
 type Uploader = React.ComponentType<VantUploader>;
+
+export { VantUploader, VantUploaderEvents, VantUploaderProps };
 
 declare const Uploader: Uploader;
 

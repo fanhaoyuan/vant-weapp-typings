@@ -1,6 +1,8 @@
-import { VantCell } from 'vant-weapp-typings';
+import { VantCell, VantCellEvents, VantCellExternalClassName, VantCellProps } from 'vant-weapp-typings';
 
 type Cell = React.ComponentType<VantCell>;
+
+export { VantCellExternalClassName, VantCell, VantCellEvents, VantCellProps };
 
 declare const Cell: Cell;
 

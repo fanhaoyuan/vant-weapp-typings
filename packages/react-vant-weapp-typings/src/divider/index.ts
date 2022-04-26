@@ -1,6 +1,8 @@
-import { VantDivider } from 'vant-weapp-typings';
+import { VantDivider, VantDividerProps } from 'vant-weapp-typings';
 
 type Divider = React.ComponentType<VantDivider>;
+
+export { VantDivider, VantDividerProps };
 
 declare const Divider: Divider;
 
