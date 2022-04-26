@@ -1,3 +1,7 @@
+## v1.26.0
+
+-   [react-vant-weapp-typings] 🚀 所有组件导出对应原始类型
+
 ## v1.25.2
 
 -   🐛 修复 `Tabs` 事件返回参数错误的问题 ([#11](https://github.com/fanhaoyuan/vant-weapp-typings/pull/11))
