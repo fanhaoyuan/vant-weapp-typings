@@ -82,16 +82,26 @@ export interface VantTreeSelectProps {
     'selected-icon'?: string;
 }
 
+/**
+ * 左侧导航点击时，触发的事件详情
+ */
+export interface VantTreeSelectClickNavDetail {
+    /**
+     * 被点击的导航的索引
+     */
+    index: number;
+}
+
 export interface VantTreeSelectEvents {
     /**
      * 左侧导航点击时，触发的事件
      */
-    'bind:click-nav'?: WechatMiniprogram.EventCallback;
+    'bind:click-nav'?: (event: WechatMiniprogram.CustomEvent<VantTreeSelectClickNavDetail>) => void;
 
     /**
      * 右侧选择项被点击时，会触发的事件
      */
-    'bind:click-item'?: WechatMiniprogram.EventCallback;
+    'bind:click-item'?: (event: WechatMiniprogram.CustomEvent<VantTreeSelectItem>) => void;
 }
 
 export interface VantTreeSelectExternalClassName {
