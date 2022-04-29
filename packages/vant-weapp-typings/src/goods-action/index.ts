@@ -9,11 +9,4 @@ export interface VantGoodsActionProps {
     'safe-area-inset-bottom'?: boolean;
 }
 
-export interface VantGoodsActionEvents {
-    /**
-     * 按钮点击事件回调
-     */
-    click?: WechatMiniprogram.EventCallback;
-}
-
-export type VantGoodsAction = VantComponent<VantGoodsActionProps, VantGoodsActionEvents>;
+export type VantGoodsAction = VantComponent<VantGoodsActionProps>;
