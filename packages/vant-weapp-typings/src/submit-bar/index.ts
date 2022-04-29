@@ -80,7 +80,7 @@ export interface VantSubmitBarEvents {
     /**
      * 按钮点击事件回调
      */
-    submit?: WechatMiniprogram.EventCallback;
+    'bind:submit'?: (event: WechatMiniprogram.TouchEvent) => void;
 }
 
 export interface VantSubmitBarExternalClassName extends VantBaseExternalClassName {
