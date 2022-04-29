@@ -56,11 +56,21 @@ export interface VantTabbarProps {
     'safe-area-inset-bottom'?: boolean;
 }
 
+/**
+ * 切换标签时触发事件
+ */
+export interface VantTabbarChangeEvent extends WechatMiniprogram.BaseEvent {
+    /**
+     * 当前选中标签的名称或索引值
+     */
+    detail: number | string;
+}
+
 export interface VantTabbarEvents {
     /**
      * 切换标签时触发
      */
-    'bind:change'?: WechatMiniprogram.EventCallback;
+    'bind:change'?: (event: VantTabbarChangeEvent) => void;
 }
 
 export type VantTabbar = VantComponent<VantTabbarProps, VantTabbarEvents>;
