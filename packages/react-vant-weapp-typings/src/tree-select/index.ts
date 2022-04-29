@@ -4,6 +4,7 @@ import {
     VantTreeSelectExternalClassName,
     VantTreeSelectItem,
     VantTreeSelectProps,
+    VantTreeSelectClickNavDetail,
 } from 'vant-weapp-typings';
 
 type TreeSelect = React.ComponentType<VantTreeSelect>;
@@ -14,6 +15,7 @@ export {
     VantTreeSelectExternalClassName,
     VantTreeSelectItem,
     VantTreeSelectProps,
+    VantTreeSelectClickNavDetail,
 };
 
 declare const TreeSelect: TreeSelect;
