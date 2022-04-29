@@ -69,10 +69,17 @@ export interface VantGoodsActionButtonProps extends Omit<VantOpenTypeProps, 'bus
     size?: 'normal' | 'large' | 'small' | 'mini';
 }
 
+export interface VantGoodsActionButtonEvents {
+    /**
+     * 按钮点击事件回调
+     */
+    'bind:click': WechatMiniprogram.EventCallback;
+}
+
 export type VantGoodsActionButtonExternalClassName = VantBaseExternalClassName;
 
 export type VantGoodsActionButton = VantComponent<
     VantGoodsActionButtonProps,
-    {},
+    VantGoodsActionButtonEvents,
     VantGoodsActionButtonExternalClassName
 >;
