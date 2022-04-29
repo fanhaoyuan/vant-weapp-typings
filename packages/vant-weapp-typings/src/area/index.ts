@@ -73,21 +73,60 @@ export interface VantAreaProps {
     'cancel-button-text'?: string;
 }
 
+/**
+ * 选中列数据
+ */
+export interface VantAreaColumn {
+    /**
+     * 被选中的地区编码
+     */
+    code: string;
+    /**
+     * 被选中的地区名称
+     */
+    name: string;
+}
+
+/**
+ * 基础事件详情
+ */
+export interface VantAreaBaseEventDetail {
+    /**
+     * 每个数据对应一列选项中被选中项的序号
+     */
+    index: number[];
+
+    /**
+     *  每个数据对应一列选项中被选中的数据
+     */
+    values: VantAreaColumn[];
+}
+
+/**
+ * `bind:change`事件详情
+ */
+export interface VantAreaChangeEventDetail extends VantAreaBaseEventDetail {
+    /**
+     * Picker 实例
+     */
+    picker: Record<string, any>;
+}
+
 export interface VantAreaEvents {
     /**
      * 点击右上方完成按钮
      */
-    'bind:confirm'?: WechatMiniprogram.EventCallback;
+    'bind:confirm'?: (event: WechatMiniprogram.CustomEvent<VantAreaBaseEventDetail>) => void;
 
     /**
      * 点击取消按钮时
      */
-    'bind:cancel'?: WechatMiniprogram.EventCallback;
+    'bind:cancel'?: (event: WechatMiniprogram.CustomEvent<VantAreaBaseEventDetail>) => void;
 
     /**
      * 选项改变时触发
      */
-    'bind:change'?: WechatMiniprogram.EventCallback;
+    'bind:change'?: (event: WechatMiniprogram.CustomEvent<VantAreaChangeEventDetail>) => void;
 }
 
 export type VantArea = VantComponent<VantAreaProps, VantAreaEvents>;
