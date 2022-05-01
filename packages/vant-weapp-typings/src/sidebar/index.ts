@@ -9,11 +9,18 @@ export interface VantSidebarProps {
     activeKey?: string | number;
 }
 
+export interface VantSidebarChangeEvent extends WechatMiniprogram.BaseEvent {
+    /**
+     * 当前选中徽章的索引
+     */
+    detail: number;
+}
+
 export interface VantSidebarEvents {
     /**
      * 切换徽章时触发
      */
-    change?: (activeKey?: string | number) => void;
+    'bind:change'?: (event: VantSidebarChangeEvent) => void;
 }
 
 export type VantSidebarExternalClassName = VantBaseExternalClassName;
