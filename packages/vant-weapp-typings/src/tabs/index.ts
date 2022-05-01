@@ -128,6 +128,17 @@ export interface VantTabsEventDetail {
     index: number;
 }
 
+export interface VantTabsScrollEventDetail {
+    /**
+     * 距离顶部位置
+     */
+    scrollTop: number;
+    /**
+     * 是否吸顶
+     */
+    isFixed: boolean;
+}
+
 export interface VantTabsEvents {
     /**
      * 点击标签时触发
@@ -147,7 +158,7 @@ export interface VantTabsEvents {
     /**
      * 滚动时触发
      */
-    'bind:scroll'?: (data?: { scrollTop: number; isFixed: boolean }) => void;
+    'bind:scroll'?: (event: WechatMiniprogram.CustomEvent<VantTabsScrollEventDetail>) => void;
 }
 
 export interface VantTabsExternalClassName extends VantBaseExternalClassName {
