@@ -41,11 +41,18 @@ export interface VantSidebarItemProps {
     disabled?: boolean;
 }
 
+export interface VantSidebarItemClickEvent extends WechatMiniprogram.BaseEvent {
+    /**
+     * 当前徽章的索引
+     */
+    detail: number;
+}
+
 export interface VantSidebarItemEvents {
     /**
      * 点击徽章时触发
      */
-    click?: WechatMiniprogram.EventCallback;
+    'bind:click'?: (event: VantSidebarItemClickEvent) => void;
 }
 
 export type VantSidebarItemExternalClassName = VantBaseExternalClassName;
