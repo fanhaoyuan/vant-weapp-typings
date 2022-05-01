@@ -67,11 +67,18 @@ export interface VantStepsProps {
     'inactive-icon'?: string;
 }
 
+export interface VantStepsClickStepEvent extends WechatMiniprogram.BaseEvent {
+    /**
+     * 当前选中步骤索引
+     */
+    detail: number;
+}
+
 export interface VantStepsEvents {
     /**
      * 点击步骤时触发的事件
      */
-    'bind:click-step'?: WechatMiniprogram.EventCallback;
+    'bind:click-step'?: (event: VantStepsClickStepEvent) => void;
 }
 
 export interface VantStepsExternalClassName extends VantBaseExternalClassName {
