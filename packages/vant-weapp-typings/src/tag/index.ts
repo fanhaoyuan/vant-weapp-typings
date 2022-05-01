@@ -53,7 +53,7 @@ export interface VantTagProps {
 }
 
 export interface VantTagEvents {
-    close?: WechatMiniprogram.EventCallback;
+    'bind:close'?: (event: WechatMiniprogram.BaseEvent) => void;
 }
 
 export type VantTagExternalClassName = VantBaseExternalClassName;
