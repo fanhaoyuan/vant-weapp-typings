@@ -1,8 +1,14 @@
-import { VantSteps, VantStepsEvents, VantStepsProps, VantStepsExternalClassName } from 'vant-weapp-typings';
+import {
+    VantSteps,
+    VantStepsEvents,
+    VantStepsProps,
+    VantStepsExternalClassName,
+    VantStepsOption,
+} from 'vant-weapp-typings';
 
 type Steps = React.ComponentType<VantSteps>;
 
-export { VantSteps, VantStepsEvents, VantStepsExternalClassName, VantStepsProps };
+export { VantSteps, VantStepsEvents, VantStepsExternalClassName, VantStepsProps, VantStepsOption };
 
 declare const Steps: Steps;
 
