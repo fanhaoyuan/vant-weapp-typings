@@ -26,16 +26,18 @@ export interface VantStickyProps {
     'scroll-top'?: number;
 }
 
+export interface VantStickyScrollEventDetail {
+    /**距离顶部位置 */
+    scrollTop: number;
+    /**是否吸顶 */
+    isFixed: boolean;
+}
+
 export interface VantStickyEvents {
     /**
      * 滚动时触发
      */
-    scroll?: (value?: {
-        /**距离顶部位置 */
-        scrollTop: number;
-        /**是否吸顶 */
-        isFixed: boolean;
-    }) => void;
+    'bind:scroll'?: (event?: WechatMiniprogram.CustomEvent<VantStickyScrollEventDetail>) => void;
 }
 
 export type VantSticky = VantComponent<VantStickyProps, VantStickyEvents>;
