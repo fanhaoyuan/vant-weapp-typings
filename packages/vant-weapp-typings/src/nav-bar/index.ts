@@ -74,12 +74,12 @@ export interface VantNavBarEvents {
     /**
      * 点击左侧按钮时触发
      */
-    'bind:click-left'?: WechatMiniprogram.EventCallback;
+    'bind:click-left'?: (event: WechatMiniprogram.BaseEvent) => void;
 
     /**
      * 点击右侧按钮时触发
      */
-    'bind:click-right'?: WechatMiniprogram.EventCallback;
+    'bind:click-right'?: (event: WechatMiniprogram.BaseEvent) => void;
 }
 
 export interface VantNavBarExternalClassName extends VantBaseExternalClassName {
