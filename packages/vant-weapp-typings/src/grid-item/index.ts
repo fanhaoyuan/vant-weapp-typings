@@ -54,7 +54,7 @@ export interface VantGridItemEvents {
     /**
      * 点击格子时触发
      */
-    'bind:click'?: WechatMiniprogram.EventCallback;
+    'bind:click'?: (event: WechatMiniprogram.BaseEvent) => void;
 }
 
 export interface VantGridItemExternalClassName extends VantBaseExternalClassName {
