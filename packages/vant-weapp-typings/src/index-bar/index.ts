@@ -37,11 +37,18 @@ export interface VantIndexBarProps {
     'highlight-color'?: string;
 }
 
+export interface VantIndexBarSelectEvent extends WechatMiniprogram.BaseEvent {
+    /**
+     * 索引字符
+     */
+    detail: string | number;
+}
+
 export interface VantIndexBarEvents {
     /**
      * 选中字符时触发
      */
-    select?: (value?: string | number) => void;
+    'bind:select'?: (event: VantIndexBarSelectEvent) => void;
 }
 
 export type VantIndexBar = VantComponent<VantIndexBarProps, VantIndexBarEvents>;
