@@ -72,12 +72,12 @@ export interface VantNoticeBarEvents {
     /**
      * 点击通知栏时触发
      */
-    click?: WechatMiniprogram.EventCallback;
+    'bind:click'?: (event: WechatMiniprogram.TouchEvent) => void;
 
     /**
      * 关闭通知栏时触发
      */
-    close?: WechatMiniprogram.EventCallback;
+    'bind:close'?: (event: WechatMiniprogram.CustomEvent<{ x: number; y: number }>) => void;
 }
 
 export type VantNoticeBarExternalClassName = VantBaseExternalClassName;
