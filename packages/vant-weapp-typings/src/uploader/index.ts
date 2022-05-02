@@ -1,5 +1,7 @@
 import { VantComponent } from '../base';
 
+type VantUploaderPreviewSize = string | number;
+
 export interface VantUploaderProps {
     /**
      * 标识符，可以在回调函数的第二项参数中获取
@@ -24,8 +26,12 @@ export interface VantUploaderProps {
      * 预览图和上传区域的尺寸，默认单位为`px`
      *
      * @default '80px'
+     *
+     * 数组模式
+     *
+     * @since `v1.10.3`
      */
-    'preview-size'?: string | number;
+    'preview-size'?: VantUploaderPreviewSize | [VantUploaderPreviewSize, VantUploaderPreviewSize];
 
     /**
      * 是否在上传完成后展示预览图
