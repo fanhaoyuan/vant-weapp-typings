@@ -55,6 +55,13 @@ export interface VantCollapseItemProps {
      * @default false
      */
     disabled?: boolean;
+
+    /**
+     * 标题栏大小
+     *
+     * @since `v1.10.3`
+     */
+    size?: 'large';
 }
 
 export interface VantCollapseItemExternalClassName extends VantBaseExternalClassName {
