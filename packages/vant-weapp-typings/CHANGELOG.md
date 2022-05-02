@@ -1,3 +1,26 @@
+## v1.27.0
+
+-   🚀 `Uploader` 组件 `preview-size` 属性类型支持 `Array` 自定义宽高 ([#26](https://github.com/fanhaoyuan/vant-weapp-typings/pull/26))
+-   🚀 `CollapseItem` 组件新增 `size` 属性 ([#26](https://github.com/fanhaoyuan/vant-weapp-typings/pull/26))
+-   🚀 `Area` 组件新增 `show-toolbar` 属性 ([#26](https://github.com/fanhaoyuan/vant-weapp-typings/pull/26))
+-   🚀 `NoticeBar`组件更新事件类型回调 ([#25](https://github.com/fanhaoyuan/vant-weapp-typings/pull/25))
+-   🚀 `Steps`组件更新并导出事件类型回调 ([#24](https://github.com/fanhaoyuan/vant-weapp-typings/pull/24))
+-   🚀 `Sticky`组件更新并导出事件类型回调 ([#23](https://github.com/fanhaoyuan/vant-weapp-typings/pull/23))
+-   🚀 `Tag`组件更新事件类型回调 ([#22](https://github.com/fanhaoyuan/vant-weapp-typings/pull/22))
+-   🚀 `Grid`组件更新事件类型回调 ([#21](https://github.com/fanhaoyuan/vant-weapp-typings/pull/21))
+-   🚀 `IndexBar`组件更新并导出事件类型回调 ([#20](https://github.com/fanhaoyuan/vant-weapp-typings/pull/20))
+-   🚀 `NavBar`组件更新事件类型回调 ([#19](https://github.com/fanhaoyuan/vant-weapp-typings/pull/19))
+-   🚀 `Sidebar`组件更新并导出事件类型回调 ([#18](https://github.com/fanhaoyuan/vant-weapp-typings/pull/18))
+-   🚀 `Tabs`组件更新并导出事件类型回调 ([#17](https://github.com/fanhaoyuan/vant-weapp-typings/pull/17))
+-   🚀 `Tabbar`组件更新并导出事件类型回调 ([#16](https://github.com/fanhaoyuan/vant-weapp-typings/pull/16))
+-   🚀 `TreeSelect`组件更新并导出事件类型回调 ([#15](https://github.com/fanhaoyuan/vant-weapp-typings/pull/15))
+-   🚀 `Area`组件更新并导出事件类型回调 ([#14](https://github.com/fanhaoyuan/vant-weapp-typings/pull/14))
+-   🚀 `GoodActions`组件新增 `VantGoodsActionsButton` 的 bind:click 事件 ([#12](https://github.com/fanhaoyuan/vant-weapp-typings/pull/12))
+
+-   🐛 `Steps`组件修复`steps`属性缺失问题 ([#24](https://github.com/fanhaoyuan/vant-weapp-typings/pull/24))
+-   🐛 `SubmitBar`组件修复`bind:submit`事件类型错误 ([#13](https://github.com/fanhaoyuan/vant-weapp-typings/pull/13))
+-   🐛 `GoodActions`组件去除 `GoodActions` 中错误的 `Event` 类型 ([#12](https://github.com/fanhaoyuan/vant-weapp-typings/pull/12))
+
 ## v1.26.0
 
 -   [react-vant-weapp-typings] 🚀 所有组件导出对应原始类型 ([0e43938e](https://github.com/fanhaoyuan/vant-weapp-typings/commit/0e43938ec2e34fc838781faf2e13f9a1ed62f431))
