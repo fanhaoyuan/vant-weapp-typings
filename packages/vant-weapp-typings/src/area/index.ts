@@ -71,6 +71,15 @@ export interface VantAreaProps {
      * @default '取消'
      */
     'cancel-button-text'?: string;
+
+    /**
+     * 是否显示顶部栏
+     *
+     * @default true
+     *
+     * @since `v1.10.3`
+     */
+    'show-toolbar'?: boolean;
 }
 
 /**
