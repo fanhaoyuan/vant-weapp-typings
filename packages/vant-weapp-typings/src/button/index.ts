@@ -142,7 +142,7 @@ export interface VantButtonEvents extends Omit<VantOpenTypeEvents, 'bind:launcha
     /**
      * 点击按钮，且按钮状态不为加载或禁用时触发
      */
-    'bind:click'?: WechatMiniprogram.EventCallback;
+    'bind:click'?: (event: WechatMiniprogram.CustomEvent<WechatMiniprogram.TouchEvent>) => void;
 }
 
 export interface VantButtonExternalClassName extends VantBaseExternalClassName, VantBaseLoadingExternalClassName {}
