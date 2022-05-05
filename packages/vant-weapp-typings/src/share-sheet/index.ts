@@ -26,6 +26,13 @@ export interface VantShareSheetOption {
 
 export interface VantShareSheetProps {
     /**
+     * 是否显示分享面板
+     *
+     * @default false
+     */
+    show?: boolean;
+
+    /**
      * 分享选项
      *
      * @default []
