@@ -46,7 +46,7 @@ export interface VantOverlayEvents {
     /**
      * 点击时触发
      */
-    'bind:click'?: WechatMiniprogram.EventCallback;
+    'bind:click'?: (event: WechatMiniprogram.BaseEvent) => void;
 }
 
 export type VantOverlay = VantComponent<VantOverlayProps, VantOverlayEvents>;
