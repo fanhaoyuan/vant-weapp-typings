@@ -1,4 +1,5 @@
 import { VantBaseExternalClassName, VantComponent } from '../base';
+import { VantTransitionEvents } from '../transition';
 
 export interface VantPopupProps {
     /**
@@ -101,46 +102,16 @@ export interface VantPopupProps {
     'lock-scroll'?: boolean;
 }
 
-export interface VantPopupEvents {
+export interface VantPopupEvents extends VantTransitionEvents {
     /**
      * 关闭弹出层时触发
      */
-    'bind:close'?: WechatMiniprogram.EventCallback;
+    'bind:close'?: (event: WechatMiniprogram.BaseEvent) => void;
 
     /**
      * 点击遮罩层时触发
      */
-    'bind:click-overlay'?: WechatMiniprogram.EventCallback;
-
-    /**
-     * 进入前触发
-     */
-    'bind:before-enter'?: WechatMiniprogram.EventCallback;
-
-    /**
-     * 进入中触发
-     */
-    'bind:enter'?: WechatMiniprogram.EventCallback;
-
-    /**
-     * 进入后触发
-     */
-    'bind:after-enter'?: WechatMiniprogram.EventCallback;
-
-    /**
-     * 离开前触发
-     */
-    'bind:before-leave'?: WechatMiniprogram.EventCallback;
-
-    /**
-     * 离开中触发
-     */
-    'bind:leave'?: WechatMiniprogram.EventCallback;
-
-    /**
-     * 离开后触发
-     */
-    'bind:after-leave'?: WechatMiniprogram.EventCallback;
+    'bind:click-overlay'?: (event: WechatMiniprogram.BaseEvent) => void;
 }
 
 export type VantPopupExternalClassName = VantBaseExternalClassName;
