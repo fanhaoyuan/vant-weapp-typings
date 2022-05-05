@@ -59,32 +59,32 @@ export interface VantTransitionEvents {
     /**
      * 进入前触发
      */
-    'bind:before-enter'?: WechatMiniprogram.EventCallback;
+    'bind:before-enter'?: (event: WechatMiniprogram.BaseEvent) => void;
 
     /**
      * 进入中触发
      */
-    'bind:enter'?: WechatMiniprogram.EventCallback;
+    'bind:enter'?: (event: WechatMiniprogram.BaseEvent) => void;
 
     /**
      * 进入后触发
      */
-    'bind:after-enter'?: WechatMiniprogram.EventCallback;
+    'bind:after-enter'?: (event: WechatMiniprogram.BaseEvent) => void;
 
     /**
      * 离开前触发
      */
-    'bind:before-leave'?: WechatMiniprogram.EventCallback;
+    'bind:before-leave'?: (event: WechatMiniprogram.BaseEvent) => void;
 
     /**
      * 离开中触发
      */
-    'bind:leave'?: WechatMiniprogram.EventCallback;
+    'bind:leave'?: (event: WechatMiniprogram.BaseEvent) => void;
 
     /**
      * 离开后触发
      */
-    'bind:after-leave'?: WechatMiniprogram.EventCallback;
+    'bind:after-leave'?: (event: WechatMiniprogram.BaseEvent) => void;
 }
 
 export interface VantTransitionExternalClassName extends VantBaseExternalClassName {
