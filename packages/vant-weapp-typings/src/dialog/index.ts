@@ -162,7 +162,7 @@ export interface VantDialogProps extends VantOpenTypeProps {
     'confirm-button-open-type'?: WechatOpenType;
 }
 
-export interface VantDialogEvents extends VantOpenTypeEvents {
+export interface VantDialogEvents extends Omit<VantOpenTypeEvents, 'bind:launchapp'> {
     /**
      * 弹窗关闭时触发
      */

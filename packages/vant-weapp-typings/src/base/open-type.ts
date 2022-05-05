@@ -153,24 +153,31 @@ export interface VantOpenTypeEvents {
      * 用户点击该按钮时，会返回获取到的用户信息，
      * 从返回参数的`detail`中获取到的值同`wx.getUserInfo`
      */
-    'bind:getuserinfo'?: WechatMiniprogram.GetUserInfoSuccessCallback;
+    'bind:getuserinfo'?: (event: WechatMiniprogram.ButtonGetUserInfo) => void;
 
     /**
      * 客服消息回调
      */
-    'bind:contact'?: (e: WechatMiniprogram.ButtonContact) => void;
+    'bind:contact'?: (event: WechatMiniprogram.ButtonContact) => void;
     /**
      * 获取用户手机号回调
      */
-    'bind:getphonenumber'?: (e: WechatMiniprogram.ButtonGetPhoneNumber) => void;
+    'bind:getphonenumber'?: (event: WechatMiniprogram.ButtonGetPhoneNumber) => void;
 
     /**
      * 当使用开放能力时，发生错误的回调
      */
-    'bind:error'?: WechatMiniprogram.EventCallback;
+    'bind:error'?: (event: WechatMiniprogram.ButtonError) => void;
 
     /**
      * 在打开授权设置页后回调
      */
-    'bind:opensetting'?: WechatMiniprogram.OpenSettingSuccessCallback;
+    'bind:opensetting'?: (event: WechatMiniprogram.ButtonOpenSetting) => void;
+
+    /**
+     * 打开 APP 成功的回调
+     *
+     * `openType="launchApp"`时有效
+     */
+    'bind:launchapp'?: (event: WechatMiniprogram.ButtonLaunchApp) => void;
 }
