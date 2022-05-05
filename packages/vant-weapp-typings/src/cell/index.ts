@@ -102,7 +102,7 @@ export interface VantCellEvents {
     /**
      * 点击单元格时触发
      */
-    'bind:click'?: WechatMiniprogram.EventCallback;
+    'bind:click'?: (event: WechatMiniprogram.CustomEvent<{ x: number; y: number }>) => void;
 }
 
 export interface VantCellExternalClassName extends VantBaseExternalClassName {
