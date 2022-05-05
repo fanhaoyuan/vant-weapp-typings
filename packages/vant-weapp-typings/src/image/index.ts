@@ -98,17 +98,17 @@ export interface VantImageEvents {
     /**
      * 点击图片时触发
      */
-    click?: (e: WechatMiniprogram.BaseEvent) => void;
+    'bind:click'?: (event: WechatMiniprogram.CustomEvent<{ x: number; y: number }>) => void;
 
     /**
      * 图片加载完毕时触发
      */
-    load?: (e: WechatMiniprogram.BaseEvent) => void;
+    'bind:load'?: (event: WechatMiniprogram.CustomEvent<{ width: number; height: number }>) => void;
 
     /**
      * 图片加载失败时触发
      */
-    error?: (e: WechatMiniprogram.BaseEvent) => void;
+    'bind:error'?: (event: WechatMiniprogram.CustomEvent<{ errMsg: string }>) => void;
 }
 
 export interface VantImageExternalClassName extends VantBaseExternalClassName, VantBaseLoadingExternalClassName {
