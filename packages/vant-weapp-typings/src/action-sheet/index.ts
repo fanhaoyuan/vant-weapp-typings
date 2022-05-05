@@ -108,33 +108,26 @@ export interface VantActionSheetProps {
     'safe-area-inset-bottom'?: boolean;
 }
 
-export interface VantActionSheetEvents extends VantOpenTypeEvents {
+export interface VantActionSheetEvents extends Omit<VantOpenTypeEvents, 'bind:launchapp'> {
     /**
      * 选中选项时触发，禁用或加载状态下不会触发
      */
-    'bind:select'?: WechatMiniprogram.EventCallback;
+    'bind:select'?: (event: WechatMiniprogram.CustomEvent<VantAction>) => void;
 
     /**
      * 关闭时触发
      */
-    'bind:close'?: WechatMiniprogram.EventCallback;
+    'bind:close'?: (event: WechatMiniprogram.BaseEvent) => void;
 
     /**
      * 取消按钮点击时触发
      */
-    'bind:cancel'?: WechatMiniprogram.EventCallback;
+    'bind:cancel'?: (event: WechatMiniprogram.BaseEvent) => void;
 
     /**
      * 点击遮罩层时触发
      */
-    'bind:click-overlay'?: WechatMiniprogram.EventCallback;
-
-    /**
-     * 打开 APP 成功的回调
-     *
-     * `openType="launchApp"`时有效
-     */
-    'bind:launchapp'?: WechatMiniprogram.EventCallback;
+    'bind:click-overlay'?: (event: WechatMiniprogram.BaseEvent) => void;
 }
 
 export type VantActionSheet = VantComponent<VantActionSheetProps, VantActionSheetEvents>;
