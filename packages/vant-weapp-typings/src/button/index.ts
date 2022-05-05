@@ -138,7 +138,7 @@ export interface VantButtonProps extends VantOpenTypeProps {
     'form-type'?: string;
 }
 
-export interface VantButtonEvents extends VantOpenTypeEvents {
+export interface VantButtonEvents extends Omit<VantOpenTypeEvents, 'bind:launchapp'> {
     /**
      * 点击按钮，且按钮状态不为加载或禁用时触发
      */
