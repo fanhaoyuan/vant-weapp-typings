@@ -76,7 +76,7 @@ export interface VantCountDownEvents {
     /**
      * 倒计时结束时触发
      */
-    'bind:finish'?: WechatMiniprogram.EventCallback;
+    'bind:finish'?: (event: WechatMiniprogram.BaseEvent) => void;
 
     /**
      * 时间变化时触发，仅在开启`use-slot`后才会触发
