@@ -48,7 +48,7 @@ export interface VantIconEvents {
     /**
      * 点击图标时触发
      */
-    'bind:click'?: WechatMiniprogram.EventCallback;
+    'bind:click'?: (event: WechatMiniprogram.BaseEvent) => void;
 }
 
 export type VantIconExternalClassName = VantBaseExternalClassName;
