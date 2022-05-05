@@ -37,21 +37,41 @@ export interface VantSwipeCellProps {
     disabled?: boolean;
 }
 
+export type VantSwipeCellPosition = 'left' | 'right';
+
+export type VantSwipeCellClickPosition = VantSwipeCellPosition | 'cell' | 'outside';
+
+export interface VantSwipeCellClickEvent extends WechatMiniprogram.BaseEvent {
+    detail: VantSwipeCellClickPosition;
+}
+
+export interface VantSwipeCellBaseEventDetail {
+    name: string | number;
+    position: VantSwipeCellPosition;
+}
+
+export interface VantSwipeCellCloseEventDetail extends VantSwipeCellBaseEventDetail {
+    /**
+     * SwipeCell 实例
+     */
+    instance: Record<string, any>;
+}
+
 export interface VantSwipeCellEvents {
     /**
      * 点击时触发
      */
-    click?: WechatMiniprogram.EventCallback;
+    'bind:click'?: (event: VantSwipeCellClickEvent) => void;
 
     /**
      * 关闭时触发
      */
-    close?: (data?: { position: 'left' | 'right'; instance; name: string }) => void;
+    'bind:close'?: (event: WechatMiniprogram.CustomEvent<VantSwipeCellCloseEventDetail>) => void;
 
     /**
      * 打开时触发
      */
-    open?: (data?: { position: 'left' | 'right'; name: string }) => void;
+    'bind:open'?: (event: WechatMiniprogram.CustomEvent<VantSwipeCellBaseEventDetail>) => void;
 }
 
 export type VantSwipeCell = VantComponent<VantSwipeCellProps, VantSwipeCellEvents>;
