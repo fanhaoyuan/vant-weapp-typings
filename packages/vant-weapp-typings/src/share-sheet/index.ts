@@ -85,26 +85,30 @@ export interface VantShareSheetProps {
     'safe-area-inset-bottom'?: boolean;
 }
 
+export interface VantShareSheetSelectEventDetail extends VantShareSheetOption {
+    index: number;
+}
+
 export interface VantShareSheetEvents {
     /**
      * 点击分享选项时触发
      */
-    select?: (option?: VantShareSheetOption, index?: number) => void;
+    'bind:select'?: (event: WechatMiniprogram.CustomEvent<VantShareSheetSelectEventDetail>) => void;
 
     /**
      * 关闭时触发
      */
-    close?: WechatMiniprogram.EventCallback;
+    'bind:close'?: (event: WechatMiniprogram.BaseEvent) => void;
 
     /**
      * 点击取消按钮时触发
      */
-    cancel?: WechatMiniprogram.EventCallback;
+    'bind:cancel'?: (event: WechatMiniprogram.BaseEvent) => void;
 
     /**
      * 点击遮罩层时触发
      */
-    'click-overlay'?: WechatMiniprogram.EventCallback;
+    'bind:click-overlay'?: (event: WechatMiniprogram.BaseEvent) => void;
 }
 
 export type VantShareSheet = VantComponent<VantShareSheetProps, VantShareSheetEvents>;
