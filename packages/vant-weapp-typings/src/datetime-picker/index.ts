@@ -115,26 +115,30 @@ export interface VantDateTimePickerProps {
     'visible-item-count'?: number;
 }
 
+export interface VantDateTimePickerBaseEvent extends WechatMiniprogram.BaseEvent {
+    detail: number;
+}
+
 export interface VantDateTimePickerEvents {
     /**
      * 当值变化时触发的事件
      */
-    'bind:input'?: (value?: any) => void;
+    'bind:input'?: (event: VantDateTimePickerBaseEvent) => void;
 
     /**
      * 当值变化时触发的事件
      */
-    'bind:change'?: (currentComponentInstance?: any) => void;
+    'bind:change'?: (event: WechatMiniprogram.CustomEvent<Record<string, any>>) => void;
 
     /**
      * 点击完成按钮时触发的事件
      */
-    'bind:confirm'?: (value?: any) => void;
+    'bind:confirm'?: (event: VantDateTimePickerBaseEvent) => void;
 
     /**
      * 点击取消按钮时触发的事件
      */
-    'bind:cancel'?: WechatMiniprogram.EventCallback;
+    'bind:cancel'?: (event: WechatMiniprogram.BaseEvent) => void;
 }
 
 export interface VantDateTimePickerExternalClassName {
