@@ -290,56 +290,62 @@ export interface VantFieldProps {
     'always-embed'?: boolean;
 }
 
+export interface VantFieldInputEvent extends WechatMiniprogram.BaseEvent {
+    detail: string;
+}
+
 export interface VantFieldEvents {
     /**
      * 输入内容时触发
      */
-    'bind:input'?: WechatMiniprogram.EventCallback;
+    'bind:input'?: (event: VantFieldInputEvent) => void;
 
     /**
      * 输入内容时触发
      */
-    'bind:change'?: WechatMiniprogram.EventCallback;
+    'bind:change'?: (event: VantFieldInputEvent) => void;
 
     /**
      * 点击完成按钮时触发
      */
-    'bind:confirm'?: WechatMiniprogram.EventCallback;
+    'bind:confirm'?: (event: VantFieldInputEvent) => void;
 
     /**
      * 点击尾部图标时触发
      */
-    'bind:click-icon'?: WechatMiniprogram.EventCallback;
+    'bind:click-icon'?: (event: WechatMiniprogram.BaseEvent) => void;
 
     /**
      * 输入框聚焦时触发
      */
-    'bind:focus'?: WechatMiniprogram.EventCallback;
+    'bind:focus'?: (event: WechatMiniprogram.CustomEvent<{ value: string; height: number }>) => void;
 
     /**
      * 输入框失焦时触发1
      */
-    'bind:blur'?: WechatMiniprogram.EventCallback;
+    'bind:blur'?: (event: WechatMiniprogram.CustomEvent<{ value: string; cursor: number }>) => void;
 
     /**
      * 点击清空控件时触发
      */
-    'bind:clear'?: WechatMiniprogram.EventCallback;
+    'bind:clear'?: (event: WechatMiniprogram.BaseEvent) => void;
 
     /**
      * 点击输入区域时触发
      */
-    'bind:click-input'?: WechatMiniprogram.EventCallback;
+    'bind:click-input'?: (event: WechatMiniprogram.CustomEvent<{ x: number; y: number }>) => void;
 
     /**
      * 输入框行数变化时调用，只对 `textarea` 有效
      */
-    'bind:linechange'?: WechatMiniprogram.EventCallback;
+    'bind:linechange'?: (
+        event: WechatMiniprogram.CustomEvent<{ height: number; heightRpx: number; lineCount: number }>
+    ) => void;
 
     /**
      * 键盘高度发生变化的时候触发此事件
      */
-    'bind:keyboardheightchange'?: WechatMiniprogram.EventCallback;
+    'bind:keyboardheightchange'?: (event: WechatMiniprogram.CustomEvent<{ height: number; duration: number }>) => void;
 }
 
 export interface VantFieldExternalClassName {
