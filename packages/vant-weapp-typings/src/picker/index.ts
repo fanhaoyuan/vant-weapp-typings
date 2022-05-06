@@ -97,6 +97,16 @@ export interface VantPickerProps {
     'default-index'?: number;
 }
 
+export interface VantPickerBaseEventDetail {
+    index: number | number[];
+    picker: Record<string, any>;
+    value: string[];
+}
+
+export interface VantPickerChangeEventDetail extends Omit<VantPickerBaseEventDetail, 'index'> {
+    index: number;
+}
+
 export interface VantPickerEvents {
     /**
      * 点击完成按钮时触发
@@ -105,7 +115,7 @@ export interface VantPickerEvents {
      *
      * 多列：所有列选中值，所有列选中值对应的索引
      */
-    'bind:confirm'?: WechatMiniprogram.EventCallback;
+    'bind:confirm'?: (event: WechatMiniprogram.CustomEvent<VantPickerBaseEventDetail>) => void;
 
     /**
      * 点击取消按钮时触发
@@ -114,7 +124,7 @@ export interface VantPickerEvents {
      *
      * 多列：所有列选中值，所有列选中值对应的索引
      */
-    'bind:cancel'?: WechatMiniprogram.EventCallback;
+    'bind:cancel'?: (event: WechatMiniprogram.CustomEvent<VantPickerChangeEventDetail>) => void;
 
     /**
      * 选项改变时触发
@@ -123,7 +133,7 @@ export interface VantPickerEvents {
      *
      * 多列：`Picker` 实例，所有列选中值，当前列对应的索引
      */
-    'bind:change'?: WechatMiniprogram.EventCallback;
+    'bind:change'?: (event: WechatMiniprogram.CustomEvent<VantPickerBaseEventDetail>) => void;
 }
 
 export interface VantPickerExternalClassName extends VantBaseExternalClassName {
