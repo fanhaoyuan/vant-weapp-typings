@@ -243,51 +243,49 @@ export interface VantCalendarEvents {
     /**
      * 点击任意日期时触发
      */
-    select?: (value: Date | Date[]) => void;
+    'bind:select'?: (event: WechatMiniprogram.CustomEvent<Date | Date[]>) => void;
 
     /**
      * 当`Calendar`的`type`为`multiple`时,点击已选中的日期时触发
      */
-    unselect?: (value: Date) => void;
+    'bind:unselect'?: (event: WechatMiniprogram.CustomEvent<Date>) => void;
 
     /**
      * 日期选择完成后触发，若`show-confirm`为`true`，则点击确认按钮后触发
      */
-    confirm?: (value: Date | Date[]) => void;
+    'bind:confirm'?: (event: WechatMiniprogram.CustomEvent<Date | Date[]>) => void;
 
     /**
      * 打开弹出层时触发
      */
-    open?: WechatMiniprogram.EventCallback;
+    'bind:open'?: (event: WechatMiniprogram.BaseEvent) => void;
 
     /**
      * 关闭弹出层时触发
      */
-    close?: WechatMiniprogram.EventCallback;
+    'bind:close'?: (event: WechatMiniprogram.BaseEvent) => void;
 
     /**
      * 打开弹出层且动画结束后触发
      */
-    opened?: WechatMiniprogram.EventCallback;
+    'bind:opened'?: (event: WechatMiniprogram.BaseEvent) => void;
 
     /**
      * 关闭弹出层且动画结束后触发
      */
-    closed?: WechatMiniprogram.EventCallback;
+    'bind:closed'?: (event: WechatMiniprogram.BaseEvent) => void;
 
     /**
      * 范围选择超过最多可选天数时触发
      */
-    'over-range'?: WechatMiniprogram.EventCallback;
+    'bind:over-range'?: (event: WechatMiniprogram.BaseEvent) => void;
 
     /**
      * 点击日历副标题时触发
      *
      * @version `v1.8.1`
-     *
-     *
      */
-    'click-subtitle'?: (e: WechatMiniprogram.TouchEvent) => void;
+    'bind:click-subtitle'?: (e: WechatMiniprogram.CustomEvent<WechatMiniprogram.TouchEvent>) => void;
 }
 
 export type VantCalendar = VantComponent<VantCalendarProps, VantCalendarEvents>;
