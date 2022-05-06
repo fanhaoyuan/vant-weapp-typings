@@ -63,11 +63,15 @@ export interface VantCheckboxProps {
     'icon-size'?: string | number;
 }
 
+export interface VantCheckboxChangeEvent extends WechatMiniprogram.BaseEvent {
+    detail: boolean;
+}
+
 export interface VantCheckboxEvents {
     /**
      * 当绑定值变化时触发的事件
      */
-    'bind:change'?: (value: boolean) => void;
+    'bind:change'?: (event: WechatMiniprogram.CustomEvent<VantCheckboxChangeEvent>) => void;
 }
 
 export interface VantCheckboxExternalClassName extends VantBaseExternalClassName {

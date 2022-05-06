@@ -39,7 +39,7 @@ export interface VantCheckboxGroupEvents {
     /**
      * 当绑定值变化时触发的事件
      */
-    'bind:change'?: (value: string[]) => void;
+    'bind:change'?: (event: WechatMiniprogram.CustomEvent<string[]>) => void;
 }
 
 export type VantCheckboxGroup = VantComponent<VantCheckboxGroupProps, VantCheckboxGroupEvents>;
