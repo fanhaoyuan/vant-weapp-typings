@@ -90,11 +90,15 @@ export interface VantSliderChangeEvent extends WechatMiniprogram.BaseEvent {
     detail: number;
 }
 
+export interface VantSliderDragEventDetail {
+    value: number;
+}
+
 export interface VantSliderEvents {
     /**
      * 拖动进度条时触发
      */
-    'bind:drag'?: (event: WechatMiniprogram.CustomEvent<{ value: number }>) => void;
+    'bind:drag'?: VantEventHandler<VantSliderDragEventDetail>;
 
     /**
      * 进度值改变后触发
