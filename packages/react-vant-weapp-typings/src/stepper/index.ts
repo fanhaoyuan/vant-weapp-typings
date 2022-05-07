@@ -5,6 +5,8 @@ import {
     VantStepperExternalClassName,
     VantStepperChangeEvent,
     VantStepperOverLimitEvent,
+    VantStepperBlurEventDetail,
+    VantStepperFocusEventDetail,
 } from 'vant-weapp-typings';
 
 type Stepper = React.ComponentType<VantStepper>;
@@ -16,6 +18,8 @@ export {
     VantStepperProps,
     VantStepperChangeEvent,
     VantStepperOverLimitEvent,
+    VantStepperBlurEventDetail,
+    VantStepperFocusEventDetail,
 };
 
 declare const Stepper: Stepper;

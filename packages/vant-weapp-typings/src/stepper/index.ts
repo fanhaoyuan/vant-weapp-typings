@@ -139,6 +139,16 @@ export interface VantStepperOverLimitEvent extends WechatMiniprogram.BaseEvent {
     detail: 'plus' | 'minus';
 }
 
+export interface VantStepperFocusEventDetail {
+    value: string;
+    height: number;
+}
+
+export interface VantStepperBlurEventDetail {
+    value: number;
+    cursor: number;
+}
+
 export interface VantStepperEvents {
     /**
      * 当绑定值变化时触发的事件
@@ -162,12 +172,12 @@ export interface VantStepperEvents {
     /**
      * 输入框聚焦时触发
      */
-    'bind:focus'?: (event: WechatMiniprogram.CustomEvent<{ value: string; height: number }>) => void;
+    'bind:focus'?: VantEventHandler<VantStepperFocusEventDetail>;
 
     /**
      * 输入框失焦时触发
      */
-    'bind:blur'?: (event: WechatMiniprogram.CustomEvent<{ value: number; cursor: number }>) => void;
+    'bind:blur'?: VantEventHandler<VantStepperBlurEventDetail>;
 }
 
 export interface VantStepperExternalClassName extends VantBaseExternalClassName {
