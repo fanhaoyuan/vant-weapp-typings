@@ -1,3 +1,35 @@
+## v1.28.0
+
+-   🚀 `Uploader` 组件更新并导出事件回调 ([#50](https://github.com/fanhaoyuan/vant-weapp-typings/pull/50))
+-   🚀 `Switch` 组件更新并导出`bind:change`事件回调 ([#49](https://github.com/fanhaoyuan/vant-weapp-typings/pull/49))
+-   🚀 `Stepper` 组件更新并导出事件回调 ([#48](https://github.com/fanhaoyuan/vant-weapp-typings/pull/48))
+-   🚀 `Slider` 组件更新并导出事件回调 ([#47](https://github.com/fanhaoyuan/vant-weapp-typings/pull/47))
+-   🚀 `Search` 组件更新并导出事件回调 ([#46](https://github.com/fanhaoyuan/vant-weapp-typings/pull/46))
+-   🚀 `Rate` 组件更新`bind:change`事件回调 ([#45](https://github.com/fanhaoyuan/vant-weapp-typings/pull/45))
+-   🚀 `Radio` 组件更新并导出 `Radio` 的 `bind:change` 事件回调 ([#44](https://github.com/fanhaoyuan/vant-weapp-typings/pull/44))
+-   🚀 `Radio` 组件更新并导出 `RadioGroup` 的 `bind:change` 事件回调 ([#44](https://github.com/fanhaoyuan/vant-weapp-typings/pull/44))
+-   🚀 `Picker` 组件更新并导出事件回调 ([#43](https://github.com/fanhaoyuan/vant-weapp-typings/pull/43))
+-   🚀 `Field` 组件更新并导出事件回调 ([#42](https://github.com/fanhaoyuan/vant-weapp-typings/pull/42))
+-   🚀 `DatetimePicker` 组件更新并导出事件回调 ([#41](https://github.com/fanhaoyuan/vant-weapp-typings/pull/41))
+-   🚀 `Checkbox` 组件更新并导出事件回调 ([#40](https://github.com/fanhaoyuan/vant-weapp-typings/pull/40))
+-   🚀 `Calendar` 组件更新事件回调 ([#39](https://github.com/fanhaoyuan/vant-weapp-typings/pull/39))
+-   🚀 `Popup` 组件更新事件回调 ([#38](https://github.com/fanhaoyuan/vant-weapp-typings/pull/38))
+-   🚀 `Transition` 组件更新事件回调 ([#38](https://github.com/fanhaoyuan/vant-weapp-typings/pull/38))
+-   🚀 `Image` 组件更新事件回调 ([#37](https://github.com/fanhaoyuan/vant-weapp-typings/pull/37))
+-   🚀 `Icon` 组件更新`bind:click`事件回调 ([#36](https://github.com/fanhaoyuan/vant-weapp-typings/pull/36))
+-   🚀 `Cell` 组件更新`bind:click`事件回调 ([#35](https://github.com/fanhaoyuan/vant-weapp-typings/pull/35))
+-   🚀 `Button` 组件更新`bind:click`事件回调 ([#34](https://github.com/fanhaoyuan/vant-weapp-typings/pull/34))
+-   🚀 `ActionSheet` 组件更新事件回调 ([#33](https://github.com/fanhaoyuan/vant-weapp-typings/pull/33))
+-   🚀 `OpenType` 更新事件回调 ([#33](https://github.com/fanhaoyuan/vant-weapp-typings/pull/33))
+-   🚀 `DropdownMenu` 组件更新并导出事件回调 ([#32](https://github.com/fanhaoyuan/vant-weapp-typings/pull/32))
+-   🚀 `Overlay` 组件更新`bind:click`事件回调 ([#31](https://github.com/fanhaoyuan/vant-weapp-typings/pull/31))
+-   🚀 `ShareSheet` 组件更新并导出事件回调 ([#30](https://github.com/fanhaoyuan/vant-weapp-typings/pull/30))
+-   🚀 `SwipeCell` 组件更新并导出事件回调 ([#29](https://github.com/fanhaoyuan/vant-weapp-typings/pull/29))
+-   🚀 `Collapse` 组件新增并导出`BaseEvent`和`ChangeEvent` ([#28](https://github.com/fanhaoyuan/vant-weapp-typings/pull/28))
+-   🚀 `Countdown` 组件更新`bind:finish`事件回调 ([#27](https://github.com/fanhaoyuan/vant-weapp-typings/pull/27))
+
+-   🐛 `ShareSheet` 组件修复`show`属性缺失的问题 ([#30](https://github.com/fanhaoyuan/vant-weapp-typings/pull/30))
+
 ## v1.27.0
 
 -   🚀 `Uploader` 组件 `preview-size` 属性类型支持 `Array` 自定义宽高 ([#26](https://github.com/fanhaoyuan/vant-weapp-typings/pull/26))
