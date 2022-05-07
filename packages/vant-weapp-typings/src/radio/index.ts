@@ -52,11 +52,15 @@ export interface VantRadioProps {
     'use-icon-slot'?: boolean;
 }
 
+export interface VantRadioChangeEvent extends WechatMiniprogram.BaseEvent {
+    detail: string;
+}
+
 export interface VantRadioEvents {
     /**
      * 当绑定值变化时触发的事件
      */
-    'bind:change'?: (name?: string) => void;
+    'bind:change'?: (event: VantRadioChangeEvent) => void;
 }
 
 export interface VantRadioExternalClassName extends VantBaseExternalClassName {
