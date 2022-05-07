@@ -96,11 +96,15 @@ export interface VantRateProps {
     touchable?: boolean;
 }
 
+export interface VantRateChangeEvent extends WechatMiniprogram.BaseEvent {
+    detail: number;
+}
+
 export interface VantRateEvents {
     /**
      * 当前分值变化时触发的事件
      */
-    change?: (value?: number) => void;
+    'bind:change'?: (event: VantRateChangeEvent) => void;
 }
 
 export interface VantRateExternalClassName extends VantBaseExternalClassName {
