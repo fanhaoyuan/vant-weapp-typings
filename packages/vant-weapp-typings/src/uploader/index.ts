@@ -134,31 +134,54 @@ export interface VantUploaderProps {
     'upload-icon'?: string;
 }
 
+export interface VantUploaderFile {
+    size: number;
+    type: string;
+    url: string;
+    thumb: string;
+    duration?: number;
+    height?: number;
+    width?: number;
+}
+
+export interface VantUploaderIndexDetail {
+    index: number;
+}
+
+export interface VantUploaderBaseReadEventDetail extends VantUploaderIndexDetail {
+    file: VantUploaderFile;
+    name: string;
+}
+
+export interface VantUploaderBeforeReadEventDetail extends VantUploaderBaseReadEventDetail {
+    callback: (ok: boolean) => void;
+}
+
 export interface VantUploaderEvents {
     /**
      * 文件读取前，在回调函数中返回 `false` 可终止文件读取，绑定事件的同时需要将`use-before-read`属性设置为`true`
      */
-    'bind:before-read'?: WechatMiniprogram.EventCallback;
+    'bind:before-read'?: (event: WechatMiniprogram.CustomEvent<VantUploaderBeforeReadEventDetail>) => void;
 
     /**
      * 文件读取完成后触发
      */
-    'bind:after-read'?: WechatMiniprogram.EventCallback;
+    'bind:after-read'?: (event: WechatMiniprogram.CustomEvent<VantUploaderBaseReadEventDetail>) => void;
 
     /**
      * 文件超出大小限制
      */
-    'bind:oversize'?: WechatMiniprogram.EventCallback;
+    'bind:oversize'?: (event: WechatMiniprogram.CustomEvent<VantUploaderBaseReadEventDetail>) => void;
 
     /**
      * 点击预览图片
      */
-    'bind:click-preview'?: WechatMiniprogram.EventCallback;
+    'bind:click-preview'?: (event: WechatMiniprogram.CustomEvent<VantUploaderIndexDetail>) => void;
 
     /**
      * 删除图片
      */
-    'bind:delete'?: WechatMiniprogram.EventCallback;
+    'bind:delete'?: (event: WechatMiniprogram.CustomEvent<VantUploaderIndexDetail>) => void;
 }
 
 export type VantUploader = VantComponent<VantUploaderProps, VantUploaderEvents>;
