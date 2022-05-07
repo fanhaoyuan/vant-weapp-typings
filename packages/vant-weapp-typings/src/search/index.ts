@@ -1,4 +1,5 @@
 import { VantBaseExternalClassName, VantComponent } from '../base';
+import { VantFieldEvents } from '../field';
 
 export interface VantSearchProps {
     /**
@@ -155,41 +156,21 @@ export interface VantSearchProps {
     'right-icon'?: string;
 }
 
-export interface VantSearchEvents {
+export interface VantSearchBaseEvent extends WechatMiniprogram.BaseEvent {
+    detail: string;
+}
+
+export interface VantSearchEvents
+    extends Pick<VantFieldEvents, 'bind:change' | 'bind:focus' | 'bind:blur' | 'bind:clear' | 'bind:click-input'> {
     /**
      * 确定搜索时触发
      */
-    'bind:search'?: WechatMiniprogram.EventCallback;
-
-    /**
-     * 输入内容变化时触发
-     */
-    'bind:change'?: WechatMiniprogram.EventCallback;
+    'bind:search'?: (event: VantSearchBaseEvent) => void;
 
     /**
      * 取消搜索搜索时触发
      */
-    'bind:cancel'?: WechatMiniprogram.EventCallback;
-
-    /**
-     * 输入框聚焦时触发
-     */
-    'bind:focus'?: WechatMiniprogram.EventCallback;
-
-    /**
-     * 输入框失焦时触发
-     */
-    'bind:blur'?: WechatMiniprogram.EventCallback;
-
-    /**
-     * 点击清空控件时触发
-     */
-    'bind:clear'?: WechatMiniprogram.EventCallback;
-
-    /**
-     * 点击搜索区域时触发
-     */
-    'bind:click-input'?: WechatMiniprogram.EventCallback;
+    'bind:cancel'?: (event: WechatMiniprogram.BaseEvent) => void;
 }
 
 export interface VantSearchExternalClassName extends VantBaseExternalClassName {
