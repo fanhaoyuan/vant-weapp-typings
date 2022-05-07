@@ -100,6 +100,15 @@ export interface VantImageProps {
     'show-menu-by-longpress'?: boolean;
 }
 
+export interface VantImageLoadEventDetail {
+    width: number;
+    height: number;
+}
+
+export interface VantImageErrorEventDetail {
+    errMsg: string;
+}
+
 export interface VantImageEvents {
     /**
      * 点击图片时触发
@@ -109,12 +118,12 @@ export interface VantImageEvents {
     /**
      * 图片加载完毕时触发
      */
-    'bind:load'?: (event: WechatMiniprogram.CustomEvent<{ width: number; height: number }>) => void;
+    'bind:load'?: VantEventHandler<VantImageLoadEventDetail>;
 
     /**
      * 图片加载失败时触发
      */
-    'bind:error'?: (event: WechatMiniprogram.CustomEvent<{ errMsg: string }>) => void;
+    'bind:error'?: VantEventHandler<VantImageErrorEventDetail>;
 }
 
 export interface VantImageExternalClassName extends VantBaseExternalClassName, VantBaseLoadingExternalClassName {
