@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantComponent } from '../base';
+import { VantBaseExternalClassName, VantComponent, VantEventHandler } from '../base';
 
 /**
  * 步骤配置项
@@ -67,6 +67,9 @@ export interface VantStepsProps {
     'inactive-icon'?: string;
 }
 
+/**
+ * @deprecated
+ */
 export interface VantStepsClickStepEvent extends WechatMiniprogram.BaseEvent {
     /**
      * 当前选中步骤索引
@@ -78,7 +81,7 @@ export interface VantStepsEvents {
     /**
      * 点击步骤时触发的事件
      */
-    'bind:click-step'?: (event: VantStepsClickStepEvent) => void;
+    'bind:click-step'?: VantEventHandler<number>;
 }
 
 export interface VantStepsExternalClassName extends VantBaseExternalClassName {

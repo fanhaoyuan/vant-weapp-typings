@@ -1,4 +1,11 @@
-import { VantBaseExternalClassName, VantComponent, WechatOpenType } from '../base';
+import {
+    TouchPositionDetail,
+    VantBaseExternalClassName,
+    VantComponent,
+    VantEventHandler,
+    VantTouchEventHandler,
+    WechatOpenType,
+} from '../base';
 
 export interface VantNoticeBarProps {
     /**
@@ -72,12 +79,12 @@ export interface VantNoticeBarEvents {
     /**
      * 点击通知栏时触发
      */
-    'bind:click'?: (event: WechatMiniprogram.TouchEvent) => void;
+    'bind:click'?: VantTouchEventHandler;
 
     /**
      * 关闭通知栏时触发
      */
-    'bind:close'?: (event: WechatMiniprogram.CustomEvent<{ x: number; y: number }>) => void;
+    'bind:close'?: VantEventHandler<TouchPositionDetail>;
 }
 
 export type VantNoticeBarExternalClassName = VantBaseExternalClassName;

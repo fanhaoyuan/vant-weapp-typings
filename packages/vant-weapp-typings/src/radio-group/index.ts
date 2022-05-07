@@ -1,4 +1,4 @@
-import { VantComponent } from '../base';
+import { VantComponent, VantEventHandler } from '../base';
 
 export interface VantRadioGroupProps {
     /**
@@ -26,6 +26,9 @@ export interface VantRadioGroupProps {
     direction?: 'horizontal' | 'vertical';
 }
 
+/**
+ * @deprecated
+ */
 export interface VantRadioGroupChangeEvent extends WechatMiniprogram.BaseEvent {
     detail: string;
 }
@@ -34,7 +37,7 @@ export interface VantRadioGroupEvents {
     /**
      * 当绑定值变化时触发的事件
      */
-    'bind:change'?: (event: VantRadioGroupChangeEvent) => void;
+    'bind:change'?: VantEventHandler<string>;
 }
 
 export type VantRadioGroup = VantComponent<VantRadioGroupProps, VantRadioGroupEvents>;

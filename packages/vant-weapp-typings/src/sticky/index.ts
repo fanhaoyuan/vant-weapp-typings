@@ -1,4 +1,4 @@
-import { VantComponent } from '../base';
+import { VantComponent, VantEventHandler } from '../base';
 
 export interface VantStickyProps {
     /**
@@ -37,7 +37,7 @@ export interface VantStickyEvents {
     /**
      * 滚动时触发
      */
-    'bind:scroll'?: (event?: WechatMiniprogram.CustomEvent<VantStickyScrollEventDetail>) => void;
+    'bind:scroll'?: VantEventHandler<VantStickyScrollEventDetail>;
 }
 
 export type VantSticky = VantComponent<VantStickyProps, VantStickyEvents>;

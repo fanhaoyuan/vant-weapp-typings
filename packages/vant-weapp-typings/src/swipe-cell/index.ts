@@ -1,4 +1,4 @@
-import { VantComponent } from '../base';
+import { VantComponent, VantEventHandler } from '../base';
 
 export interface VantSwipeCellProps {
     /**
@@ -41,6 +41,9 @@ export type VantSwipeCellPosition = 'left' | 'right';
 
 export type VantSwipeCellClickPosition = VantSwipeCellPosition | 'cell' | 'outside';
 
+/**
+ * @deprecated
+ */
 export interface VantSwipeCellClickEvent extends WechatMiniprogram.BaseEvent {
     detail: VantSwipeCellClickPosition;
 }
@@ -61,17 +64,17 @@ export interface VantSwipeCellEvents {
     /**
      * 点击时触发
      */
-    'bind:click'?: (event: VantSwipeCellClickEvent) => void;
+    'bind:click'?: VantEventHandler<VantSwipeCellClickPosition>;
 
     /**
      * 关闭时触发
      */
-    'bind:close'?: (event: WechatMiniprogram.CustomEvent<VantSwipeCellCloseEventDetail>) => void;
+    'bind:close'?: VantEventHandler<VantSwipeCellCloseEventDetail>;
 
     /**
      * 打开时触发
      */
-    'bind:open'?: (event: WechatMiniprogram.CustomEvent<VantSwipeCellBaseEventDetail>) => void;
+    'bind:open'?: VantEventHandler<VantSwipeCellBaseEventDetail>;
 }
 
 export type VantSwipeCell = VantComponent<VantSwipeCellProps, VantSwipeCellEvents>;

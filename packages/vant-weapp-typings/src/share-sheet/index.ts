@@ -1,4 +1,4 @@
-import { VantComponent } from '../base';
+import { VantComponent, VantEventHandler } from '../base';
 
 export interface VantShareSheetOption {
     /**
@@ -93,22 +93,22 @@ export interface VantShareSheetEvents {
     /**
      * 点击分享选项时触发
      */
-    'bind:select'?: (event: WechatMiniprogram.CustomEvent<VantShareSheetSelectEventDetail>) => void;
+    'bind:select'?: VantEventHandler<VantShareSheetSelectEventDetail>;
 
     /**
      * 关闭时触发
      */
-    'bind:close'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:close'?: VantEventHandler;
 
     /**
      * 点击取消按钮时触发
      */
-    'bind:cancel'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:cancel'?: VantEventHandler;
 
     /**
      * 点击遮罩层时触发
      */
-    'bind:click-overlay'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:click-overlay'?: VantEventHandler;
 }
 
 export type VantShareSheet = VantComponent<VantShareSheetProps, VantShareSheetEvents>;

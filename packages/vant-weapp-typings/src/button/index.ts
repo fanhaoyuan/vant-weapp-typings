@@ -5,6 +5,8 @@ import {
     VantBaseLoadingExternalClassName,
     VantComponent,
     WechatOpenType,
+    VantEventHandler,
+    VantTouchEvent,
 } from '../base';
 
 export interface VantButtonProps extends VantOpenTypeProps {
@@ -142,7 +144,7 @@ export interface VantButtonEvents extends Omit<VantOpenTypeEvents, 'bind:launcha
     /**
      * 点击按钮，且按钮状态不为加载或禁用时触发
      */
-    'bind:click'?: (event: WechatMiniprogram.CustomEvent<WechatMiniprogram.TouchEvent>) => void;
+    'bind:click'?: VantEventHandler<VantTouchEvent>;
 }
 
 export interface VantButtonExternalClassName extends VantBaseExternalClassName, VantBaseLoadingExternalClassName {}

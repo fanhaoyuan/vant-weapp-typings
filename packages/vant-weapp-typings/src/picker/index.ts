@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantComponent } from '../base';
+import { VantBaseExternalClassName, VantComponent, VantEventHandler } from '../base';
 
 export type VantPickerSingleColumn = string | Record<string, unknown>;
 
@@ -115,7 +115,7 @@ export interface VantPickerEvents {
      *
      * 多列：所有列选中值，所有列选中值对应的索引
      */
-    'bind:confirm'?: (event: WechatMiniprogram.CustomEvent<VantPickerBaseEventDetail>) => void;
+    'bind:confirm'?: VantEventHandler<VantPickerBaseEventDetail>;
 
     /**
      * 点击取消按钮时触发
@@ -124,7 +124,7 @@ export interface VantPickerEvents {
      *
      * 多列：所有列选中值，所有列选中值对应的索引
      */
-    'bind:cancel'?: (event: WechatMiniprogram.CustomEvent<VantPickerChangeEventDetail>) => void;
+    'bind:cancel'?: VantEventHandler<VantPickerChangeEventDetail>;
 
     /**
      * 选项改变时触发
@@ -133,7 +133,7 @@ export interface VantPickerEvents {
      *
      * 多列：`Picker` 实例，所有列选中值，当前列对应的索引
      */
-    'bind:change'?: (event: WechatMiniprogram.CustomEvent<VantPickerBaseEventDetail>) => void;
+    'bind:change'?: VantEventHandler<VantPickerBaseEventDetail>;
 }
 
 export interface VantPickerExternalClassName extends VantBaseExternalClassName {

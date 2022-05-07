@@ -1,4 +1,4 @@
-import { VantComponent } from '../base';
+import { VantComponent, VantEventHandler } from '../base';
 
 export interface Day {
     /**
@@ -243,42 +243,42 @@ export interface VantCalendarEvents {
     /**
      * 点击任意日期时触发
      */
-    'bind:select'?: (event: WechatMiniprogram.CustomEvent<Date | Date[]>) => void;
+    'bind:select'?: VantEventHandler<Date | Date[]>;
 
     /**
      * 当`Calendar`的`type`为`multiple`时,点击已选中的日期时触发
      */
-    'bind:unselect'?: (event: WechatMiniprogram.CustomEvent<Date>) => void;
+    'bind:unselect'?: VantEventHandler<Date>;
 
     /**
      * 日期选择完成后触发，若`show-confirm`为`true`，则点击确认按钮后触发
      */
-    'bind:confirm'?: (event: WechatMiniprogram.CustomEvent<Date | Date[]>) => void;
+    'bind:confirm'?: VantEventHandler<Date | Date[]>;
 
     /**
      * 打开弹出层时触发
      */
-    'bind:open'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:open'?: VantEventHandler;
 
     /**
      * 关闭弹出层时触发
      */
-    'bind:close'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:close'?: VantEventHandler;
 
     /**
      * 打开弹出层且动画结束后触发
      */
-    'bind:opened'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:opened'?: VantEventHandler;
 
     /**
      * 关闭弹出层且动画结束后触发
      */
-    'bind:closed'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:closed'?: VantEventHandler;
 
     /**
      * 范围选择超过最多可选天数时触发
      */
-    'bind:over-range'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:over-range'?: VantEventHandler;
 
     /**
      * 点击日历副标题时触发

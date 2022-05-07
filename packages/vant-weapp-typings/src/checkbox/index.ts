@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantComponent } from '../base';
+import { VantBaseExternalClassName, VantComponent, VantEventHandler } from '../base';
 
 export interface VantCheckboxProps {
     /**
@@ -63,6 +63,9 @@ export interface VantCheckboxProps {
     'icon-size'?: string | number;
 }
 
+/**
+ * @deprecated
+ */
 export interface VantCheckboxChangeEvent extends WechatMiniprogram.BaseEvent {
     detail: boolean;
 }
@@ -71,7 +74,7 @@ export interface VantCheckboxEvents {
     /**
      * 当绑定值变化时触发的事件
      */
-    'bind:change'?: (event: WechatMiniprogram.CustomEvent<VantCheckboxChangeEvent>) => void;
+    'bind:change'?: VantEventHandler<boolean>;
 }
 
 export interface VantCheckboxExternalClassName extends VantBaseExternalClassName {

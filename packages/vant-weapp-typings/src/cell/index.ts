@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantComponent } from '../base';
+import { TouchPositionDetail, VantBaseExternalClassName, VantComponent, VantEventHandler } from '../base';
 
 export interface VantCellProps {
     /**
@@ -102,7 +102,7 @@ export interface VantCellEvents {
     /**
      * 点击单元格时触发
      */
-    'bind:click'?: (event: WechatMiniprogram.CustomEvent<{ x: number; y: number }>) => void;
+    'bind:click'?: VantEventHandler<TouchPositionDetail>;
 }
 
 export interface VantCellExternalClassName extends VantBaseExternalClassName {

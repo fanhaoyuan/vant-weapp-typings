@@ -1,4 +1,10 @@
-import { VantOpenTypeCamelCaseProps, VantOpenTypeEvents, VantComponent, WechatOpenType } from '../base';
+import {
+    VantOpenTypeCamelCaseProps,
+    VantOpenTypeEvents,
+    VantComponent,
+    WechatOpenType,
+    VantEventHandler,
+} from '../base';
 
 export interface VantAction extends Omit<VantOpenTypeCamelCaseProps, 'businessId'> {
     /**
@@ -112,22 +118,22 @@ export interface VantActionSheetEvents extends Omit<VantOpenTypeEvents, 'bind:la
     /**
      * 选中选项时触发，禁用或加载状态下不会触发
      */
-    'bind:select'?: (event: WechatMiniprogram.CustomEvent<VantAction>) => void;
+    'bind:select'?: VantEventHandler<VantAction>;
 
     /**
      * 关闭时触发
      */
-    'bind:close'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:close'?: VantEventHandler;
 
     /**
      * 取消按钮点击时触发
      */
-    'bind:cancel'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:cancel'?: VantEventHandler;
 
     /**
      * 点击遮罩层时触发
      */
-    'bind:click-overlay'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:click-overlay'?: VantEventHandler;
 }
 
 export type VantActionSheet = VantComponent<VantActionSheetProps, VantActionSheetEvents>;

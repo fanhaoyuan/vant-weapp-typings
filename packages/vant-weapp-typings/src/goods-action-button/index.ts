@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantComponent, VantOpenTypeProps, WechatOpenType } from '../base';
+import { VantBaseExternalClassName, VantComponent, VantEventHandler, VantOpenTypeProps, WechatOpenType } from '../base';
 
 export interface VantGoodsActionButtonProps extends Omit<VantOpenTypeProps, 'business-id'> {
     /**
@@ -73,7 +73,7 @@ export interface VantGoodsActionButtonEvents {
     /**
      * 按钮点击事件回调
      */
-    'bind:click': WechatMiniprogram.EventCallback;
+    'bind:click': VantEventHandler;
 }
 
 export type VantGoodsActionButtonExternalClassName = VantBaseExternalClassName;
