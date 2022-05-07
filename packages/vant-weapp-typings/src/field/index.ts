@@ -297,6 +297,27 @@ export interface VantFieldInputEvent extends WechatMiniprogram.BaseEvent {
     detail: string;
 }
 
+export interface VantFieldFocusEventDetail {
+    value: string;
+    height: number;
+}
+
+export interface VantFieldBlurEventDetail {
+    value: string;
+    cursor: number;
+}
+
+export interface VantFieldLineChangeEventDetail {
+    height: number;
+    heightRpx: number;
+    lineCount: number;
+}
+
+export interface VantFieldKeyboardHeightChangeEventDetail {
+    height: number;
+    duration: number;
+}
+
 export interface VantFieldEvents {
     /**
      * 输入内容时触发
@@ -321,12 +342,12 @@ export interface VantFieldEvents {
     /**
      * 输入框聚焦时触发
      */
-    'bind:focus'?: (event: WechatMiniprogram.CustomEvent<{ value: string; height: number }>) => void;
+    'bind:focus'?: VantEventHandler<VantFieldFocusEventDetail>;
 
     /**
      * 输入框失焦时触发1
      */
-    'bind:blur'?: (event: WechatMiniprogram.CustomEvent<{ value: string; cursor: number }>) => void;
+    'bind:blur'?: VantEventHandler<VantFieldBlurEventDetail>;
 
     /**
      * 点击清空控件时触发
@@ -336,19 +357,17 @@ export interface VantFieldEvents {
     /**
      * 点击输入区域时触发
      */
-    'bind:click-input'?: (event: WechatMiniprogram.CustomEvent<{ x: number; y: number }>) => void;
+    'bind:click-input'?: VantEventHandler<TouchPositionDetail>;
 
     /**
      * 输入框行数变化时调用，只对 `textarea` 有效
      */
-    'bind:linechange'?: (
-        event: WechatMiniprogram.CustomEvent<{ height: number; heightRpx: number; lineCount: number }>
-    ) => void;
+    'bind:linechange'?: VantEventHandler<VantFieldLineChangeEventDetail>;
 
     /**
      * 键盘高度发生变化的时候触发此事件
      */
-    'bind:keyboardheightchange'?: (event: WechatMiniprogram.CustomEvent<{ height: number; duration: number }>) => void;
+    'bind:keyboardheightchange'?: VantEventHandler<VantFieldKeyboardHeightChangeEventDetail>;
 }
 
 export interface VantFieldExternalClassName {
