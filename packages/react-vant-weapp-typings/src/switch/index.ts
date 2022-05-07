@@ -1,8 +1,14 @@
-import { VantSwitch, VantSwitchEvents, VantSwitchExternalClassName, VantSwitchProps } from 'vant-weapp-typings';
+import {
+    VantSwitch,
+    VantSwitchEvents,
+    VantSwitchExternalClassName,
+    VantSwitchProps,
+    VantSwitchChangeEvent,
+} from 'vant-weapp-typings';
 
 type Switch = React.ComponentType<VantSwitch>;
 
-export { VantSwitch, VantSwitchEvents, VantSwitchExternalClassName, VantSwitchProps };
+export { VantSwitch, VantSwitchEvents, VantSwitchExternalClassName, VantSwitchProps, VantSwitchChangeEvent };
 
 declare const Switch: Switch;
 

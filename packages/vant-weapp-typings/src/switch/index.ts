@@ -62,11 +62,15 @@ export interface VantSwitchProps {
     'inactive-value'?: any;
 }
 
+export interface VantSwitchChangeEvent extends WechatMiniprogram.BaseEvent {
+    detail: boolean;
+}
+
 export interface VantSwitchEvents {
     /**
      * 开关状态切换回调
      */
-    'bind:change'?: WechatMiniprogram.EventCallback;
+    'bind:change'?: (event: VantSwitchChangeEvent) => void;
 }
 
 export interface VantSwitchExternalClassName extends VantBaseExternalClassName {
