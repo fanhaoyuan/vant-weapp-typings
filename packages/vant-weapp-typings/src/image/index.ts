@@ -1,4 +1,10 @@
-import { VantBaseExternalClassName, VantBaseLoadingExternalClassName, VantComponent } from '../base';
+import {
+    TouchPositionDetail,
+    VantBaseExternalClassName,
+    VantBaseLoadingExternalClassName,
+    VantComponent,
+    VantEventHandler,
+} from '../base';
 
 export interface VantImageProps {
     /**
@@ -98,7 +104,7 @@ export interface VantImageEvents {
     /**
      * 点击图片时触发
      */
-    'bind:click'?: (event: WechatMiniprogram.CustomEvent<{ x: number; y: number }>) => void;
+    'bind:click'?: VantEventHandler<TouchPositionDetail>;
 
     /**
      * 图片加载完毕时触发

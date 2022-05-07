@@ -1,4 +1,4 @@
-import { VantComponent } from '../base';
+import { VantComponent, VantEventHandler } from '../base';
 
 export interface VantTreeSelectItem {
     /**
@@ -96,12 +96,12 @@ export interface VantTreeSelectEvents {
     /**
      * 左侧导航点击时，触发的事件
      */
-    'bind:click-nav'?: (event: WechatMiniprogram.CustomEvent<VantTreeSelectClickNavDetail>) => void;
+    'bind:click-nav'?: VantEventHandler<VantTreeSelectClickNavDetail>;
 
     /**
      * 右侧选择项被点击时，会触发的事件
      */
-    'bind:click-item'?: (event: WechatMiniprogram.CustomEvent<VantTreeSelectItem>) => void;
+    'bind:click-item'?: VantEventHandler<VantTreeSelectItem>;
 }
 
 export interface VantTreeSelectExternalClassName {

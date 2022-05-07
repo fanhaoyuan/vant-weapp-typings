@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantComponent } from '../base';
+import { VantBaseExternalClassName, VantComponent, VantEventHandler } from '../base';
 
 export interface VantStepperProps {
     /**
@@ -125,10 +125,16 @@ export interface VantStepperProps {
     'always-embed'?: boolean;
 }
 
+/**
+ * @deprecated
+ */
 export interface VantStepperChangeEvent extends WechatMiniprogram.BaseEvent {
     detail: number;
 }
 
+/**
+ * @deprecated
+ */
 export interface VantStepperOverLimitEvent extends WechatMiniprogram.BaseEvent {
     detail: 'plus' | 'minus';
 }
@@ -137,22 +143,22 @@ export interface VantStepperEvents {
     /**
      * 当绑定值变化时触发的事件
      */
-    'bind:change'?: (event: VantStepperChangeEvent) => void;
+    'bind:change'?: VantEventHandler<number>;
 
     /**
      * 点击不可用的按钮时触发
      */
-    'bind:overlimit'?: (event: VantStepperOverLimitEvent) => void;
+    'bind:overlimit'?: VantEventHandler<'plus' | 'minus'>;
 
     /**
      * 点击增加按钮时触发
      */
-    'bind:plus'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:plus'?: VantEventHandler;
 
     /**
      * 点击减少按钮时触发
      */
-    'bind:minus'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:minus'?: VantEventHandler;
     /**
      * 输入框聚焦时触发
      */

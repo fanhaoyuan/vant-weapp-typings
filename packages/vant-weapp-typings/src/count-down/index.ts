@@ -1,4 +1,4 @@
-import { VantComponent } from '../base';
+import { VantComponent, VantEventHandler } from '../base';
 
 export interface VantCountDownProps {
     /**
@@ -76,12 +76,12 @@ export interface VantCountDownEvents {
     /**
      * 倒计时结束时触发
      */
-    'bind:finish'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:finish'?: VantEventHandler;
 
     /**
      * 时间变化时触发，仅在开启`use-slot`后才会触发
      */
-    'bind:change'?: (e: WechatMiniprogram.CustomEvent<VantCountDownTimeData>) => void;
+    'bind:change'?: VantEventHandler<VantCountDownTimeData>;
 }
 
 export type VantCountDown = VantComponent<VantCountDownProps, VantCountDownEvents>;

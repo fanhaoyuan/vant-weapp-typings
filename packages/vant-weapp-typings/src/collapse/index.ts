@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantComponent } from '../base';
+import { VantBaseExternalClassName, VantComponent, VantEventHandler } from '../base';
 
 export interface VantCollapseProps {
     /**
@@ -25,6 +25,9 @@ export interface VantCollapseProps {
     border?: boolean;
 }
 
+/**
+ * @deprecated
+ */
 export interface VantCollapseBaseEvent extends WechatMiniprogram.BaseEvent {
     /**
      * 当前打开的面板 name
@@ -32,6 +35,9 @@ export interface VantCollapseBaseEvent extends WechatMiniprogram.BaseEvent {
     detail: string;
 }
 
+/**
+ * @deprecated
+ */
 export interface VantCollapseChangeEvent extends WechatMiniprogram.BaseEvent {
     /**
      * 手风琴模式时，为 name
@@ -45,17 +51,17 @@ export interface VantCollapseEvents {
     /**
      * 切换面板时触发
      */
-    'bind:change'?: (event: VantCollapseChangeEvent) => void;
+    'bind:change'?: VantEventHandler<string | string[]>;
 
     /**
      * 展开面板时触发
      */
-    'bind:open'?: (event: VantCollapseBaseEvent) => void;
+    'bind:open'?: VantEventHandler<string>;
 
     /**
      * 关闭面板时触发
      */
-    'bind:close'?: (event: VantCollapseBaseEvent) => void;
+    'bind:close'?: VantEventHandler<string>;
 }
 
 export type VantCollapseExternalClassName = VantBaseExternalClassName;

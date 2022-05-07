@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantComponent } from '../base';
+import { VantBaseExternalClassName, VantComponent, VantEventHandler } from '../base';
 
 export interface VantSidebarItemProps {
     /**
@@ -41,6 +41,9 @@ export interface VantSidebarItemProps {
     disabled?: boolean;
 }
 
+/**
+ * @deprecated
+ */
 export interface VantSidebarItemClickEvent extends WechatMiniprogram.BaseEvent {
     /**
      * 当前徽章的索引
@@ -52,7 +55,7 @@ export interface VantSidebarItemEvents {
     /**
      * 点击徽章时触发
      */
-    'bind:click'?: (event: VantSidebarItemClickEvent) => void;
+    'bind:click'?: VantEventHandler<number>;
 }
 
 export type VantSidebarItemExternalClassName = VantBaseExternalClassName;

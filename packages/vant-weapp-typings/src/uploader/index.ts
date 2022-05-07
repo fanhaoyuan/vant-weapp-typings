@@ -1,4 +1,4 @@
-import { VantComponent } from '../base';
+import { VantComponent, VantEventHandler } from '../base';
 
 type VantUploaderPreviewSize = string | number;
 
@@ -161,27 +161,27 @@ export interface VantUploaderEvents {
     /**
      * 文件读取前，在回调函数中返回 `false` 可终止文件读取，绑定事件的同时需要将`use-before-read`属性设置为`true`
      */
-    'bind:before-read'?: (event: WechatMiniprogram.CustomEvent<VantUploaderBeforeReadEventDetail>) => void;
+    'bind:before-read'?: VantEventHandler<VantUploaderBeforeReadEventDetail>;
 
     /**
      * 文件读取完成后触发
      */
-    'bind:after-read'?: (event: WechatMiniprogram.CustomEvent<VantUploaderBaseReadEventDetail>) => void;
+    'bind:after-read'?: VantEventHandler<VantUploaderBaseReadEventDetail>;
 
     /**
      * 文件超出大小限制
      */
-    'bind:oversize'?: (event: WechatMiniprogram.CustomEvent<VantUploaderBaseReadEventDetail>) => void;
+    'bind:oversize'?: VantEventHandler<VantUploaderBaseReadEventDetail>;
 
     /**
      * 点击预览图片
      */
-    'bind:click-preview'?: (event: WechatMiniprogram.CustomEvent<VantUploaderIndexDetail>) => void;
+    'bind:click-preview'?: VantEventHandler<VantUploaderIndexDetail>;
 
     /**
      * 删除图片
      */
-    'bind:delete'?: (event: WechatMiniprogram.CustomEvent<VantUploaderIndexDetail>) => void;
+    'bind:delete'?: VantEventHandler<VantUploaderIndexDetail>;
 }
 
 export type VantUploader = VantComponent<VantUploaderProps, VantUploaderEvents>;

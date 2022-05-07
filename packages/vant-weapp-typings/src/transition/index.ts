@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantComponent } from '../base';
+import { VantBaseExternalClassName, VantComponent, VantEventHandler } from '../base';
 
 export interface VantTransitionProps {
     /**
@@ -59,32 +59,32 @@ export interface VantTransitionEvents {
     /**
      * 进入前触发
      */
-    'bind:before-enter'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:before-enter'?: VantEventHandler;
 
     /**
      * 进入中触发
      */
-    'bind:enter'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:enter'?: VantEventHandler;
 
     /**
      * 进入后触发
      */
-    'bind:after-enter'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:after-enter'?: VantEventHandler;
 
     /**
      * 离开前触发
      */
-    'bind:before-leave'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:before-leave'?: VantEventHandler;
 
     /**
      * 离开中触发
      */
-    'bind:leave'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:leave'?: VantEventHandler;
 
     /**
      * 离开后触发
      */
-    'bind:after-leave'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:after-leave'?: VantEventHandler;
 }
 
 export interface VantTransitionExternalClassName extends VantBaseExternalClassName {

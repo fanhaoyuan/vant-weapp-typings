@@ -1,4 +1,4 @@
-import { VantComponent } from '../base';
+import { VantComponent, VantEventHandler } from '../base';
 
 export interface VantTabbarProps {
     /**
@@ -58,6 +58,8 @@ export interface VantTabbarProps {
 
 /**
  * 切换标签时触发事件
+ *
+ * @deprecated
  */
 export interface VantTabbarChangeEvent extends WechatMiniprogram.BaseEvent {
     /**
@@ -70,7 +72,7 @@ export interface VantTabbarEvents {
     /**
      * 切换标签时触发
      */
-    'bind:change'?: (event: VantTabbarChangeEvent) => void;
+    'bind:change'?: VantEventHandler<number | string>;
 }
 
 export type VantTabbar = VantComponent<VantTabbarProps, VantTabbarEvents>;

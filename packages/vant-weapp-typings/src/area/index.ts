@@ -1,4 +1,4 @@
-import { VantComponent } from '../base';
+import { VantComponent, VantEventHandler } from '../base';
 
 /* eslint-disable camelcase */
 export interface VantAreaList {
@@ -125,17 +125,17 @@ export interface VantAreaEvents {
     /**
      * 点击右上方完成按钮
      */
-    'bind:confirm'?: (event: WechatMiniprogram.CustomEvent<VantAreaBaseEventDetail>) => void;
+    'bind:confirm'?: VantEventHandler<VantAreaBaseEventDetail>;
 
     /**
      * 点击取消按钮时
      */
-    'bind:cancel'?: (event: WechatMiniprogram.CustomEvent<VantAreaBaseEventDetail>) => void;
+    'bind:cancel'?: VantEventHandler<VantAreaBaseEventDetail>;
 
     /**
      * 选项改变时触发
      */
-    'bind:change'?: (event: WechatMiniprogram.CustomEvent<VantAreaChangeEventDetail>) => void;
+    'bind:change'?: VantEventHandler<VantAreaChangeEventDetail>;
 }
 
 export type VantArea = VantComponent<VantAreaProps, VantAreaEvents>;

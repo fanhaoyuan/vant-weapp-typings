@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantComponent } from '../base';
+import { VantBaseExternalClassName, VantComponent, VantEventHandler } from '../base';
 
 export interface VantRadioProps {
     /**
@@ -52,6 +52,9 @@ export interface VantRadioProps {
     'use-icon-slot'?: boolean;
 }
 
+/**
+ * @deprecated
+ */
 export interface VantRadioChangeEvent extends WechatMiniprogram.BaseEvent {
     detail: string;
 }
@@ -60,7 +63,7 @@ export interface VantRadioEvents {
     /**
      * 当绑定值变化时触发的事件
      */
-    'bind:change'?: (event: VantRadioChangeEvent) => void;
+    'bind:change'?: VantEventHandler<string>;
 }
 
 export interface VantRadioExternalClassName extends VantBaseExternalClassName {

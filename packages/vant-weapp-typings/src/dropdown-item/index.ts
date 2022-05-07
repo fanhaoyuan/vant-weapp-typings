@@ -1,4 +1,4 @@
-import { VantComponent } from '../base';
+import { VantComponent, VantEventHandler } from '../base';
 
 export interface VantDropdownItemOption {
     /**
@@ -55,6 +55,9 @@ export interface VantDropdownItemProps {
     'popup-style'?: string;
 }
 
+/**
+ * @deprecated
+ */
 export interface VantDropdownItemChangeEvent extends WechatMiniprogram.BaseEvent {
     /**
      * 当前选中的 value
@@ -66,27 +69,27 @@ export interface VantDropdownItemEvents {
     /**
      * 点击选项导致 `value` 变化时触发
      */
-    'bind:change'?: (event: VantDropdownItemChangeEvent) => void;
+    'bind:change'?: VantEventHandler<number | string>;
 
     /**
      * 打开菜单栏时触发
      */
-    'bind:open'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:open'?: VantEventHandler;
 
     /**
      * 关闭菜单栏时触发
      */
-    'bind:close'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:close'?: VantEventHandler;
 
     /**
      * 打开菜单栏且动画结束后触发
      */
-    'bind:opened'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:opened'?: VantEventHandler;
 
     /**
      * 关闭菜单栏且动画结束后触发
      */
-    'bind:closed'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:closed'?: VantEventHandler;
 }
 
 export type VantDropdownItem = VantComponent<VantDropdownItemProps, VantDropdownItemEvents>;

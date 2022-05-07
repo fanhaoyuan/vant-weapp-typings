@@ -1,4 +1,4 @@
-import { VantComponent } from '../base';
+import { VantComponent, VantEventHandler } from '../base';
 
 export interface VantOverlayProps {
     /**
@@ -46,7 +46,7 @@ export interface VantOverlayEvents {
     /**
      * 点击时触发
      */
-    'bind:click'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:click'?: VantEventHandler;
 }
 
 export type VantOverlay = VantComponent<VantOverlayProps, VantOverlayEvents>;

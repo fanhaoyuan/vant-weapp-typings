@@ -1,4 +1,4 @@
-import { VantComponent, VantOpenTypeEvents, VantOpenTypeProps, WechatOpenType } from '../base';
+import { VantComponent, VantEventHandler, VantOpenTypeEvents, VantOpenTypeProps, WechatOpenType } from '../base';
 
 export interface VantDialogProps extends VantOpenTypeProps {
     /**
@@ -166,17 +166,17 @@ export interface VantDialogEvents extends Omit<VantOpenTypeEvents, 'bind:launcha
     /**
      * 弹窗关闭时触发
      */
-    'bind:close'?: WechatMiniprogram.EventCallback;
+    'bind:close'?: VantEventHandler;
 
     /**
      * 点击确认按钮时触发
      */
-    'bind:confirm'?: WechatMiniprogram.EventCallback;
+    'bind:confirm'?: VantEventHandler;
 
     /**
      * 点击取消按钮时触发
      */
-    'bind:cancel'?: WechatMiniprogram.EventCallback;
+    'bind:cancel'?: VantEventHandler;
 }
 
 export type VantDialog = VantComponent<VantDialogProps, VantDialogEvents>;

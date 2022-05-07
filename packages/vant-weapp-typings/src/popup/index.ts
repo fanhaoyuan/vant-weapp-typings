@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantComponent } from '../base';
+import { VantBaseExternalClassName, VantComponent, VantEventHandler } from '../base';
 import { VantTransitionEvents } from '../transition';
 
 export interface VantPopupProps {
@@ -106,12 +106,12 @@ export interface VantPopupEvents extends VantTransitionEvents {
     /**
      * 关闭弹出层时触发
      */
-    'bind:close'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:close'?: VantEventHandler;
 
     /**
      * 点击遮罩层时触发
      */
-    'bind:click-overlay'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:click-overlay'?: VantEventHandler;
 }
 
 export type VantPopupExternalClassName = VantBaseExternalClassName;

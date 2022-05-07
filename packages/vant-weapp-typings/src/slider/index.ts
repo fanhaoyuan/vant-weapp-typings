@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantComponent } from '../base';
+import { VantBaseExternalClassName, VantComponent, VantEventHandler } from '../base';
 
 export interface VantSliderProps {
     /**
@@ -83,6 +83,9 @@ export interface VantSliderProps {
     vertical?: boolean;
 }
 
+/**
+ * @deprecated
+ */
 export interface VantSliderChangeEvent extends WechatMiniprogram.BaseEvent {
     detail: number;
 }
@@ -96,17 +99,17 @@ export interface VantSliderEvents {
     /**
      * 进度值改变后触发
      */
-    'bind:change'?: (event: VantSliderChangeEvent) => void;
+    'bind:change'?: VantEventHandler<number>;
 
     /**
      * 开始拖动时触发
      */
-    'bind:drag-start'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:drag-start'?: VantEventHandler;
 
     /**
      * 结束拖动时触发
      */
-    'bind:drag-end'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:drag-end'?: VantEventHandler;
 }
 
 export type VantSliderExternalClassName = VantBaseExternalClassName;

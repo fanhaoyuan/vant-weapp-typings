@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantComponent } from '../base';
+import { VantBaseExternalClassName, VantComponent, VantEventHandler } from '../base';
 
 export interface VantTabsProps {
     /**
@@ -113,6 +113,9 @@ export interface VantTabsProps {
     'z-index'?: number;
 }
 
+/**
+ * @deprecated
+ */
 export interface VantTabsEventDetail {
     /**
      * 标签标识符
@@ -127,6 +130,8 @@ export interface VantTabsEventDetail {
      */
     index: number;
 }
+
+export type VantTabsBaseEventDetail = VantTabsEventDetail;
 
 export interface VantTabsScrollEventDetail {
     /**
@@ -143,17 +148,17 @@ export interface VantTabsEvents {
     /**
      * 点击标签时触发
      */
-    'bind:click'?: (event: WechatMiniprogram.CustomEvent<VantTabsEventDetail>) => void;
+    'bind:click'?: VantEventHandler<VantTabsBaseEventDetail>;
 
     /**
      * 当前激活的标签改变时触发
      */
-    'bind:change'?: (event: WechatMiniprogram.CustomEvent<VantTabsEventDetail>) => void;
+    'bind:change'?: VantEventHandler<VantTabsBaseEventDetail>;
 
     /**
      * 点击被禁用的标签时触发
      */
-    'bind:disabled'?: (event: WechatMiniprogram.CustomEvent<VantTabsEventDetail>) => void;
+    'bind:disabled'?: VantEventHandler<VantTabsBaseEventDetail>;
 
     /**
      * 滚动时触发

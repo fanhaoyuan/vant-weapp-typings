@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantComponent } from '../base';
+import { VantBaseExternalClassName, VantComponent, VantEventHandler } from '../base';
 import { VantFieldEvents } from '../field';
 
 export interface VantSearchProps {
@@ -156,6 +156,9 @@ export interface VantSearchProps {
     'right-icon'?: string;
 }
 
+/**
+ * @deprecated
+ */
 export interface VantSearchBaseEvent extends WechatMiniprogram.BaseEvent {
     detail: string;
 }
@@ -165,12 +168,12 @@ export interface VantSearchEvents
     /**
      * 确定搜索时触发
      */
-    'bind:search'?: (event: VantSearchBaseEvent) => void;
+    'bind:search'?: VantEventHandler<string>;
 
     /**
      * 取消搜索搜索时触发
      */
-    'bind:cancel'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:cancel'?: VantEventHandler;
 }
 
 export interface VantSearchExternalClassName extends VantBaseExternalClassName {

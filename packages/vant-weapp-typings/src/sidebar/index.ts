@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantComponent } from '../base';
+import { VantBaseExternalClassName, VantComponent, VantEventHandler } from '../base';
 
 export interface VantSidebarProps {
     /**
@@ -9,6 +9,9 @@ export interface VantSidebarProps {
     activeKey?: string | number;
 }
 
+/**
+ * @deprecated
+ */
 export interface VantSidebarChangeEvent extends WechatMiniprogram.BaseEvent {
     /**
      * 当前选中徽章的索引
@@ -20,7 +23,7 @@ export interface VantSidebarEvents {
     /**
      * 切换徽章时触发
      */
-    'bind:change'?: (event: VantSidebarChangeEvent) => void;
+    'bind:change'?: VantEventHandler<number>;
 }
 
 export type VantSidebarExternalClassName = VantBaseExternalClassName;

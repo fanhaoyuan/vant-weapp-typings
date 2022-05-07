@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantComponent } from '../base';
+import { VantBaseExternalClassName, VantComponent, VantEventHandler } from '../base';
 
 export interface VantTagProps {
     /**
@@ -53,7 +53,7 @@ export interface VantTagProps {
 }
 
 export interface VantTagEvents {
-    'bind:close'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:close'?: VantEventHandler;
 }
 
 export type VantTagExternalClassName = VantBaseExternalClassName;

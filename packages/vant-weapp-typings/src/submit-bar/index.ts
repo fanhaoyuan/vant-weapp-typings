@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantComponent } from '../base';
+import { VantBaseExternalClassName, VantComponent, VantTouchEventHandler } from '../base';
 
 export interface VantSubmitBarProps {
     /**
@@ -80,7 +80,7 @@ export interface VantSubmitBarEvents {
     /**
      * 按钮点击事件回调
      */
-    'bind:submit'?: (event: WechatMiniprogram.TouchEvent) => void;
+    'bind:submit'?: VantTouchEventHandler;
 }
 
 export interface VantSubmitBarExternalClassName extends VantBaseExternalClassName {

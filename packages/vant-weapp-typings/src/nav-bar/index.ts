@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantComponent } from '../base';
+import { VantBaseExternalClassName, VantComponent, VantEventHandler } from '../base';
 
 export interface VantNavBarProps {
     /**
@@ -74,12 +74,12 @@ export interface VantNavBarEvents {
     /**
      * 点击左侧按钮时触发
      */
-    'bind:click-left'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:click-left'?: VantEventHandler;
 
     /**
      * 点击右侧按钮时触发
      */
-    'bind:click-right'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:click-right'?: VantEventHandler;
 }
 
 export interface VantNavBarExternalClassName extends VantBaseExternalClassName {

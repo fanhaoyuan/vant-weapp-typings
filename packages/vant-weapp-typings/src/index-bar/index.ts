@@ -1,4 +1,4 @@
-import { VantComponent } from '../base';
+import { VantComponent, VantEventHandler } from '../base';
 
 export interface VantIndexBarProps {
     /**
@@ -37,6 +37,9 @@ export interface VantIndexBarProps {
     'highlight-color'?: string;
 }
 
+/**
+ * @deprecated
+ */
 export interface VantIndexBarSelectEvent extends WechatMiniprogram.BaseEvent {
     /**
      * 索引字符
@@ -48,7 +51,7 @@ export interface VantIndexBarEvents {
     /**
      * 选中字符时触发
      */
-    'bind:select'?: (event: VantIndexBarSelectEvent) => void;
+    'bind:select'?: VantEventHandler<string | number>;
 }
 
 export type VantIndexBar = VantComponent<VantIndexBarProps, VantIndexBarEvents>;

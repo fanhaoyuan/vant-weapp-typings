@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantComponent } from '../base';
+import { VantBaseExternalClassName, VantComponent, VantEventHandler } from '../base';
 
 export interface VantRateProps {
     /**
@@ -96,6 +96,9 @@ export interface VantRateProps {
     touchable?: boolean;
 }
 
+/**
+ * @deprecated
+ */
 export interface VantRateChangeEvent extends WechatMiniprogram.BaseEvent {
     detail: number;
 }
@@ -104,7 +107,7 @@ export interface VantRateEvents {
     /**
      * 当前分值变化时触发的事件
      */
-    'bind:change'?: (event: VantRateChangeEvent) => void;
+    'bind:change'?: VantEventHandler<number>;
 }
 
 export interface VantRateExternalClassName extends VantBaseExternalClassName {

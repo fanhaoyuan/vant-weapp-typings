@@ -1,4 +1,4 @@
-import { VantComponent } from '../base';
+import { VantComponent, VantEventHandler } from '../base';
 
 export interface VantCheckboxGroupProps {
     /**
@@ -39,7 +39,7 @@ export interface VantCheckboxGroupEvents {
     /**
      * 当绑定值变化时触发的事件
      */
-    'bind:change'?: (event: WechatMiniprogram.CustomEvent<string[]>) => void;
+    'bind:change'?: VantEventHandler<string[]>;
 }
 
 export type VantCheckboxGroup = VantComponent<VantCheckboxGroupProps, VantCheckboxGroupEvents>;

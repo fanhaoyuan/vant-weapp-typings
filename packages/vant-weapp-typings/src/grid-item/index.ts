@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantComponent } from '../base';
+import { VantBaseExternalClassName, VantComponent, VantEventHandler } from '../base';
 
 export interface VantGridItemProps {
     /**
@@ -54,7 +54,7 @@ export interface VantGridItemEvents {
     /**
      * 点击格子时触发
      */
-    'bind:click'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:click'?: VantEventHandler;
 }
 
 export interface VantGridItemExternalClassName extends VantBaseExternalClassName {

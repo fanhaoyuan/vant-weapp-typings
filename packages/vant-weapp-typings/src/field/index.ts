@@ -1,4 +1,4 @@
-import { VantComponent } from '../base';
+import { TouchPositionDetail, VantComponent, VantEventHandler } from '../base';
 
 export interface VantFieldProps {
     /**
@@ -290,6 +290,9 @@ export interface VantFieldProps {
     'always-embed'?: boolean;
 }
 
+/**
+ * @deprecated
+ */
 export interface VantFieldInputEvent extends WechatMiniprogram.BaseEvent {
     detail: string;
 }
@@ -298,22 +301,22 @@ export interface VantFieldEvents {
     /**
      * 输入内容时触发
      */
-    'bind:input'?: (event: VantFieldInputEvent) => void;
+    'bind:input'?: VantEventHandler<string>;
 
     /**
      * 输入内容时触发
      */
-    'bind:change'?: (event: VantFieldInputEvent) => void;
+    'bind:change'?: VantEventHandler<string>;
 
     /**
      * 点击完成按钮时触发
      */
-    'bind:confirm'?: (event: VantFieldInputEvent) => void;
+    'bind:confirm'?: VantEventHandler<string>;
 
     /**
      * 点击尾部图标时触发
      */
-    'bind:click-icon'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:click-icon'?: VantEventHandler;
 
     /**
      * 输入框聚焦时触发
@@ -328,7 +331,7 @@ export interface VantFieldEvents {
     /**
      * 点击清空控件时触发
      */
-    'bind:clear'?: (event: WechatMiniprogram.BaseEvent) => void;
+    'bind:clear'?: VantEventHandler;
 
     /**
      * 点击输入区域时触发

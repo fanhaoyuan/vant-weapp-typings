@@ -1,4 +1,4 @@
-import { VantBaseExternalClassName, VantComponent } from '../base';
+import { VantBaseExternalClassName, VantComponent, VantEventHandler } from '../base';
 
 export interface VantSwitchProps {
     /**
@@ -62,6 +62,9 @@ export interface VantSwitchProps {
     'inactive-value'?: any;
 }
 
+/**
+ * @deprecated
+ */
 export interface VantSwitchChangeEvent extends WechatMiniprogram.BaseEvent {
     detail: boolean;
 }
@@ -70,7 +73,7 @@ export interface VantSwitchEvents {
     /**
      * 开关状态切换回调
      */
-    'bind:change'?: (event: VantSwitchChangeEvent) => void;
+    'bind:change'?: VantEventHandler<boolean>;
 }
 
 export interface VantSwitchExternalClassName extends VantBaseExternalClassName {
