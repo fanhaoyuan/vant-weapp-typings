@@ -26,11 +26,15 @@ export interface VantRadioGroupProps {
     direction?: 'horizontal' | 'vertical';
 }
 
+export interface VantRadioGroupChangeEvent extends WechatMiniprogram.BaseEvent {
+    detail: string;
+}
+
 export interface VantRadioGroupEvents {
     /**
      * 当绑定值变化时触发的事件
      */
-    'bind:change'?: (name?: string) => void;
+    'bind:change'?: (event: VantRadioGroupChangeEvent) => void;
 }
 
 export type VantRadioGroup = VantComponent<VantRadioGroupProps, VantRadioGroupEvents>;
