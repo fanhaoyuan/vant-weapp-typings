@@ -163,7 +163,7 @@ export interface VantTabsEvents {
     /**
      * 滚动时触发
      */
-    'bind:scroll'?: (event: WechatMiniprogram.CustomEvent<VantTabsScrollEventDetail>) => void;
+    'bind:scroll'?: VantEventHandler<VantTabsScrollEventDetail>;
 }
 
 export interface VantTabsExternalClassName extends VantBaseExternalClassName {
