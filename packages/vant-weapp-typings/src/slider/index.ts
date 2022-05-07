@@ -83,26 +83,30 @@ export interface VantSliderProps {
     vertical?: boolean;
 }
 
+export interface VantSliderChangeEvent extends WechatMiniprogram.BaseEvent {
+    detail: number;
+}
+
 export interface VantSliderEvents {
     /**
      * 拖动进度条时触发
      */
-    'bind:drag'?: WechatMiniprogram.EventCallback;
+    'bind:drag'?: (event: WechatMiniprogram.CustomEvent<{ value: number }>) => void;
 
     /**
      * 进度值改变后触发
      */
-    'bind:change'?: WechatMiniprogram.EventCallback;
+    'bind:change'?: (event: VantSliderChangeEvent) => void;
 
     /**
      * 开始拖动时触发
      */
-    'bind:drag-start'?: WechatMiniprogram.EventCallback;
+    'bind:drag-start'?: (event: WechatMiniprogram.BaseEvent) => void;
 
     /**
      * 结束拖动时触发
      */
-    'bind:drag-end'?: WechatMiniprogram.EventCallback;
+    'bind:drag-end'?: (event: WechatMiniprogram.BaseEvent) => void;
 }
 
 export type VantSliderExternalClassName = VantBaseExternalClassName;
