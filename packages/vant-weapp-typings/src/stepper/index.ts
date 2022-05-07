@@ -125,35 +125,43 @@ export interface VantStepperProps {
     'always-embed'?: boolean;
 }
 
+export interface VantStepperChangeEvent extends WechatMiniprogram.BaseEvent {
+    detail: number;
+}
+
+export interface VantStepperOverLimitEvent extends WechatMiniprogram.BaseEvent {
+    detail: 'plus' | 'minus';
+}
+
 export interface VantStepperEvents {
     /**
      * 当绑定值变化时触发的事件
      */
-    'bind:change'?: WechatMiniprogram.EventCallback;
+    'bind:change'?: (event: VantStepperChangeEvent) => void;
 
     /**
      * 点击不可用的按钮时触发
      */
-    'bind:overlimit'?: WechatMiniprogram.EventCallback;
+    'bind:overlimit'?: (event: VantStepperOverLimitEvent) => void;
 
     /**
      * 点击增加按钮时触发
      */
-    'bind:plus'?: WechatMiniprogram.EventCallback;
+    'bind:plus'?: (event: WechatMiniprogram.BaseEvent) => void;
 
     /**
      * 点击减少按钮时触发
      */
-    'bind:minus'?: WechatMiniprogram.EventCallback;
+    'bind:minus'?: (event: WechatMiniprogram.BaseEvent) => void;
     /**
      * 输入框聚焦时触发
      */
-    'bind:focus'?: WechatMiniprogram.EventCallback;
+    'bind:focus'?: (event: WechatMiniprogram.CustomEvent<{ value: string; height: number }>) => void;
 
     /**
      * 输入框失焦时触发
      */
-    'bind:blur'?: WechatMiniprogram.EventCallback;
+    'bind:blur'?: (event: WechatMiniprogram.CustomEvent<{ value: number; cursor: number }>) => void;
 }
 
 export interface VantStepperExternalClassName extends VantBaseExternalClassName {
