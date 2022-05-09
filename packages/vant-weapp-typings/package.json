@@ -6,7 +6,8 @@
     "author": "Fansy <418536538@qq.com>",
     "scripts": {
         "build": "rimraf dist && tsc -p tsconfig.json",
-        "release": "pnpm build && pnpm publish --no-git-check"
+        "release": "pnpm build && pnpm publish --no-git-check",
+        "theme-vars": "ts-node scripts/generate-theme-vars.ts && prettier -w src/config-provider/theme-vars.ts"
     },
     "keywords": [
         "@vant/weapp",
@@ -23,5 +24,11 @@
     "dependencies": {
         "@types/wechat-miniprogram": "^3.4.0"
     },
-    "version": "1.28.0"
+    "version": "1.28.0",
+    "devDependencies": {
+        "@types/postcss-less": "^4.0.2",
+        "postcss": "^8.4.13",
+        "postcss-less": "^6.0.0",
+        "prettier": "^2.6.2"
+    }
 }

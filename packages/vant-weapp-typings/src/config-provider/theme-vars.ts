@@ -1,7 +1,4 @@
-/**
- * 调色板
- */
-type ColorVars =
+type ColorPaletteThemeVars =
     | 'black'
     | 'white'
     | 'gray1'
@@ -19,15 +16,9 @@ type ColorVars =
     | 'orangeLight'
     | 'green';
 
-/**
- * 渐变色
- */
-type GradientColorVars = 'gradientRed' | 'gradientOrange';
+type GradientColorsThemeVars = 'gradientRed' | 'gradientOrange';
 
-/**
- * 组件颜色
- */
-type ComponentColorVars =
+type ComponentColorsThemeVars =
     | 'textColor'
     | 'activeColor'
     | 'activeOpacity'
@@ -36,15 +27,9 @@ type ComponentColorVars =
     | 'backgroundColorLight'
     | 'textLinkColor';
 
-/**
- * 内边距
- */
-type PaddingVars = 'paddingBase' | 'paddingXs' | 'paddingSm' | 'paddingMd' | 'paddingLg' | 'paddingXl';
+type PaddingThemeVars = 'paddingBase' | 'paddingXs' | 'paddingSm' | 'paddingMd' | 'paddingLg' | 'paddingXl';
 
-/**
- * 字体
- */
-type FontVars =
+type FontThemeVars =
     | 'fontSizeXs'
     | 'fontSizeSm'
     | 'fontSizeMd'
@@ -57,15 +42,9 @@ type FontVars =
     | 'baseFontFamily'
     | 'priceIntegerFontFamily';
 
-/**
- * 动画
- */
-type AnimationVars = 'animationDurationBase' | 'animationDurationFast';
+type AnimationThemeVars = 'animationDurationBase' | 'animationDurationFast';
 
-/**
- * 边框
- */
-type BorderVars =
+type BorderThemeVars =
     | 'borderColor'
     | 'borderWidthBase'
     | 'borderRadiusSm'
@@ -73,10 +52,7 @@ type BorderVars =
     | 'borderRadiusLg'
     | 'borderRadiusMax';
 
-/**
- * 动作面板
- */
-type ActionSheetVars =
+type ActionSheetThemeVars =
     | 'actionSheetMaxHeight'
     | 'actionSheetHeaderHeight'
     | 'actionSheetHeaderFontSize'
@@ -86,6 +62,7 @@ type ActionSheetVars =
     | 'actionSheetItemBackground'
     | 'actionSheetItemFontSize'
     | 'actionSheetItemLineHeight'
+    | 'actionSheetItemTextColor'
     | 'actionSheetItemDisabledTextColor'
     | 'actionSheetSubnameColor'
     | 'actionSheetSubnameFontSize'
@@ -97,10 +74,7 @@ type ActionSheetVars =
     | 'actionSheetCancelPaddingTop'
     | 'actionSheetCancelPaddingColor';
 
-/**
- * 按钮
- */
-type ButtonVars =
+type ButtonThemeVars =
     | 'buttonMiniHeight'
     | 'buttonMiniMinWidth'
     | 'buttonMiniFontSize'
@@ -133,10 +107,7 @@ type ButtonVars =
     | 'buttonPlainBackgroundColor'
     | 'buttonDisabledOpacity';
 
-/**
- * 日历
- */
-type CalendarVars =
+type CalendarThemeVars =
     | 'calendarHeight'
     | 'calendarBackgroundColor'
     | 'calendarPopupHeight'
@@ -165,10 +136,7 @@ type CalendarVars =
     | 'calendarConfirmButtonMargin'
     | 'calendarConfirmButtonLineHeight';
 
-/**
- * 卡片
- */
-type CardVars =
+type CardThemeVars =
     | 'cardPadding'
     | 'cardFontSize'
     | 'cardTextColor'
@@ -184,10 +152,7 @@ type CardVars =
     | 'cardPriceIntegerFontSize'
     | 'cardPriceFontFamily';
 
-/**
- * 单元格
- */
-type CellVars =
+type CellThemeVars =
     | 'cellFontSize'
     | 'cellLineHeight'
     | 'cellVerticalPadding'
@@ -208,10 +173,8 @@ type CellVars =
     | 'cellLargeTitleFontSize'
     | 'cellLargeValueFontSize'
     | 'cellLargeLabelFontSize';
-/**
- * 单元格组
- */
-type CellGroupVars =
+
+type CellGroupThemeVars =
     | 'cellGroupBackgroundColor'
     | 'cellGroupTitleColor'
     | 'cellGroupTitlePadding'
@@ -220,10 +183,8 @@ type CellGroupVars =
     | 'cellGroupInsetPadding'
     | 'cellGroupInsetBorderRadius'
     | 'cellGroupInsetTitlePadding';
-/**
- * 复选框
- */
-type CheckboxVars =
+
+type CheckboxThemeVars =
     | 'checkboxSize'
     | 'checkboxBorderColor'
     | 'checkboxTransitionDuration'
@@ -234,15 +195,9 @@ type CheckboxVars =
     | 'checkboxDisabledLabelColor'
     | 'checkboxDisabledBackgroundColor';
 
-/**
- * 环形进度条
- */
-type CircleVars = 'circleTextColor';
+type CircleThemeVars = 'circleTextColor';
 
-/**
- * 折叠面板
- */
-type CollapseVars =
+type CollapseThemeVars =
     | 'collapseItemTransitionDuration'
     | 'collapseItemContentPadding'
     | 'collapseItemContentFontSize'
@@ -251,15 +206,9 @@ type CollapseVars =
     | 'collapseItemContentBackgroundColor'
     | 'collapseItemTitleDisabledColor';
 
-/**
- * 倒计时
- */
-type CountDownVars = 'countDownTextColor' | 'countDownFontSize' | 'countDownLineHeight';
+type CountDownThemeVars = 'countDownTextColor' | 'countDownFontSize' | 'countDownLineHeight';
 
-/**
- * 弹出框
- */
-type DialogVars =
+type DialogThemeVars =
     | 'dialogWidth'
     | 'dialogSmallScreenWidth'
     | 'dialogFontSize'
@@ -276,10 +225,7 @@ type DialogVars =
     | 'dialogHasTitleMessageTextColor'
     | 'dialogHasTitleMessagePaddingTop';
 
-/**
- * 输入框
- */
-type FieldVars =
+type FieldThemeVars =
     | 'fieldLabelColor'
     | 'fieldInputTextColor'
     | 'fieldInputErrorTextColor'
@@ -298,10 +244,7 @@ type FieldVars =
     | 'fieldWordNumFullColor'
     | 'fieldDisabledTextColor';
 
-/**
- * 商品导航
- */
-type GoodsActionVars =
+type GoodsActionThemeVars =
     | 'goodsActionBackgroundColor'
     | 'goodsActionHeight'
     | 'goodsActionIconWidth'
@@ -317,10 +260,7 @@ type GoodsActionVars =
     | 'goodsActionButtonDangerColor'
     | 'goodsActionButtonPlainColor';
 
-/**
- * 图片
- */
-type ImageVars =
+type ImageThemeVars =
     | 'imagePlaceholderTextColor'
     | 'imagePlaceholderFontSize'
     | 'imagePlaceholderBackgroundColor'
@@ -329,7 +269,7 @@ type ImageVars =
     | 'imageErrorIconSize'
     | 'imageErrorIconColor';
 
-type InfoVars =
+type InfoThemeVars =
     | 'infoSize'
     | 'infoColor'
     | 'infoPadding'
@@ -341,10 +281,7 @@ type InfoVars =
     | 'infoDotSize'
     | 'infoFontFamily';
 
-/**
- * 加载
- */
-type LoadingVars =
+type LoadingThemeVars =
     | 'loadingTextColor'
     | 'loadingTextFontSize'
     | 'loadingTextLineHeight'
@@ -352,10 +289,7 @@ type LoadingVars =
     | 'loadingSpinnerSize'
     | 'loadingSpinnerAnimationDuration';
 
-/**
- * 导航栏
- */
-type NavBarVars =
+type NavBarThemeVars =
     | 'navBarHeight'
     | 'navBarBackgroundColor'
     | 'navBarArrowSize'
@@ -364,10 +298,7 @@ type NavBarVars =
     | 'navBarTitleFontSize'
     | 'navBarTitleTextColor';
 
-/**
- * 通知栏
- */
-type NoticeBarVars =
+type NoticeBarThemeVars =
     | 'noticeBarHeight'
     | 'noticeBarPadding'
     | 'noticeBarWrapablePadding'
@@ -378,10 +309,7 @@ type NoticeBarVars =
     | 'noticeBarIconSize'
     | 'noticeBarIconMinWidth';
 
-/**
- * 消息通知
- */
-type NotifyVars =
+type NotifyThemeVars =
     | 'notifyPadding'
     | 'notifyFontSize'
     | 'notifyLineHeight'
@@ -390,20 +318,11 @@ type NotifyVars =
     | 'notifyDangerBackgroundColor'
     | 'notifyWarningBackgroundColor';
 
-/**
- * 遮罩层
- */
-type OverlayVars = 'overlayBackgroundColor';
+type OverlayThemeVars = 'overlayBackgroundColor';
 
-/**
- * 面板
- */
-type PanelVars = 'panelBackgroundColor' | 'panelHeaderValueColor' | 'panelFooterPadding';
+type PanelThemeVars = 'panelBackgroundColor' | 'panelHeaderValueColor' | 'panelFooterPadding';
 
-/**
- * 选择器
- */
-type PickerVars =
+type PickerThemeVars =
     | 'pickerBackgroundColor'
     | 'pickerToolbarHeight'
     | 'pickerTitleFontSize'
@@ -418,10 +337,7 @@ type PickerVars =
     | 'pickerOptionDisabledOpacity'
     | 'pickerOptionSelectedTextColor';
 
-/**
- * 弹出层
- */
-type PopupVars =
+type PopupThemeVars =
     | 'popupBackgroundColor'
     | 'popupRoundBorderRadius'
     | 'popupCloseIconSize'
@@ -429,10 +345,7 @@ type PopupVars =
     | 'popupCloseIconMargin'
     | 'popupCloseIconZIndex';
 
-/**
- * 进度条
- */
-type ProgressVars =
+type ProgressThemeVars =
     | 'progressHeight'
     | 'progressBackgroundColor'
     | 'progressPivotPadding'
@@ -442,10 +355,7 @@ type ProgressVars =
     | 'progressPivotBackgroundColor'
     | 'progressPivotTextColor';
 
-/**
- * 单选框
- */
-type RadioVars =
+type RadioThemeVars =
     | 'radioSize'
     | 'radioBorderColor'
     | 'radioTransitionDuration'
@@ -456,10 +366,7 @@ type RadioVars =
     | 'radioDisabledLabelColor'
     | 'radioDisabledBackgroundColor';
 
-/**
- * 评分
- */
-type RateVars =
+type RateThemeVars =
     | 'rateHorizontalPadding'
     | 'rateIconSize'
     | 'rateIconVoidColor'
@@ -467,10 +374,7 @@ type RateVars =
     | 'rateIconDisabledColor'
     | 'rateIconGutter';
 
-/**
- * 开关
- */
-type SwitchVars =
+type SwitchThemeVars =
     | 'switchWidth'
     | 'switchHeight'
     | 'switchNodeSize'
@@ -483,10 +387,7 @@ type SwitchVars =
     | 'switchDisabledOpacity'
     | 'switchBorder';
 
-/**
- * 分享面板
- */
-type ShareSheetVars =
+type ShareSheetThemeVars =
     | 'shareSheetHeaderPadding'
     | 'shareSheetTitleColor'
     | 'shareSheetTitleFontSize'
@@ -503,10 +404,7 @@ type ShareSheetVars =
     | 'shareSheetCancelButtonHeight'
     | 'shareSheetCancelButtonBackground';
 
-/**
- * 搜索
- */
-type SearchVars =
+type SearchThemeVars =
     | 'searchBackgroundColor'
     | 'searchPadding'
     | 'searchInputHeight'
@@ -518,15 +416,9 @@ type SearchVars =
     | 'searchActionTextColor'
     | 'searchActionFontSize';
 
-/**
- * 侧边导航
- */
-type SideBarVars = 'sidebarWidth';
+type SidebarThemeVars = 'sidebarWidth';
 
-/**
- * 侧边导航项
- */
-type SizeBarItemVars =
+type SidebarItemThemeVars =
     | 'sidebarFontSize'
     | 'sidebarLineHeight'
     | 'sidebarTextColor'
@@ -539,10 +431,7 @@ type SizeBarItemVars =
     | 'sidebarSelectedBorderColor'
     | 'sidebarSelectedBackgroundColor';
 
-/**
- * 滑块
- */
-type SliderVars =
+type SliderThemeVars =
     | 'sliderActiveBackgroundColor'
     | 'sliderInactiveBackgroundColor'
     | 'sliderDisabledOpacity'
@@ -553,10 +442,7 @@ type SliderVars =
     | 'sliderButtonBackgroundColor'
     | 'sliderButtonBoxShadow';
 
-/**
- * 步骤项
- */
-type StepVars =
+type StepThemeVars =
     | 'stepTextColor'
     | 'stepProcessTextColor'
     | 'stepFontSize'
@@ -568,15 +454,9 @@ type StepVars =
     | 'stepCircleColor'
     | 'stepHorizontalTitleFontSize';
 
-/**
- * 步骤条
- */
-type StepsVars = 'stepsBackgroundColor';
+type StepsThemeVars = 'stepsBackgroundColor';
 
-/**
- * 步进器
- */
-type StepperVars =
+type StepperThemeVars =
     | 'stepperActiveColor'
     | 'stepperBackgroundColor'
     | 'stepperButtonIconColor'
@@ -592,10 +472,7 @@ type StepperVars =
     | 'stepperInputDisabledBackgroundColor'
     | 'stepperBorderRadius';
 
-/**
- * 提交订单栏
- */
-type SubmitBarVars =
+type SubmitBarThemeVars =
     | 'submitBarHeight'
     | 'submitBarZIndex'
     | 'submitBarBackgroundColor'
@@ -616,15 +493,9 @@ type SubmitBarVars =
     | 'submitBarPriceIntegerFontSize'
     | 'submitBarPriceFontFamily';
 
-/**
- * 标签栏
- */
-type TabbarVars = 'tabbarHeight' | 'tabbarBackgroundColor';
+type TabbarThemeVars = 'tabbarHeight' | 'tabbarBackgroundColor';
 
-/**
- * 标签栏项
- */
-type TabbarItemVars =
+type TabbarItemThemeVars =
     | 'tabbarItemFontSize'
     | 'tabbarItemTextColor'
     | 'tabbarItemActiveColor'
@@ -632,14 +503,9 @@ type TabbarItemVars =
     | 'tabbarItemIconSize'
     | 'tabbarItemMarginBottom';
 
-/**
- * 标签页项
- */
-type TabVars = 'tabTextColor' | 'tabActiveTextColor' | 'tabDisabledTextColor' | 'tabFontSize';
-/**
- * 标签页
- */
-type TabsVars =
+type TabThemeVars = 'tabTextColor' | 'tabActiveTextColor' | 'tabDisabledTextColor' | 'tabFontSize';
+
+type TabsThemeVars =
     | 'tabsDefaultColor'
     | 'tabsLineHeight'
     | 'tabsCardHeight'
@@ -647,10 +513,7 @@ type TabsVars =
     | 'tabsBottomBarHeight'
     | 'tabsBottomBarColor';
 
-/**
- * 标签
- */
-type TagVars =
+type TagThemeVars =
     | 'tagPadding'
     | 'tagTextColor'
     | 'tagFontSize'
@@ -668,10 +531,7 @@ type TagVars =
     | 'tagDefaultColor'
     | 'tagPlainBackgroundColor';
 
-/**
- * 轻提示
- */
-type ToastVars =
+type ToastThemeVars =
     | 'toastMaxWidth'
     | 'toastFontSize'
     | 'toastTextColor'
@@ -685,10 +545,7 @@ type ToastVars =
     | 'toastDefaultWidth'
     | 'toastDefaultMinHeight';
 
-/**
- * 宫格项
- */
-type GridItemVars =
+type GridItemThemeVars =
     | 'gridItemContentPadding'
     | 'gridItemContentBackgroundColor'
     | 'gridItemContentActiveColor'
@@ -696,10 +553,7 @@ type GridItemVars =
     | 'gridItemTextColor'
     | 'gridItemTextFontSize';
 
-/**
- * 分割线
- */
-type DividerVars =
+type DividerThemeVars =
     | 'dividerMargin'
     | 'dividerTextColor'
     | 'dividerFontSize'
@@ -709,10 +563,7 @@ type DividerVars =
     | 'dividerContentLeftWidth'
     | 'dividerContentRightWidth';
 
-/**
- * 空状态
- */
-type EmptyVars =
+type EmptyThemeVars =
     | 'emptyPadding'
     | 'emptyImageSize'
     | 'emptyDescriptionMarginTop'
@@ -722,10 +573,7 @@ type EmptyVars =
     | 'emptyDescriptionLineHeight'
     | 'emptyBottomMarginTop';
 
-/**
- * 分类选择
- */
-type TreeSelectVars =
+type TreeSelectThemeVars =
     | 'treeSelectFontSize'
     | 'treeSelectNavBackgroundColor'
     | 'treeSelectContentBackgroundColor'
@@ -734,10 +582,7 @@ type TreeSelectVars =
     | 'treeSelectItemActiveColor'
     | 'treeSelectItemDisabledColor';
 
-/**
- * 文件上传
- */
-type UploaderVars =
+type UploaderThemeVars =
     | 'uploaderSize'
     | 'uploaderIconSize'
     | 'uploaderIconColor'
@@ -763,10 +608,7 @@ type UploaderVars =
     | 'uploaderLoadingIconColor'
     | 'uploaderDisabledOpacity';
 
-/**
- * 下拉菜单
- */
-type DropdownMenuVars =
+type DropdownMenuThemeVars =
     | 'dropdownMenuHeight'
     | 'dropdownMenuBackgroundColor'
     | 'dropdownMenuTitleFontSize'
@@ -778,10 +620,7 @@ type DropdownMenuVars =
     | 'dropdownMenuOptionActiveColor'
     | 'dropdownMenuBoxShadow';
 
-/**
- * 索引项
- */
-type IndexAnchorVars =
+type IndexAnchorThemeVars =
     | 'indexAnchorPadding'
     | 'indexAnchorTextColor'
     | 'indexAnchorFontWeight'
@@ -791,15 +630,9 @@ type IndexAnchorVars =
     | 'indexAnchorActiveBackgroundColor'
     | 'indexAnchorActiveTextColor';
 
-/**
- * 索引栏
- */
-type IndexBarVars = 'indexBarIndexFontSize' | 'indexBarIndexLineHeight';
+type IndexBarThemeVars = 'indexBarIndexFontSize' | 'indexBarIndexLineHeight';
 
-/**
- * 骨架屏
- */
-type SkeletonVars =
+type SkeletonThemeVars =
     | 'skeletonPadding'
     | 'skeletonRowHeight'
     | 'skeletonRowBackgroundColor'
@@ -813,63 +646,63 @@ type SkeletonVars =
  * @see https://github.com/youzan/vant-weapp/blob/dev/packages/common/style/var.less
  */
 export type ThemeVars = Record<
-    | ColorVars
-    | GradientColorVars
-    | ComponentColorVars
-    | PaddingVars
-    | FontVars
-    | AnimationVars
-    | BorderVars
-    | ActionSheetVars
-    | ButtonVars
-    | CalendarVars
-    | CardVars
-    | CellVars
-    | CellGroupVars
-    | CheckboxVars
-    | CircleVars
-    | CollapseVars
-    | CountDownVars
-    | DialogVars
-    | FieldVars
-    | GoodsActionVars
-    | ImageVars
-    | InfoVars
-    | LoadingVars
-    | NavBarVars
-    | NoticeBarVars
-    | NotifyVars
-    | OverlayVars
-    | PanelVars
-    | PickerVars
-    | PopupVars
-    | ProgressVars
-    | RadioVars
-    | RateVars
-    | SwitchVars
-    | ShareSheetVars
-    | SearchVars
-    | SideBarVars
-    | SizeBarItemVars
-    | SliderVars
-    | StepVars
-    | StepsVars
-    | StepperVars
-    | SubmitBarVars
-    | TabbarVars
-    | TabbarItemVars
-    | TabVars
-    | TabsVars
-    | TagVars
-    | ToastVars
-    | GridItemVars
-    | DividerVars
-    | EmptyVars
-    | TreeSelectVars
-    | UploaderVars
-    | DropdownMenuVars
-    | IndexAnchorVars
-    | IndexBarVars
-    | SkeletonVars,
+    | ColorPaletteThemeVars
+    | GradientColorsThemeVars
+    | ComponentColorsThemeVars
+    | PaddingThemeVars
+    | FontThemeVars
+    | AnimationThemeVars
+    | BorderThemeVars
+    | ActionSheetThemeVars
+    | ButtonThemeVars
+    | CalendarThemeVars
+    | CardThemeVars
+    | CellThemeVars
+    | CellGroupThemeVars
+    | CheckboxThemeVars
+    | CircleThemeVars
+    | CollapseThemeVars
+    | CountDownThemeVars
+    | DialogThemeVars
+    | FieldThemeVars
+    | GoodsActionThemeVars
+    | ImageThemeVars
+    | InfoThemeVars
+    | LoadingThemeVars
+    | NavBarThemeVars
+    | NoticeBarThemeVars
+    | NotifyThemeVars
+    | OverlayThemeVars
+    | PanelThemeVars
+    | PickerThemeVars
+    | PopupThemeVars
+    | ProgressThemeVars
+    | RadioThemeVars
+    | RateThemeVars
+    | SwitchThemeVars
+    | ShareSheetThemeVars
+    | SearchThemeVars
+    | SidebarThemeVars
+    | SidebarItemThemeVars
+    | SliderThemeVars
+    | StepThemeVars
+    | StepsThemeVars
+    | StepperThemeVars
+    | SubmitBarThemeVars
+    | TabbarThemeVars
+    | TabbarItemThemeVars
+    | TabThemeVars
+    | TabsThemeVars
+    | TagThemeVars
+    | ToastThemeVars
+    | GridItemThemeVars
+    | DividerThemeVars
+    | EmptyThemeVars
+    | TreeSelectThemeVars
+    | UploaderThemeVars
+    | DropdownMenuThemeVars
+    | IndexAnchorThemeVars
+    | IndexBarThemeVars
+    | SkeletonThemeVars,
     string
 >;
