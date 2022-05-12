@@ -26,7 +26,7 @@ export interface VantFieldProps {
      *
      * @default 'text'
      */
-    type?: 'number' | 'idcard' | 'textarea' | 'digit' | 'text';
+    type?: 'number' | 'idcard' | 'textarea' | 'digit' | 'text' | 'safe-password' | 'nickname';
 
     /**
      * 如果`type`为`textarea`且在一个`position:fixed`的区域，需要显示指定属性`fixed`为`true`
