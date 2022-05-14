@@ -1,3 +1,13 @@
+## v1.29.0
+
+-   🚀 `ConfigProvider` 组件添加生成 `themeVars` 方法并更新 `themeVars` 类型 ([#53](https://github.com/fanhaoyuan/vant-weapp-typings/pull/53))
+-   🚀 [react-vant-weapp-typings] 导出 `Base` 类型 ([#52](https://github.com/fanhaoyuan/vant-weapp-typings/pull/52))
+-   🚀 `Field`、`Image`、`Slider`、`Stepper`、`Tabs`组件新增并导出 `EventDetails` ([#51](https://github.com/fanhaoyuan/vant-weapp-typings/pull/51))
+-   🚀 使用 `VantEventHandler` 和 `VantTouchEventHandler` 替换字面量类型 ([#51](https://github.com/fanhaoyuan/vant-weapp-typings/pull/51))
+-   🚀 添加通用 `Event` 类型 ([#51](https://github.com/fanhaoyuan/vant-weapp-typings/pull/51))
+
+-   🐛 `Field` 修复 `type` 属性遗漏 `safe-password` 和 `nickname` 的问题 ([#54](https://github.com/fanhaoyuan/vant-weapp-typings/pull/54))
+
 ## v1.28.0
 
 -   🚀 `Uploader` 组件更新并导出事件回调 ([#50](https://github.com/fanhaoyuan/vant-weapp-typings/pull/50))
