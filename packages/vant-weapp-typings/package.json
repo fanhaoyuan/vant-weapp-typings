@@ -24,7 +24,7 @@
     "dependencies": {
         "@types/wechat-miniprogram": "^3.4.0"
     },
-    "version": "1.29.0",
+    "version": "1.29.1",
     "devDependencies": {
         "@types/postcss-less": "^4.0.2",
         "postcss": "^8.4.13",
