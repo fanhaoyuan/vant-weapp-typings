@@ -1,8 +1,8 @@
-import { VantActionSheet, VantActionSheetProps, VantActionSheetEvents } from 'vant-weapp-typings';
+import { VantActionSheet, VantActionSheetProps, VantActionSheetEvents, VantAction } from 'vant-weapp-typings';
 
 type ActionSheet = React.ComponentType<VantActionSheet>;
 
-export { VantActionSheet, VantActionSheetProps, VantActionSheetEvents };
+export { VantActionSheet, VantActionSheetProps, VantActionSheetEvents, VantAction };
 
 declare const ActionSheet: ActionSheet;
 
