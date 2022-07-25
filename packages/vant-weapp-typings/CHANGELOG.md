@@ -1,3 +1,7 @@
+## v1.30.0
+
+-   🚀 `Button` 新增 `chooseavatar` 事件 ([#57](https://github.com/fanhaoyuan/vant-weapp-typings/pull/57))
+
 ## v1.29.1
 
 -   🐛 [react-vant-weapp-typings] 修复没有导出 `VantAction` 的问题 ([#56](https://github.com/fanhaoyuan/vant-weapp-typings/pull/56))
