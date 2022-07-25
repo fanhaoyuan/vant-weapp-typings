@@ -145,6 +145,11 @@ export interface VantButtonEvents extends Omit<VantOpenTypeEvents, 'bind:launcha
      * 点击按钮，且按钮状态不为加载或禁用时触发
      */
     'bind:click'?: VantEventHandler<VantTouchEvent>;
+
+    /**
+     * 当 open-type 的值为 chooseAvatar 时，选择头像之后的回调
+     */
+    'bind:chooseavatar': VantEventHandler;
 }
 
 export interface VantButtonExternalClassName extends VantBaseExternalClassName, VantBaseLoadingExternalClassName {}
