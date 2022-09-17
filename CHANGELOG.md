@@ -1,3 +1,7 @@
+## Coming Soon
+
+-   🚀 Dialog 中 `messageAlign` 属性支持传 `justify`
+
 ## v1.30.0
 
 -   🚀 `Button` 新增 `chooseavatar` 事件 ([#57](https://github.com/fanhaoyuan/vant-weapp-typings/pull/57))

@@ -35,7 +35,7 @@ export interface VantDialogProps extends VantOpenTypeProps {
      *
      * @default 'center'
      */
-    'message-align'?: 'left' | 'center' | 'right';
+    'message-align'?: 'left' | 'center' | 'right' | 'justify';
 
     /**
      * `z-index`层级
