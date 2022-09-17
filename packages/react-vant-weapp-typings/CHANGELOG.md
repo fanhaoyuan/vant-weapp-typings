@@ -1,3 +1,8 @@
+## v1.31.0
+
+-   🚀 Dialog 中 `messageAlign` 属性支持传 `justify` ([#59](https://github.com/fanhaoyuan/vant-weapp-typings/pull/59))
+-   🚀 Toast 组件 `context` 选项支持传入函数 ([#60](https://github.com/fanhaoyuan/vant-weapp-typings/pull/60))
+
 ## v1.30.0
 
 -   🚀 `Button` 新增 `chooseavatar` 事件 ([#57](https://github.com/fanhaoyuan/vant-weapp-typings/pull/57))
