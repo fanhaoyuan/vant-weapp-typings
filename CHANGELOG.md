@@ -1,6 +1,7 @@
 ## Coming Soon
 
 -   🚀 Dialog 中 `messageAlign` 属性支持传 `justify`
+-   🚀 Toast 组件 `context` 选项支持传入函数
 
 ## v1.30.0
 

@@ -58,7 +58,7 @@ export interface VantToastOptions {
      *
      * @default 当前页面
      */
-    context?: object;
+    context?: object | (() => any);
     /**
      * 关闭时的回调函数
      */
